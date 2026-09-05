@@ -4,11 +4,18 @@
     if (root) root.PreviewPolicy = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     const DAY_MS = 24 * 60 * 60 * 1000;
+    const WEEK_MS = 7 * DAY_MS;
     const DEFAULT_BOOKMARK_DISPLAY_TYPE = 'preview';
 
-    function isPreviewBookmark(bookmark) {
+    function isScreenshotBookmark(bookmark) {
         return Boolean(bookmark) &&
             (bookmark.displayType === 'preview' || !bookmark.displayType) &&
+            Boolean(normalizeComparableUrl(bookmark.url));
+    }
+
+    function isThumbnailBookmark(bookmark) {
+        return Boolean(bookmark) &&
+            bookmark.displayType === 'icon' &&
             Boolean(normalizeComparableUrl(bookmark.url));
     }
 
@@ -28,32 +35,53 @@
         return !Number.isFinite(timestamp) || now - timestamp >= intervalMs;
     }
 
-    function shouldRefreshMetadata(bookmark, now = Date.now()) {
-        if (!isPreviewBookmark(bookmark)) return false;
-        if (bookmark.previewSource === 'visit' || bookmark.previewSource === 'manual') return false;
-        return isStale(bookmark.previewMetadataCheckedAt, now, DAY_MS);
+    function exactBookmarkUrlMatches(bookmark, tabUrl) {
+        return normalizeComparableUrl(bookmark && bookmark.url) === normalizeComparableUrl(tabUrl);
     }
 
-    function shouldCaptureVisit(bookmark, tabUrl, now = Date.now()) {
-        if (!isPreviewBookmark(bookmark)) return false;
-        if (normalizeComparableUrl(bookmark.url) !== normalizeComparableUrl(tabUrl)) return false;
-        return isStale(bookmark.previewVisitCapturedAt, now, DAY_MS);
+    function shouldCaptureScreenshotVisit(bookmark, tabUrl, now = Date.now()) {
+        if (!isScreenshotBookmark(bookmark) || !exactBookmarkUrlMatches(bookmark, tabUrl)) return false;
+        return isStale(bookmark.screenshotVisitCapturedAt, now, DAY_MS);
     }
 
-    function markPreview(bookmark, source, now = Date.now()) {
+    function shouldRefreshThumbnailVisit(bookmark, tabUrl, now = Date.now()) {
+        if (!isThumbnailBookmark(bookmark) || !exactBookmarkUrlMatches(bookmark, tabUrl)) return false;
+        return isStale(bookmark.thumbnailVisitRefreshedAt, now, DAY_MS);
+    }
+
+    function isScheduledScreenshotDue(bookmark, now = Date.now()) {
+        if (!isScreenshotBookmark(bookmark)) return false;
+        const interval = bookmark.screenshotRefreshInterval;
+        if (interval !== 'daily' && interval !== 'weekly') return false;
+        return isStale(bookmark.screenshotUpdatedAt, now, interval === 'daily' ? DAY_MS : WEEK_MS);
+    }
+
+    function markScreenshot(bookmark, source, now = Date.now()) {
         const updated = {
             ...bookmark,
-            previewSource: source,
-            previewUpdatedAt: now
+            screenshotSource: source,
+            screenshotUpdatedAt: now
         };
 
-        if (source === 'metadata') updated.previewMetadataCheckedAt = now;
-        if (source === 'visit') updated.previewVisitCapturedAt = now;
+        if (source === 'visit') updated.screenshotVisitCapturedAt = now;
+        return updated;
+    }
+
+    function markThumbnail(bookmark, details = {}, now = Date.now()) {
+        const updated = {
+            ...bookmark,
+            thumbnailSource: details.source || 'metadata',
+            thumbnailSourceUrl: details.sourceUrl || null,
+            thumbnailPlateColor: details.plateColor || null,
+            thumbnailUpdatedAt: now
+        };
+
+        if (details.source === 'rendered-metadata') updated.thumbnailVisitRefreshedAt = now;
         return updated;
     }
 
     function selectPreviewCandidates(groups, baseUrl) {
-        const orderedGroups = ['openGraph', 'twitter', 'schema', 'imageSrc', 'icons', 'manifest', 'content'];
+        const orderedGroups = ['openGraph', 'twitter', 'schema', 'imageSrc', 'manifest', 'icons', 'content'];
         const seen = new Set();
         const candidates = [];
 
@@ -75,11 +103,23 @@
 
     return {
         DAY_MS,
+        WEEK_MS,
         DEFAULT_BOOKMARK_DISPLAY_TYPE,
         normalizeComparableUrl,
-        shouldRefreshMetadata,
-        shouldCaptureVisit,
-        markPreview,
+        isScreenshotBookmark,
+        isThumbnailBookmark,
+        shouldCaptureScreenshotVisit,
+        shouldRefreshThumbnailVisit,
+        isScheduledScreenshotDue,
+        markScreenshot,
+        markThumbnail,
+        // Temporary compatibility aliases while older call sites migrate.
+        shouldRefreshMetadata: (bookmark, now) =>
+            isThumbnailBookmark(bookmark) && isStale(bookmark.thumbnailUpdatedAt, now || Date.now(), DAY_MS),
+        shouldCaptureVisit: shouldCaptureScreenshotVisit,
+        markPreview: (bookmark, source, now) => source === 'metadata'
+            ? markThumbnail(bookmark, { source }, now)
+            : markScreenshot(bookmark, source, now),
         selectPreviewCandidates
     };
 });
