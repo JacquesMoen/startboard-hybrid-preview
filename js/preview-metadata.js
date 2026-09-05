@@ -7,8 +7,11 @@
     const REQUEST_TIMEOUT_MS = 8000;
     const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
     const MAX_CONTENT_IMAGES = 12;
-    const THUMBNAIL_WIDTH = 440;
-    const THUMBNAIL_HEIGHT = 248;
+    const MAX_THUMBNAIL_WIDTH = 1200;
+    const MAX_THUMBNAIL_HEIGHT = 675;
+    const TARGET_RATIO = MAX_THUMBNAIL_WIDTH / MAX_THUMBNAIL_HEIGHT;
+    const RATIO_TOLERANCE = 0.25;
+    const MIN_USEFUL_IMAGE_SIZE = 96;
     const inFlight = new Map();
 
     function getStorageManager(override) {
@@ -22,6 +25,15 @@
         return Array.from(document.querySelectorAll(selector))
             .map((element) => attributes.map((name) => element.getAttribute(name)).find(Boolean))
             .filter(Boolean);
+    }
+
+    function iconArea(icon) {
+        const sizes = String(icon && icon.sizes || '').toLowerCase();
+        if (sizes.includes('any')) return 256 * 256;
+        return sizes.split(/\s+/).reduce((largest, size) => {
+            const match = size.match(/^(\d+)x(\d+)$/);
+            return match ? Math.max(largest, Number(match[1]) * Number(match[2])) : largest;
+        }, 0);
     }
 
     function documentIconCandidates(document) {
@@ -51,15 +63,6 @@
         };
     }
 
-    function iconArea(icon) {
-        const sizes = String(icon && icon.sizes || '').toLowerCase();
-        if (sizes.includes('any')) return 256 * 256;
-        return sizes.split(/\s+/).reduce((largest, size) => {
-            const match = size.match(/^(\d+)x(\d+)$/);
-            return match ? Math.max(largest, Number(match[1]) * Number(match[2])) : largest;
-        }, 0);
-    }
-
     function sortManifestIcons(icons) {
         return (Array.isArray(icons) ? icons : [])
             .filter((icon) => icon && icon.src)
@@ -68,46 +71,90 @@
             .map((icon) => icon.src);
     }
 
-    async function fetchWithTimeout(url, options = {}, fetchImpl = runtime.fetch.bind(runtime)) {
+    function fetchWithTimeout(url, options = {}, fetchImpl = runtime.fetch.bind(runtime)) {
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-        try {
-            return await fetchImpl(url, { ...options, signal: controller.signal });
-        } finally {
-            clearTimeout(timeout);
-        }
+        return Promise.resolve(fetchImpl(url, { ...options, signal: controller.signal }))
+            .finally(() => clearTimeout(timeout));
     }
 
     function blobToDataUrl(blob) {
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.onload = () => resolve(reader.result);
-            reader.onerror = () => reject(reader.error || new Error('Unable to read preview image'));
+            reader.onerror = () => reject(reader.error || new Error('Unable to read thumbnail image'));
             reader.readAsDataURL(blob);
         });
     }
 
-    function calculateCoverCrop(sourceWidth, sourceHeight, targetWidth, targetHeight) {
-        const sourceRatio = sourceWidth / sourceHeight;
-        const targetRatio = targetWidth / targetHeight;
-
-        if (sourceRatio > targetRatio) {
-            const sourceWidthCropped = sourceHeight * targetRatio;
-            return {
-                sourceX: (sourceWidth - sourceWidthCropped) / 2,
-                sourceY: 0,
-                sourceWidth: sourceWidthCropped,
-                sourceHeight
-            };
+    function calculateThumbnailPlan(sourceWidth, sourceHeight) {
+        if (!Number.isFinite(sourceWidth) || !Number.isFinite(sourceHeight) ||
+            sourceWidth <= 0 || sourceHeight <= 0) {
+            throw new Error('Invalid image dimensions');
         }
 
-        const sourceHeightCropped = sourceWidth / targetRatio;
+        const sourceRatio = sourceWidth / sourceHeight;
+        const closeToTarget = Math.abs(sourceRatio - TARGET_RATIO) <= RATIO_TOLERANCE;
+        let sourceX = 0;
+        let sourceY = 0;
+        let croppedWidth = sourceWidth;
+        let croppedHeight = sourceHeight;
+
+        if (closeToTarget) {
+            if (sourceRatio > TARGET_RATIO) {
+                croppedWidth = sourceHeight * TARGET_RATIO;
+                sourceX = (sourceWidth - croppedWidth) / 2;
+            } else {
+                croppedHeight = sourceWidth / TARGET_RATIO;
+                sourceY = (sourceHeight - croppedHeight) / 2;
+            }
+        }
+
+        const shouldFillTarget = closeToTarget &&
+            (sourceWidth >= MAX_THUMBNAIL_WIDTH || sourceHeight >= MAX_THUMBNAIL_HEIGHT);
+        const scale = shouldFillTarget
+            ? Math.min(MAX_THUMBNAIL_WIDTH / croppedWidth, MAX_THUMBNAIL_HEIGHT / croppedHeight)
+            : Math.min(1, MAX_THUMBNAIL_WIDTH / croppedWidth, MAX_THUMBNAIL_HEIGHT / croppedHeight);
+
         return {
-            sourceX: 0,
-            sourceY: (sourceHeight - sourceHeightCropped) / 2,
-            sourceWidth,
-            sourceHeight: sourceHeightCropped
+            canvasWidth: Math.max(1, Math.round(croppedWidth * scale)),
+            canvasHeight: Math.max(1, Math.round(croppedHeight * scale)),
+            sourceX,
+            sourceY,
+            sourceWidth: croppedWidth,
+            sourceHeight: croppedHeight
         };
+    }
+
+    function sampleEdgeColor(pixelData, width, height) {
+        if (!pixelData || !width || !height) return 'rgb(255, 255, 255)';
+        const step = Math.max(1, Math.floor(Math.min(width, height) / 64));
+        let red = 0;
+        let green = 0;
+        let blue = 0;
+        let count = 0;
+
+        function addPixel(x, y) {
+            const index = (y * width + x) * 4;
+            const alpha = pixelData[index + 3];
+            if (!alpha) return;
+            red += pixelData[index];
+            green += pixelData[index + 1];
+            blue += pixelData[index + 2];
+            count += 1;
+        }
+
+        for (let x = 0; x < width; x += step) {
+            addPixel(x, 0);
+            if (height > 1) addPixel(x, height - 1);
+        }
+        for (let y = step; y < height - 1; y += step) {
+            addPixel(0, y);
+            if (width > 1) addPixel(width - 1, y);
+        }
+
+        if (!count) return 'rgb(255, 255, 255)';
+        return `rgb(${Math.round(red / count)}, ${Math.round(green / count)}, ${Math.round(blue / count)})`;
     }
 
     function resizeToThumbnail(imageDataUrl, options = {}) {
@@ -115,41 +162,48 @@
             const image = options.createImage ? options.createImage() : new Image();
             image.onload = () => {
                 try {
+                    const width = image.naturalWidth || image.width;
+                    const height = image.naturalHeight || image.height;
+                    if (width < MIN_USEFUL_IMAGE_SIZE && height < MIN_USEFUL_IMAGE_SIZE) {
+                        throw new Error('Representative image is too small');
+                    }
+
+                    const plan = calculateThumbnailPlan(width, height);
                     const canvas = options.createCanvas
                         ? options.createCanvas()
                         : document.createElement('canvas');
-                    canvas.width = THUMBNAIL_WIDTH;
-                    canvas.height = THUMBNAIL_HEIGHT;
-                    const context = canvas.getContext('2d');
-                    const crop = calculateCoverCrop(
-                        image.naturalWidth || image.width,
-                        image.naturalHeight || image.height,
-                        THUMBNAIL_WIDTH,
-                        THUMBNAIL_HEIGHT
-                    );
+                    canvas.width = plan.canvasWidth;
+                    canvas.height = plan.canvasHeight;
+                    const context = canvas.getContext('2d', { willReadFrequently: true });
+                    context.imageSmoothingEnabled = true;
+                    context.imageSmoothingQuality = 'high';
                     context.drawImage(
                         image,
-                        crop.sourceX,
-                        crop.sourceY,
-                        crop.sourceWidth,
-                        crop.sourceHeight,
+                        plan.sourceX,
+                        plan.sourceY,
+                        plan.sourceWidth,
+                        plan.sourceHeight,
                         0,
                         0,
-                        THUMBNAIL_WIDTH,
-                        THUMBNAIL_HEIGHT
+                        plan.canvasWidth,
+                        plan.canvasHeight
                     );
-                    resolve(canvas.toDataURL('image/webp', 0.86));
+                    const pixels = context.getImageData(0, 0, plan.canvasWidth, plan.canvasHeight).data;
+                    resolve({
+                        imageDataUrl: canvas.toDataURL('image/webp', 0.86),
+                        plateColor: sampleEdgeColor(pixels, plan.canvasWidth, plan.canvasHeight)
+                    });
                 } catch (error) {
                     reject(error);
                 }
             };
-            image.onerror = () => reject(new Error('Unable to decode preview image'));
+            image.onerror = () => reject(new Error('Unable to decode representative image'));
             image.src = imageDataUrl;
         });
     }
 
     async function manifestCandidates(manifestUrls, pageUrl, fetchImpl) {
-        for (const rawUrl of manifestUrls) {
+        for (const rawUrl of manifestUrls || []) {
             try {
                 const manifestUrl = new URL(rawUrl, pageUrl).href;
                 const response = await fetchWithTimeout(manifestUrl, {}, fetchImpl);
@@ -157,7 +211,7 @@
                 const manifest = await response.json();
                 return sortManifestIcons(manifest.icons);
             } catch (error) {
-                // Try the next manifest, if present.
+                // Try the next manifest.
             }
         }
         return [];
@@ -165,18 +219,40 @@
 
     async function downloadImage(candidateUrl, fetchImpl) {
         const response = await fetchWithTimeout(candidateUrl, {}, fetchImpl);
-        if (!response.ok) throw new Error(`Preview image request failed: ${response.status}`);
+        if (!response.ok) throw new Error(`Thumbnail request failed: ${response.status}`);
 
         const declaredType = response.headers.get('content-type') || '';
         const declaredLength = Number(response.headers.get('content-length') || 0);
-        if (declaredType && !declaredType.startsWith('image/')) throw new Error('Preview candidate is not an image');
-        if (declaredLength > MAX_IMAGE_BYTES) throw new Error('Preview candidate is too large');
+        if (declaredType && !declaredType.startsWith('image/')) throw new Error('Candidate is not an image');
+        if (declaredLength > MAX_IMAGE_BYTES) throw new Error('Candidate is too large');
 
         const blob = await response.blob();
         if (blob.size > MAX_IMAGE_BYTES || (blob.type && !blob.type.startsWith('image/'))) {
-            throw new Error('Preview candidate is invalid');
+            throw new Error('Candidate is invalid');
         }
         return blobToDataUrl(blob);
+    }
+
+    async function collectCandidates(groups, pageUrl, fetchImpl) {
+        const completeGroups = { ...groups };
+        completeGroups.manifest = await manifestCandidates(groups.manifestUrls, pageUrl, fetchImpl);
+        return PreviewPolicy.selectPreviewCandidates(completeGroups, pageUrl);
+    }
+
+    async function processCandidates(groups, pageUrl, options = {}) {
+        const fetchImpl = options.fetchImpl || runtime.fetch.bind(runtime);
+        const thumbnailer = options.thumbnailer || resizeToThumbnail;
+        const candidates = await collectCandidates(groups, pageUrl, fetchImpl);
+
+        for (const sourceUrl of candidates) {
+            try {
+                const processed = await thumbnailer(await downloadImage(sourceUrl, fetchImpl));
+                return { ...processed, sourceUrl };
+            } catch (error) {
+                // Candidate URLs are best-effort; continue in ranked order.
+            }
+        }
+        throw new Error('No usable representative image found');
     }
 
     async function findRepresentativeImage(pageUrl, options = {}) {
@@ -188,43 +264,49 @@
         if (!pageResponse.ok) throw new Error(`Page request failed: ${pageResponse.status}`);
 
         const document = parser.parseFromString(await pageResponse.text(), 'text/html');
-        const groups = extractCandidateGroups(document);
-        groups.manifest = await manifestCandidates(groups.manifestUrls, pageUrl, fetchImpl);
-        const candidates = PreviewPolicy.selectPreviewCandidates(groups, pageUrl);
-        const thumbnailer = options.thumbnailer || resizeToThumbnail;
+        return processCandidates(extractCandidateGroups(document), pageUrl, options);
+    }
 
-        for (const candidate of candidates) {
-            try {
-                return await thumbnailer(await downloadImage(candidate, fetchImpl));
-            } catch (error) {
-                // Candidate URLs are best-effort; continue in ranked order.
-            }
-        }
-        throw new Error('No usable preview image found');
+    async function saveProcessedThumbnail(bookmark, processed, options) {
+        const timestamp = options.now ? options.now() : Date.now();
+        const storage = getStorageManager(options.storage);
+        await storage.saveThumbnail(bookmark.id, processed.imageDataUrl, {
+            plateColor: processed.plateColor,
+            sourceUrl: processed.sourceUrl,
+            source: options.source || 'metadata',
+            timestamp
+        });
+    }
+
+    async function withBookmarkLock(bookmark, work) {
+        if (!bookmark || !bookmark.id || !PreviewPolicy.isThumbnailBookmark(bookmark)) return false;
+        if (inFlight.has(bookmark.id)) return inFlight.get(bookmark.id);
+
+        const task = Promise.resolve()
+            .then(work)
+            .finally(() => inFlight.delete(bookmark.id));
+        inFlight.set(bookmark.id, task);
+        return task;
     }
 
     async function refreshBookmarkMetadata(bookmark, options = {}) {
-        if (!bookmark || !bookmark.id) return false;
         if (!options.force && !PreviewPolicy.shouldRefreshMetadata(bookmark)) return false;
-        if (inFlight.has(bookmark.id)) return inFlight.get(bookmark.id);
+        return withBookmarkLock(bookmark, async () => {
+            const processed = await findRepresentativeImage(bookmark.url, options);
+            await saveProcessedThumbnail(bookmark, processed, { ...options, source: options.source || 'metadata' });
+            return true;
+        });
+    }
 
-        const task = (async () => {
-            const checkedAt = Date.now();
-            const storage = getStorageManager(options.storage);
-            try {
-                const imageDataUrl = await findRepresentativeImage(bookmark.url, options);
-                await storage.savePreview(bookmark.id, imageDataUrl, 'metadata', checkedAt);
-                return true;
-            } catch (error) {
-                await storage.markPreviewMetadataChecked(bookmark.id, checkedAt);
-                throw error;
-            } finally {
-                inFlight.delete(bookmark.id);
-            }
-        })();
-
-        inFlight.set(bookmark.id, task);
-        return task;
+    async function refreshBookmarkFromCandidateGroups(bookmark, groups, pageUrl, options = {}) {
+        return withBookmarkLock(bookmark, async () => {
+            const processed = await processCandidates(groups, pageUrl || bookmark.url, options);
+            await saveProcessedThumbnail(bookmark, processed, {
+                ...options,
+                source: options.source || 'rendered-metadata'
+            });
+            return true;
+        });
     }
 
     async function refreshStalePreviews(onUpdated) {
@@ -240,7 +322,7 @@
                 try {
                     if (await refreshBookmarkMetadata(bookmark)) updatedIds.push(bookmark.id);
                 } catch (error) {
-                    console.debug(`Metadata preview unavailable for ${bookmark.url}`);
+                    console.debug(`Representative thumbnail unavailable for ${bookmark.url}`);
                 }
             }
         }
@@ -253,10 +335,12 @@
     return {
         extractCandidateGroups,
         sortManifestIcons,
-        calculateCoverCrop,
+        calculateThumbnailPlan,
+        sampleEdgeColor,
         resizeToThumbnail,
         findRepresentativeImage,
         refreshBookmarkMetadata,
+        refreshBookmarkFromCandidateGroups,
         refreshStalePreviews
     };
 });

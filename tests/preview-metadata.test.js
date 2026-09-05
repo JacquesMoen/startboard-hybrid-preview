@@ -4,16 +4,18 @@ const assert = require('node:assert/strict');
 const {
     extractCandidateGroups,
     sortManifestIcons,
-    calculateCoverCrop,
+    calculateThumbnailPlan,
+    sampleEdgeColor,
     resizeToThumbnail,
-    refreshBookmarkMetadata
+    refreshBookmarkMetadata,
+    refreshBookmarkFromCandidateGroups
 } = require('../js/preview-metadata.js');
 
 function node(attributes) {
     return { getAttribute: (name) => attributes[name] || null };
 }
 
-test('extracts preview metadata without depending on visible page layout', () => {
+test('extracts representative metadata without depending on visible page layout', () => {
     const matches = new Map([
         ['meta[property="og:image"], meta[property="og:image:secure_url"]', [node({ content: '/og.jpg' })]],
         ['meta[name="twitter:image"], meta[name="twitter:image:src"]', [node({ content: '/twitter.jpg' })]],
@@ -39,27 +41,52 @@ test('extracts preview metadata without depending on visible page layout', () =>
     });
 });
 
-test('calculates a centered cover crop for wide and tall source images', () => {
-    assert.deepEqual(calculateCoverCrop(1200, 630, 440, 248), {
-        sourceX: 41.12903225806451,
+test('crops near-wide images to 16:9 but preserves portrait image proportions', () => {
+    assert.deepEqual(calculateThumbnailPlan(1200, 630), {
+        canvasWidth: 1200,
+        canvasHeight: 675,
+        sourceX: 40,
         sourceY: 0,
-        sourceWidth: 1117.741935483871,
+        sourceWidth: 1120,
         sourceHeight: 630
     });
-    assert.deepEqual(calculateCoverCrop(600, 900, 440, 248), {
+
+    assert.deepEqual(calculateThumbnailPlan(600, 900), {
+        canvasWidth: 450,
+        canvasHeight: 675,
         sourceX: 0,
-        sourceY: 280.9090909090909,
+        sourceY: 0,
         sourceWidth: 600,
-        sourceHeight: 338.1818181818182
+        sourceHeight: 900
     });
 });
 
-test('renders the selected image as a 440 by 248 WebP thumbnail', async () => {
+test('samples a stable plate color from image edges', () => {
+    const pixels = new Uint8ClampedArray([
+        12, 34, 56, 255, 12, 34, 56, 255, 12, 34, 56, 255,
+        12, 34, 56, 255, 99, 99, 99, 255, 12, 34, 56, 255,
+        12, 34, 56, 255, 12, 34, 56, 255, 12, 34, 56, 255
+    ]);
+
+    assert.equal(sampleEdgeColor(pixels, 3, 3), 'rgb(12, 34, 56)');
+});
+
+test('renders a portrait representative image inside the bounded cache without cropping it', async () => {
     const drawCalls = [];
+    const renderedPixels = new Uint8ClampedArray(450 * 675 * 4);
+    for (let index = 0; index < renderedPixels.length; index += 4) {
+        renderedPixels[index] = 20;
+        renderedPixels[index + 1] = 40;
+        renderedPixels[index + 2] = 60;
+        renderedPixels[index + 3] = 255;
+    }
     const canvas = {
         width: 0,
         height: 0,
-        getContext: () => ({ drawImage: (...args) => drawCalls.push(args) }),
+        getContext: () => ({
+            drawImage: (...args) => drawCalls.push(args),
+            getImageData: () => ({ data: renderedPixels })
+        }),
         toDataURL: (type, quality) => {
             assert.equal(type, 'image/webp');
             assert.equal(quality, 0.86);
@@ -67,8 +94,8 @@ test('renders the selected image as a 440 by 248 WebP thumbnail', async () => {
         }
     };
     const image = {
-        naturalWidth: 1200,
-        naturalHeight: 630,
+        naturalWidth: 600,
+        naturalHeight: 900,
         set src(value) {
             assert.equal(value, 'data:image/jpeg;base64,aW1hZ2U=');
             queueMicrotask(() => this.onload());
@@ -80,10 +107,12 @@ test('renders the selected image as a 440 by 248 WebP thumbnail', async () => {
         createCanvas: () => canvas
     });
 
-    assert.equal(result, 'data:image/webp;base64,dGh1bWI=');
-    assert.deepEqual([canvas.width, canvas.height], [440, 248]);
-    assert.equal(drawCalls.length, 1);
-    assert.deepEqual(drawCalls[0].slice(-4), [0, 0, 440, 248]);
+    assert.deepEqual(result, {
+        imageDataUrl: 'data:image/webp;base64,dGh1bWI=',
+        plateColor: 'rgb(20, 40, 60)'
+    });
+    assert.deepEqual([canvas.width, canvas.height], [450, 675]);
+    assert.deepEqual(drawCalls[0].slice(1), [0, 0, 600, 900, 0, 0, 450, 675]);
 });
 
 test('sorts manifest icons by declared pixel area', () => {
@@ -96,18 +125,17 @@ test('sorts manifest icons by declared pixel area', () => {
     assert.deepEqual(sortManifestIcons(icons), ['/large.png', '/scalable.svg', '/small.png']);
 });
 
-test('downloads the best representative image and records it as metadata', async () => {
+test('downloads the best representative image into thumbnail storage', async () => {
     const document = {
         querySelectorAll: (selector) => selector.startsWith('meta[property="og:image"')
-            ? [node({ content: '/preview.jpg' })]
+            ? [node({ content: '/chronicle.jpg' })]
             : []
     };
-    const parser = { parseFromString: () => document };
     const fetchImpl = async (url) => {
-        if (url === 'https://example.com/page') {
+        if (url === 'https://ampcode.com/chronicle') {
             return { ok: true, text: async () => '<html></html>' };
         }
-        assert.equal(url, 'https://example.com/preview.jpg');
+        assert.equal(url, 'https://ampcode.com/chronicle.jpg');
         return {
             ok: true,
             headers: new Headers({ 'content-type': 'image/jpeg' }),
@@ -115,11 +143,11 @@ test('downloads the best representative image and records it as metadata', async
         };
     };
     const writes = [];
-    const storage = {
-        savePreview: async (...args) => writes.push(args),
-        markPreviewMetadataChecked: async () => assert.fail('successful refresh should not be marked as failed')
-    };
-    const thumbnailer = async () => 'data:image/webp;base64,dGh1bWI=';
+    const storage = { saveThumbnail: async (...args) => writes.push(args) };
+    const thumbnailer = async () => ({
+        imageDataUrl: 'data:image/webp;base64,dGh1bWI=',
+        plateColor: 'rgb(12, 34, 56)'
+    });
     const OriginalFileReader = global.FileReader;
     global.FileReader = class {
         readAsDataURL() {
@@ -130,16 +158,61 @@ test('downloads the best representative image and records it as metadata', async
 
     try {
         assert.equal(await refreshBookmarkMetadata({
-            id: 'bookmark-1',
-            url: 'https://example.com/page',
-            displayType: 'preview'
-        }, { force: true, storage, parser, fetchImpl, thumbnailer }), true);
-        assert.equal(writes.length, 1);
-        assert.deepEqual(writes[0].slice(0, 3), [
-            'bookmark-1',
+            id: 'chronicle',
+            url: 'https://ampcode.com/chronicle',
+            displayType: 'icon'
+        }, {
+            force: true,
+            storage,
+            parser: { parseFromString: () => document },
+            fetchImpl,
+            thumbnailer,
+            now: () => 12345
+        }), true);
+        assert.deepEqual(writes, [[
+            'chronicle',
             'data:image/webp;base64,dGh1bWI=',
-            'metadata'
-        ]);
+            {
+                plateColor: 'rgb(12, 34, 56)',
+                sourceUrl: 'https://ampcode.com/chronicle.jpg',
+                source: 'metadata',
+                timestamp: 12345
+            }
+        ]]);
+    } finally {
+        global.FileReader = OriginalFileReader;
+    }
+});
+
+test('uses rendered-DOM candidate groups for visit refreshes', async () => {
+    const writes = [];
+    const OriginalFileReader = global.FileReader;
+    global.FileReader = class {
+        readAsDataURL() {
+            this.result = 'data:image/png;base64,aW1hZ2U=';
+            queueMicrotask(() => this.onload());
+        }
+    };
+
+    try {
+        assert.equal(await refreshBookmarkFromCandidateGroups(
+            { id: 'bookmark-1', url: 'https://example.com/app', displayType: 'icon' },
+            { openGraph: ['/rendered-og.png'] },
+            'https://example.com/app',
+            {
+                storage: { saveThumbnail: async (...args) => writes.push(args) },
+                fetchImpl: async () => ({
+                    ok: true,
+                    headers: new Headers({ 'content-type': 'image/png' }),
+                    blob: async () => new Blob(['image'], { type: 'image/png' })
+                }),
+                thumbnailer: async () => ({ imageDataUrl: 'data:image/webp;base64,eA==', plateColor: 'rgb(1, 2, 3)' }),
+                source: 'rendered-metadata',
+                now: () => 67890
+            }
+        ), true);
+        assert.equal(writes[0][2].source, 'rendered-metadata');
+        assert.equal(writes[0][2].sourceUrl, 'https://example.com/rendered-og.png');
     } finally {
         global.FileReader = OriginalFileReader;
     }
