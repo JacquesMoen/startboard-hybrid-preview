@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 
 const {
     DAY_MS,
+    DEFAULT_BOOKMARK_DISPLAY_TYPE,
     normalizeComparableUrl,
     shouldRefreshMetadata,
     shouldCaptureVisit,
@@ -15,6 +16,10 @@ const NOW = Date.UTC(2026, 8, 5, 12, 0, 0);
 test('normalizes only safe web URLs and ignores hash and trailing slash', () => {
     assert.equal(normalizeComparableUrl('https://example.com/path/#news'), 'https://example.com/path');
     assert.equal(normalizeComparableUrl('chrome://extensions'), null);
+});
+
+test('new bookmarks default to the automatic preview route', () => {
+    assert.equal(DEFAULT_BOOKMARK_DISPLAY_TYPE, 'preview');
 });
 
 test('metadata refresh runs for stale preview bookmarks but not fresh or high-quality previews', () => {
@@ -59,6 +64,7 @@ test('candidate selection prioritizes social preview images and resolves relativ
         twitter: ['https://cdn.example.com/twitter.jpg'],
         schema: ['/schema.jpg'],
         imageSrc: ['/image-src.jpg'],
+        icons: ['/apple-touch.png'],
         manifest: ['/icon-512.png'],
         content: ['/first.jpg', 'data:image/png;base64,ignored']
     }, 'https://example.com/articles/page');
@@ -68,6 +74,7 @@ test('candidate selection prioritizes social preview images and resolves relativ
         'https://cdn.example.com/twitter.jpg',
         'https://example.com/schema.jpg',
         'https://example.com/image-src.jpg',
+        'https://example.com/apple-touch.png',
         'https://example.com/icon-512.png',
         'https://example.com/first.jpg'
     ]);

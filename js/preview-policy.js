@@ -4,6 +4,7 @@
     if (root) root.PreviewPolicy = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     const DAY_MS = 24 * 60 * 60 * 1000;
+    const DEFAULT_BOOKMARK_DISPLAY_TYPE = 'preview';
 
     function isPreviewBookmark(bookmark) {
         return Boolean(bookmark) &&
@@ -52,7 +53,7 @@
     }
 
     function selectPreviewCandidates(groups, baseUrl) {
-        const orderedGroups = ['openGraph', 'twitter', 'schema', 'imageSrc', 'manifest', 'content'];
+        const orderedGroups = ['openGraph', 'twitter', 'schema', 'imageSrc', 'icons', 'manifest', 'content'];
         const seen = new Set();
         const candidates = [];
 
@@ -74,6 +75,7 @@
 
     return {
         DAY_MS,
+        DEFAULT_BOOKMARK_DISPLAY_TYPE,
         normalizeComparableUrl,
         shouldRefreshMetadata,
         shouldCaptureVisit,

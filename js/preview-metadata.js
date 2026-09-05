@@ -7,6 +7,8 @@
     const REQUEST_TIMEOUT_MS = 8000;
     const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
     const MAX_CONTENT_IMAGES = 12;
+    const THUMBNAIL_WIDTH = 440;
+    const THUMBNAIL_HEIGHT = 248;
     const inFlight = new Map();
 
     function getStorageManager(override) {
@@ -22,6 +24,18 @@
             .filter(Boolean);
     }
 
+    function documentIconCandidates(document) {
+        return Array.from(document.querySelectorAll('link[rel~="apple-touch-icon"], link[rel~="icon"]'))
+            .map((element, index) => ({
+                src: element.getAttribute('href'),
+                sizes: element.getAttribute('sizes'),
+                index
+            }))
+            .filter((icon) => icon.src)
+            .sort((a, b) => iconArea(b) - iconArea(a) || a.index - b.index)
+            .map((icon) => icon.src);
+    }
+
     function extractCandidateGroups(document) {
         return {
             openGraph: values(document,
@@ -31,6 +45,7 @@
             schema: values(document,
                 'meta[itemprop="image"], link[itemprop="image"], img[itemprop="image"]', ['content', 'href', 'src']),
             imageSrc: values(document, 'link[rel="image_src"]', ['href']),
+            icons: documentIconCandidates(document),
             manifestUrls: values(document, 'link[rel~="manifest"]', ['href']),
             content: values(document, 'img[src], img[data-src]', ['src', 'data-src']).slice(0, MAX_CONTENT_IMAGES)
         };
@@ -69,6 +84,67 @@
             reader.onload = () => resolve(reader.result);
             reader.onerror = () => reject(reader.error || new Error('Unable to read preview image'));
             reader.readAsDataURL(blob);
+        });
+    }
+
+    function calculateCoverCrop(sourceWidth, sourceHeight, targetWidth, targetHeight) {
+        const sourceRatio = sourceWidth / sourceHeight;
+        const targetRatio = targetWidth / targetHeight;
+
+        if (sourceRatio > targetRatio) {
+            const sourceWidthCropped = sourceHeight * targetRatio;
+            return {
+                sourceX: (sourceWidth - sourceWidthCropped) / 2,
+                sourceY: 0,
+                sourceWidth: sourceWidthCropped,
+                sourceHeight
+            };
+        }
+
+        const sourceHeightCropped = sourceWidth / targetRatio;
+        return {
+            sourceX: 0,
+            sourceY: (sourceHeight - sourceHeightCropped) / 2,
+            sourceWidth,
+            sourceHeight: sourceHeightCropped
+        };
+    }
+
+    function resizeToThumbnail(imageDataUrl, options = {}) {
+        return new Promise((resolve, reject) => {
+            const image = options.createImage ? options.createImage() : new Image();
+            image.onload = () => {
+                try {
+                    const canvas = options.createCanvas
+                        ? options.createCanvas()
+                        : document.createElement('canvas');
+                    canvas.width = THUMBNAIL_WIDTH;
+                    canvas.height = THUMBNAIL_HEIGHT;
+                    const context = canvas.getContext('2d');
+                    const crop = calculateCoverCrop(
+                        image.naturalWidth || image.width,
+                        image.naturalHeight || image.height,
+                        THUMBNAIL_WIDTH,
+                        THUMBNAIL_HEIGHT
+                    );
+                    context.drawImage(
+                        image,
+                        crop.sourceX,
+                        crop.sourceY,
+                        crop.sourceWidth,
+                        crop.sourceHeight,
+                        0,
+                        0,
+                        THUMBNAIL_WIDTH,
+                        THUMBNAIL_HEIGHT
+                    );
+                    resolve(canvas.toDataURL('image/webp', 0.86));
+                } catch (error) {
+                    reject(error);
+                }
+            };
+            image.onerror = () => reject(new Error('Unable to decode preview image'));
+            image.src = imageDataUrl;
         });
     }
 
@@ -115,10 +191,11 @@
         const groups = extractCandidateGroups(document);
         groups.manifest = await manifestCandidates(groups.manifestUrls, pageUrl, fetchImpl);
         const candidates = PreviewPolicy.selectPreviewCandidates(groups, pageUrl);
+        const thumbnailer = options.thumbnailer || resizeToThumbnail;
 
         for (const candidate of candidates) {
             try {
-                return await downloadImage(candidate, fetchImpl);
+                return await thumbnailer(await downloadImage(candidate, fetchImpl));
             } catch (error) {
                 // Candidate URLs are best-effort; continue in ranked order.
             }
@@ -176,6 +253,8 @@
     return {
         extractCandidateGroups,
         sortManifestIcons,
+        calculateCoverCrop,
+        resizeToThumbnail,
         findRepresentativeImage,
         refreshBookmarkMetadata,
         refreshStalePreviews

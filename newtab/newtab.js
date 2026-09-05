@@ -1174,7 +1174,9 @@ async function openAddBookmarkModal() {
     document.getElementById('bookmarkTitle').value = '';
     document.getElementById('bookmarkUrl').value = '';
     document.getElementById('bookmarkSize').value = '200';
-    document.querySelector('input[name="displayType"][value="icon"]').checked = true;
+    document.querySelector(
+        `input[name="displayType"][value="${PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE}"]`
+    ).checked = true;
     document.getElementById('customImageGroup').style.display = 'none';
     document.getElementById('imagePreview').innerHTML = '';
 
@@ -1197,7 +1199,9 @@ async function openAddBookmarkModalInFolder(folderId) {
     document.getElementById('bookmarkTitle').value = '';
     document.getElementById('bookmarkUrl').value = '';
     document.getElementById('bookmarkSize').value = '200';
-    document.querySelector('input[name="displayType"][value="icon"]').checked = true;
+    document.querySelector(
+        `input[name="displayType"][value="${PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE}"]`
+    ).checked = true;
     document.getElementById('customImageGroup').style.display = 'none';
     document.getElementById('imagePreview').innerHTML = '';
 

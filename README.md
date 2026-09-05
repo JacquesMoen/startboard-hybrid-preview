@@ -2,16 +2,18 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.3.0-blue)
+![Version](https://img.shields.io/badge/version-2.3.1-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.3
+## ⭐ What's New in 2.3.1
 
 ### 🔄 Hybrid Preview Refresh
 - **Fast representative image refresh** - Reads Open Graph, Twitter Card,
   schema.org, `image_src`, web app manifest and page image metadata without
   opening a popup window.
+- **Speed-dial-style thumbnails** - New bookmarks default to Preview mode;
+  selected images are center-cropped to 440×248 and compressed as WebP.
 - **Real screenshot on normal visits** - When you visit the exact bookmarked
   page, StartBoard captures the active tab after it finishes loading.
 - **Manual fallback preserved** - The existing individual and bulk screenshot
