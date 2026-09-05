@@ -1,5 +1,6 @@
 // Storage management for Visual Bookmarks
 // Now using HybridStorageManager (chrome.storage + IndexedDB)
+/* global PreviewPolicy */
 
 const StorageManager = {
     // Hybrid storage instance
@@ -13,6 +14,7 @@ const StorageManager = {
     // Screenshot queue to prevent multiple windows opening at once
     _screenshotQueue: [],
     _isProcessingScreenshots: false,
+    _previewUpdateQueue: Promise.resolve(),
 
     // Default settings
     defaultSettings: {
@@ -516,6 +518,7 @@ const StorageManager = {
 
             try {
                 const screenshot = await this._captureScreenshotInternal(url, bookmarkId);
+                await this.markPreviewMetadata(bookmarkId, 'manual');
                 resolve(screenshot);
             } catch (error) {
                 reject(error);
@@ -660,6 +663,39 @@ const StorageManager = {
         return await this._hybrid.deleteScreenshot(bookmarkId);
     },
 
+    // Save a preview image and record how it was obtained.
+    async savePreview(bookmarkId, imageDataUrl, source, timestamp = Date.now()) {
+        await this._initHybrid();
+        await this._hybrid.saveScreenshot(bookmarkId, imageDataUrl);
+        return await this.markPreviewMetadata(bookmarkId, source, timestamp);
+    },
+
+    async _updatePreviewMetadata(bookmarkId, update) {
+        const task = this._previewUpdateQueue.then(async () => {
+            const bookmarks = await this.getBookmarks();
+            const index = bookmarks.findIndex((bookmark) => bookmark.id === bookmarkId);
+            if (index === -1) return null;
+
+            bookmarks[index] = { ...bookmarks[index], ...update(bookmarks[index]) };
+            await this.saveBookmarks(bookmarks);
+            return bookmarks[index];
+        });
+
+        this._previewUpdateQueue = task.catch(() => null);
+        return await task;
+    },
+
+    async markPreviewMetadata(bookmarkId, source, timestamp = Date.now()) {
+        return await this._updatePreviewMetadata(bookmarkId, (bookmark) =>
+            PreviewPolicy.markPreview(bookmark, source, timestamp));
+    },
+
+    async markPreviewMetadataChecked(bookmarkId, timestamp = Date.now()) {
+        return await this._updatePreviewMetadata(bookmarkId, () => ({
+            previewMetadataCheckedAt: timestamp
+        }));
+    },
+
     // Get favicon URL
     getFaviconUrl(url) {
         try {
@@ -670,10 +706,9 @@ const StorageManager = {
         }
     },
 
-    // Enable auto screenshot refresh (placeholder)
+    // Metadata refresh is performed whenever StartBoard opens.
     async enableAutoRefresh(intervalHours = 24) {
-        console.log('Auto-refresh not available without background service worker');
-        return false;
+        return intervalHours === 24;
     },
 
     // Disable auto screenshot refresh (placeholder)

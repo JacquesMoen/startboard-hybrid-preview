@@ -411,7 +411,7 @@ class BookmarkManager {
             preview.innerHTML = '';
             preview.appendChild(img);
         } else {
-            // No screenshot yet - capture it
+            // No preview yet - obtain the page's representative image without opening a popup.
             this.captureAndDisplayScreenshot(preview, bookmark);
         }
     }
@@ -433,8 +433,9 @@ class BookmarkManager {
         `;
 
         try {
-            // Capture screenshot
-            const screenshot = await StorageManager.captureScreenshot(bookmark.url, bookmark.id);
+            await PreviewMetadata.refreshBookmarkMetadata(bookmark, { force: true });
+            const screenshot = await StorageManager.getScreenshot(bookmark.id);
+            if (!screenshot) throw new Error('No preview image available');
 
             // Display screenshot
             const img = document.createElement('img');

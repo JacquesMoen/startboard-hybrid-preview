@@ -47,6 +47,7 @@ async function initializeApp() {
     // Setup event listeners
     setupEventListeners();
     setupSelectionToolbar();
+    setupHybridPreviewRefresh();
 
     // Setup external drag and drop (from Chrome bookmarks bar)
     setupExternalDragDrop(container);
@@ -197,6 +198,19 @@ async function initializeApp() {
         // Save new order
         await StorageManager.saveBookmarks(newBookmarksList);
     });
+}
+
+function setupHybridPreviewRefresh() {
+    chrome.runtime.onMessage.addListener((message) => {
+        if (message && message.type === 'preview-updated') refreshBookmarks();
+    });
+
+    // Keep startup fast: refresh stale representative images after the board is usable.
+    setTimeout(() => {
+        PreviewMetadata.refreshStalePreviews(async () => {
+            await refreshBookmarks();
+        }).catch((error) => console.debug('Automatic preview refresh skipped:', error.message));
+    }, 0);
 }
 
 function setupEventListeners() {

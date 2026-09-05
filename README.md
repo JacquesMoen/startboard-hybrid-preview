@@ -2,11 +2,29 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Version](https://img.shields.io/badge/version-2.3.0-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.0
+## ⭐ What's New in 2.3
+
+### 🔄 Hybrid Preview Refresh
+- **Fast representative image refresh** - Reads Open Graph, Twitter Card,
+  schema.org, `image_src`, web app manifest and page image metadata without
+  opening a popup window.
+- **Real screenshot on normal visits** - When you visit the exact bookmarked
+  page, StartBoard captures the active tab after it finishes loading.
+- **Manual fallback preserved** - The existing individual and bulk screenshot
+  controls still force a full screenshot when needed.
+- **24-hour throttling** - Automatic work is limited to once per bookmark per
+  day, and metadata never overwrites a manual or visited-page screenshot.
+- **Original UI preserved** - No layout, color, typography, card style, icon or
+  interaction design changes from StartBoard 2.2.6.
+
+This repository is an independent derivative of StartBoard Visual Bookmarks
+2.2.6. See [NOTICE.md](NOTICE.md) for attribution.
+
+## Previous 2.0 changes
 
 ### 🚀 Hybrid Storage System
 - **IndexedDB for Images** - Unlimited storage for screenshots and backgrounds
@@ -26,7 +44,7 @@ Beautiful visual bookmarks with drag & drop support for your new tab page.
 🎨 **Material Design** - Modern, clean interface following Material Design principles
 🌓 **Dark/Light Themes** - Automatic theme switching based on system preferences
 📱 **Touch Support** - Full drag & drop support on touch devices
-📸 **Real Website Screenshots** - Automatic capture of actual website screenshots
+📸 **Hybrid Website Previews** - Metadata images, visited-page screenshots, and manual capture fallback
 🖼️ **Multiple Display Modes** - Preview screenshots, icons, or custom images
 📁 **Workspaces & Folders** - Organize bookmarks into separate workspaces and folders
 🔄 **Screenshot Refresh** - Update screenshots individually or all at once
@@ -43,7 +61,7 @@ Beautiful visual bookmarks with drag & drop support for your new tab page.
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)
 3. Click **Load unpacked**
-4. Select the `visual-bookmarks` folder
+4. Select the `startboard-hybrid-preview` folder
 5. Done! Open a new tab to see your visual bookmarks
 
 ## Usage
@@ -53,7 +71,7 @@ Beautiful visual bookmarks with drag & drop support for your new tab page.
 1. Click the **"Add Bookmark"** button
 2. Enter the title and URL
 3. Choose display type:
-   - **Preview** - Shows website favicon with colored background
+   - **Preview** - Shows a website preview image, with favicon fallback
    - **Icon Only** - Shows only the favicon
    - **Custom Image** - Upload your own image
 4. Select the size (Small, Medium, or Large)
@@ -83,7 +101,8 @@ Click the ⚙️ **Settings** button to access:
 - **Capture All Screenshots** - Automatically capture screenshots for all bookmarks
 - **Refresh All Screenshots** - Update all existing screenshots
 - **Individual Refresh** - Hover over any bookmark and click refresh button
-- **Auto-Refresh** - Enable daily automatic screenshot updates
+- **Auto-Refresh** - Stale metadata previews refresh when StartBoard opens;
+  normal visits refresh real screenshots
 - Real-time progress indicator during bulk operations
 
 **Data Management:**
@@ -99,7 +118,7 @@ Click the ⚙️ **Settings** button to access:
 ## Project Structure
 
 ```
-visual-bookmarks/
+startboard-hybrid-preview/
 ├── manifest.json           # Extension manifest
 ├── background.js          # Background service worker (screenshot capture)
 ├── newtab/
@@ -107,6 +126,8 @@ visual-bookmarks/
 │   └── newtab.js          # Main application logic
 ├── js/
 │   ├── storage.js         # Chrome storage management
+│   ├── preview-policy.js  # Refresh priority and 24-hour throttling
+│   ├── preview-metadata.js# Representative image discovery
 │   ├── dragdrop.js        # Drag & drop functionality
 │   └── bookmarks.js       # Bookmark management
 ├── css/
