@@ -2,26 +2,31 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.3.1-blue)
+![Version](https://img.shields.io/badge/version-2.4.0-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.3.1
+## ⭐ What's New in 2.4.0
 
-### 🔄 Hybrid Preview Refresh
-- **Fast representative image refresh** - Reads Open Graph, Twitter Card,
-  schema.org, `image_src`, web app manifest and page image metadata without
-  opening a popup window.
-- **Speed-dial-style thumbnails** - New bookmarks default to Preview mode;
-  selected images are center-cropped to 440×248 and compressed as WebP.
-- **Real screenshot on normal visits** - When you visit the exact bookmarked
-  page, StartBoard captures the active tab after it finishes loading.
-- **Manual fallback preserved** - The existing individual and bulk screenshot
-  controls still force a full screenshot when needed.
-- **24-hour throttling** - Automatic work is limited to once per bookmark per
-  day, and metadata never overwrites a manual or visited-page screenshot.
-- **Original UI preserved** - No layout, color, typography, card style, icon or
-  interaction design changes from StartBoard 2.2.6.
+### 🔄 Two Correctly Separated Visual Modes
+
+- **Preview (Screenshot)** stores a real page screenshot. Creating a bookmark,
+  changing its URL, or switching to this mode automatically performs one popup
+  capture; the refresh button remains available as a manual fallback.
+- **Icon Only** uses a speed-dial-style representative site thumbnail. It ranks
+  Open Graph, Twitter Card, schema.org, `image_src`, manifest, icon and rendered
+  page candidates, then fits the result responsively inside any card size.
+- **Visit refresh** opportunistically improves both modes when the exact saved
+  URL is opened, with independent once-per-day throttles.
+- **Optional screenshot schedule** is shown only in Screenshot mode and offers
+  Off, Daily and Weekly. It defaults to Off.
+- **Missed schedule catch-up** runs from one checker when StartBoard or Chrome
+  next opens, so a deadline missed while Chrome was closed is not lost.
+- **Safe upgrade** separates screenshots and representative thumbnails without
+  deleting legacy image data, and rejects stale async results after URL or mode
+  changes.
+- **Original visual style preserved**: the StartBoard 2.2.6 card layout, colors,
+  typography and interactions remain unchanged.
 
 This repository is an independent derivative of StartBoard Visual Bookmarks
 2.2.6. See [NOTICE.md](NOTICE.md) for attribution.
@@ -46,8 +51,8 @@ This repository is an independent derivative of StartBoard Visual Bookmarks
 🎨 **Material Design** - Modern, clean interface following Material Design principles
 🌓 **Dark/Light Themes** - Automatic theme switching based on system preferences
 📱 **Touch Support** - Full drag & drop support on touch devices
-📸 **Hybrid Website Previews** - Metadata images, visited-page screenshots, and manual capture fallback
-🖼️ **Multiple Display Modes** - Preview screenshots, icons, or custom images
+📸 **Real Website Screenshots** - Automatic initial capture, visit refresh, manual fallback, and optional schedule
+🖼️ **Multiple Display Modes** - Screenshot previews, representative site thumbnails, or custom images
 📁 **Workspaces & Folders** - Organize bookmarks into separate workspaces and folders
 🔄 **Screenshot Refresh** - Update screenshots individually or all at once
 ⚙️ **Customizable** - Extensive settings for visual customization
@@ -73,11 +78,12 @@ This repository is an independent derivative of StartBoard Visual Bookmarks
 1. Click the **"Add Bookmark"** button
 2. Enter the title and URL
 3. Choose display type:
-   - **Preview** - Shows a website preview image, with favicon fallback
-   - **Icon Only** - Shows only the favicon
+   - **Preview (Screenshot)** - Captures the actual website in a temporary popup
+   - **Icon Only** - Builds a responsive representative thumbnail from site metadata
    - **Custom Image** - Upload your own image
-4. Select the size (Small, Medium, or Large)
-5. Click **Save**
+4. For Screenshot mode, optionally choose Off, Daily, or Weekly refresh
+5. Select a preset size or resize the card directly on the board
+6. Click **Save**
 
 ### Dragging & Dropping
 
@@ -103,8 +109,10 @@ Click the ⚙️ **Settings** button to access:
 - **Capture All Screenshots** - Automatically capture screenshots for all bookmarks
 - **Refresh All Screenshots** - Update all existing screenshots
 - **Individual Refresh** - Hover over any bookmark and click refresh button
-- **Auto-Refresh** - Stale metadata previews refresh when StartBoard opens;
-  normal visits refresh real screenshots
+- **Auto-Refresh** - Per-bookmark Off/Daily/Weekly screenshot schedule; overdue
+  work is checked on Chrome startup and when StartBoard opens
+- **Visit Refresh** - Opening the exact saved URL can refresh its screenshot or
+  representative thumbnail at most once per day
 - Real-time progress indicator during bulk operations
 
 **Data Management:**
@@ -128,10 +136,13 @@ startboard-hybrid-preview/
 │   └── newtab.js          # Main application logic
 ├── js/
 │   ├── storage.js         # Chrome storage management
-│   ├── preview-policy.js  # Refresh priority and 24-hour throttling
+│   ├── preview-policy.js  # Mode routing, schedules, and throttling
 │   ├── preview-metadata.js# Representative image discovery
+│   ├── refresh-coordinator.js # Startup, visit, and manual refresh coordination
+│   ├── offscreen-bridge.js# Background/offscreen thumbnail processing
 │   ├── dragdrop.js        # Drag & drop functionality
 │   └── bookmarks.js       # Bookmark management
+├── offscreen/             # DOM/canvas processing outside the service worker
 ├── css/
 │   └── styles.css         # All styles with theme support
 └── icons/
@@ -155,18 +166,18 @@ startboard-hybrid-preview/
 
 ### Browser Compatibility
 
-- Chrome 88+
-- Edge 88+
-- Brave (Chromium-based)
-- Opera (Chromium-based)
+- A current Chrome or Chromium-based browser with Manifest V3 offscreen document support
 
 ### Permissions
 
 The extension requires these permissions:
 
 - `storage` - Save bookmarks and settings
+- `unlimitedStorage` - Store screenshot and thumbnail image data locally
 - `tabs` - Capture website screenshots
-- `activeTab` - Access active tab for screenshot capture
+- `scripting` - Read image metadata from the exact page you visit
+- `offscreen` - Decode, resize, crop and compress representative thumbnails
+- `contextMenus` - Add bookmarks from the page context menu
 - `bookmarks` - Import Chrome bookmarks (optional)
 - `<all_urls>` - Access websites to capture screenshots
 
@@ -188,6 +199,7 @@ The extension requires these permissions:
 - **Bookmarks** - `chrome.storage.local` (metadata only, no images)
 - **Folders** - `chrome.storage.local` (organizational data)
 - **Screenshots** - `IndexedDB` (stored as Blob, efficient)
+- **Representative Thumbnails** - separate `IndexedDB` store (stored as Blob)
 - **Custom Images** - `IndexedDB` (stored as Blob)
 - **Workspace Backgrounds** - `IndexedDB` (stored as Blob)
 
@@ -227,11 +239,7 @@ The codebase is modular and easy to extend:
 
 Future features planned:
 
-- [ ] Folder/Group support for organizing bookmarks
-- [ ] Multiple pages/tabs of bookmarks
-- [ ] Website screenshot capture (requires permissions)
 - [ ] Keyboard shortcuts
-- [ ] Context menu integration
 - [ ] Bookmark search with filters
 - [ ] Cloud sync (Google Drive, Dropbox)
 - [ ] Background image library
