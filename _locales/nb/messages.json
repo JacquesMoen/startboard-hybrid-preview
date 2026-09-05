@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Legg til bokmerke"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Legg til bokmerke i StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Legg til mappe"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Legg til nytt arbeidsområde"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Legg til arbeidsområde"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Ordne bokmerker automatisk"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arranger alle bokmerker og mapper i gjeldende arbeidsområde?\n\nDe blir omorganisert i et rutenett med minimumsstørrelse."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organiserer automatisk alle bokmerker og mapper i det aktuelle arbeidsområdet i en ryddig rutenettlayout."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organiserte $1 bokmerker og $2 mapper!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Bakgrunn"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Kunne ikke behandle filen. Prøv en annen fil."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Velg bilde eller .webm-video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Filen er for stor. Maks 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Fil ikke støttet. Bruk bilde eller .webm-video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: opptil 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Sikkerhetskopi og gjenoppretting"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Nordlys"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Tilpasset"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Mørkt rom"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Skog"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavendel"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Lyse bølger"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Midnatt"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Nattehimmel"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Hav"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Myk gradient"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Solnedgang"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bokmerke flyttet til \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Avbryt"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Kan ikke slette siste arbeidsområde!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Ta alle skjermbilder"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Tar bilde av $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Det vil bli tatt skjermbilder for $1 bokmerker. Dette kan ta noen minutter. Fortsette?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Kunne ikke ta skjermbilder. Prøv igjen."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Tar skjermbilder..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Endre bakgrunn"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Endre farge"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Endre ikon"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Endre bakgrunn for arbeidsområde"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Sjekk gjeldende lagring"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Velg bokmerkefarge"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Velg bilde eller video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome-lagring"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Ren modus"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Blå"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Standard"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Grønn"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Ingen"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Oransje"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rosa"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Lilla"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Rød"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Gul"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Opprett mappe"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Tilpasset bilde"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Egendefinert bilde/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Er du sikker på at du vil slette dette bokmerket?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Slett mappe"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Slette denne mappen og alle bokmerkene inni den?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Slett valgte"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Slette valgte elementer?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Slett arbeidsområde"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Slette arbeidsområdet \"$1\"? Alle bokmerker i dette arbeidsområdet vil bli slettet."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Tilpasset bilde"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Kun ikon"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Forhåndsvisning (Skjermbilde)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Visningstype"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Rediger mappe"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Rediger arbeidsområde"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Klikk på \"$1\" for å komme i gang"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Ingen bokmerker ennå"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Aktiver animasjoner"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Skriv inn bokmerketittel"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Skriv inn mappenavn"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Skriv inn navn på arbeidsområdet"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Eksporter alle data"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Kunne ikke eksportere data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data eksportert!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Vakre visuelle bokmerker med dra-og-slipp-støtte for den nye fanesiden"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Fyll ut alle obligatoriske felt."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Mappe"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Mappefarge"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Mappe: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Mappeikon"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 elementer"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Mappenavn"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Mappe (Valgfri)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mappeinnstillinger"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Ikon"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Fant $1 bokmerker. Importere alle?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Fant ingen bokmerker å importere."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 bokmerker importert!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Importere data fra $1?\n\nDette vil erstatte alle nåværende data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Importer data"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Kunne ikke importere data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data importert! Laster siden på nytt..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Ugyldig valg."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Skriv inn en gyldig URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Engelsk"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Fransk"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Tysk"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugisisk (Brasil)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spansk"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Språk"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Hvordan åpne lenker?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Nytt vindu"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Samme fane"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Lås arbeidsområde"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrer dine visuelle bokmerker fra chrome.storage til IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Verktøy for lagringsmigrering"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Legg til bokmerke"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Rediger bokmerke"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Kunne ikke flytte bokmerket: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Kunne ikke flytte bokmerket. Prøv igjen."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Velg mappe å flytte til:\n\n$1\n\nSkriv inn nummer:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Kunne ikke flytte bokmerket til mappen: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Kunne ikke flytte bokmerket til mappen. Prøv igjen."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Flytt til skrivebordet"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Flytt til en annen mappe"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Flytt til arbeidsområde"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Nytt bokmerke"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Ingen bokmerker i denne mappen."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Ingen mappe"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Ingen andre mapper tilgjengelige. Opprett en ny mappe først."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Fant ingen bokmerker i forhåndsvisningsmodus."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organisering"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Forhåndsinnstilte bakgrunner"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Fullført!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Vurder utvidelsen vår"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Liker du utvidelsen vår? Vennligst gi oss en vurdering og anmeldelse!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Oppdater alle skjermbilder"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Oppdaterer $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Kunne ikke oppdatere skjermbilde: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Oppdater skjermbilde"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Skjermbilder for $1 bokmerker oppdateres. Fortsette?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Kunne ikke oppdatere skjermbilder. Prøv igjen."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Fjern bakgrunn"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Gi nytt navn til mappe"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Er du sikker? Dette vil slette ALLE bokmerkene og innstillingene dine!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Helt sikker? Dette kan ikke angres!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Tilbakestill alle data"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Lagre"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Tar skjermbilde..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Skjermbildebehandling"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Klikk oppdater for å prøve igjen"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Velg arbeidsområde"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Velg et ikon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Valgt"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Angi farge"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Innstillinger"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Vis rutenett"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Vis bokmerkeetiketter"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Vis logg"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Størrelse"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Ekstra stor (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Stor (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Middels (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Liten (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Start migrering"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Vurder oss"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (System)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Mørk"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Lys"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Tittel"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Lås opp arbeidsområde"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Kunne ikke oppdatere arbeidsområdet: $1\n\nDataene dine er trygge – endringene ble ikke brukt."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Visuelle innstillinger"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Nyheter"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Innstillingene er nå organisert i faner."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Velg hvordan lenker åpnes: nytt vindu eller samme fane."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Rutenett med justeringsmarkeringer og ren modus."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Verktøylinje for flervalg for å slette og endre størrelse."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videobakgrunner (.webm) støttes (opptil 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Når en mappe slettes, fjernes også bokmerkene."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Lås et arbeidsområde for å hindre utilsiktede endringer."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Bokmerkekort viser nå peker-ikon ved hover."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Arbeidsområde: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Navn på arbeidsområde"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Innstillinger for arbeidsområde"
+   }
+}

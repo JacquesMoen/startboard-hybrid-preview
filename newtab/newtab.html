@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartBoard</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Workspace Switcher -->
+    <div class="workspace-switcher">
+        <div class="workspace-tabs" id="workspaceTabs">
+            <!-- Workspace tabs will be dynamically inserted here -->
+        </div>
+        <button class="workspace-add-btn" id="workspaceAddBtn" data-i18n-title="addWorkspace">
+            <span class="material-icons">add_box</span>
+        </button>
+    </div>
+
+    <!-- Selection Toolbar -->
+    <div class="selection-toolbar" id="selectionToolbar" aria-hidden="true">
+        <div class="selection-toolbar-content">
+            <span class="selection-count" id="selectionCountText" data-i18n="selectedItems">Selected</span>
+            <div class="selection-size-control">
+                <label for="selectionSize" data-i18n="size">Size</label>
+                <input type="range" id="selectionSize" min="150" max="600" step="10" value="200">
+                <span class="selection-size-value" id="selectionSizeValue">200px</span>
+            </div>
+            <button class="btn btn-danger btn-compact" id="deleteSelectedItems">
+                <span class="material-icons">delete</span>
+                <span data-i18n="deleteSelected">Delete selected</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Bookmarks Grid -->
+    <div class="container">
+        <div id="bookmarksGrid" class="bookmarks-grid">
+            <!-- Bookmarks will be dynamically inserted here -->
+        </div>
+
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <button class="fab" id="settingsBtn" data-i18n-title="settings">
+            <span class="material-icons">settings</span>
+        </button>
+        <button class="fab" id="addFolderBtn" data-i18n-title="addFolder">
+            <span class="material-icons">create_new_folder</span>
+        </button>
+        <button class="fab fab-primary" id="addBookmarkBtn" data-i18n-title="addBookmark">
+            <span class="material-icons">bookmark_add</span>
+        </button>
+    </div>
+
+    <!-- Context Menu for Workspaces -->
+    <div class="context-menu" id="workspaceContextMenu">
+        <div class="context-menu-header" id="workspaceContextHeader" data-i18n="workspaceSettings">
+            Workspace Settings
+        </div>
+        <div class="context-menu-item" id="editWorkspaceContext">
+            <span class="material-icons">edit</span>
+            <span data-i18n="editWorkspace">Edit Workspace</span>
+        </div>
+        <div class="context-menu-item" id="changeBackgroundContext">
+            <span class="material-icons">wallpaper</span>
+            <span data-i18n="changeBackground">Change Background</span>
+        </div>
+        <div class="context-menu-item" id="toggleWorkspaceLockContext">
+            <span class="material-icons" id="workspaceLockIcon">lock_open</span>
+            <span id="workspaceLockLabel" data-i18n="lockWorkspace">Lock Workspace</span>
+        </div>
+        <div class="context-menu-divider"></div>
+        <div class="context-menu-item" id="deleteWorkspaceContext">
+            <span class="material-icons">delete</span>
+            <span data-i18n="deleteWorkspace">Delete Workspace</span>
+        </div>
+    </div>
+
+    <!-- Context Menu for Bookmarks -->
+    <div class="context-menu" id="bookmarkContextMenu">
+        <div class="context-menu-item" data-action="color">
+            <span class="material-icons">palette</span>
+            <span data-i18n="setColor">Set Color</span>
+        </div>
+        <div class="context-menu-divider"></div>
+        <div class="context-menu-item" id="moveBookmarkToWorkspace">
+            <span class="material-icons">move_to_inbox</span>
+            <span data-i18n="moveToWorkspace">Move to Workspace</span>
+        </div>
+        <div class="context-menu-divider"></div>
+        <div class="context-menu-item" data-size="150">
+            <span class="material-icons">crop_square</span>
+            <span data-i18n="sizeSmall">Small (150×150)</span>
+        </div>
+        <div class="context-menu-item" data-size="200">
+            <span class="material-icons">crop_square</span>
+            <span data-i18n="sizeMedium">Medium (200×200)</span>
+        </div>
+        <div class="context-menu-item" data-size="250">
+            <span class="material-icons">crop_square</span>
+            <span data-i18n="sizeLarge">Large (250×250)</span>
+        </div>
+        <div class="context-menu-item" data-size="300">
+            <span class="material-icons">crop_square</span>
+            <span data-i18n="sizeExtraLarge">Extra Large (300×300)</span>
+        </div>
+    </div>
+
+    <!-- Context Menu for Folders -->
+    <div class="context-menu" id="folderContextMenu">
+        <div class="context-menu-header" id="folderContextHeader" data-i18n="folderSettings">
+            Folder Settings
+        </div>
+        <div class="context-menu-item" id="renameFolderContext">
+            <span class="material-icons">edit</span>
+            <span data-i18n="renameFolder">Rename Folder</span>
+        </div>
+        <div class="context-menu-item" id="changeFolderColorContext">
+            <span class="material-icons">palette</span>
+            <span data-i18n="changeColor">Change Color</span>
+        </div>
+        <div class="context-menu-item" id="changeFolderIconContext">
+            <span class="material-icons">folder_special</span>
+            <span data-i18n="changeIcon">Change Icon</span>
+        </div>
+        <div class="context-menu-item" id="moveFolderToWorkspace">
+            <span class="material-icons">move_to_inbox</span>
+            <span data-i18n="moveToWorkspace">Move to Workspace</span>
+        </div>
+        <div class="context-menu-divider"></div>
+        <div class="context-menu-item" id="deleteFolderContext">
+            <span class="material-icons">delete</span>
+            <span data-i18n="deleteFolder">Delete Folder</span>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-dialog">
+            <div class="settings-header">
+                <h2 data-i18n="settings">Settings</h2>
+                <button class="icon-btn close-btn" id="closeSettings">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+
+            <div class="settings-main">
+                <nav class="settings-tabs" role="tablist">
+                    <button class="settings-tab active" data-tab="visual" data-i18n="visualSettings">Visual Settings</button>
+                    <button class="settings-tab" data-tab="organization" data-i18n="organization">Organization</button>
+                    <button class="settings-tab" data-tab="backup" data-i18n="backupRestore">Backup & Restore</button>
+                    <button class="settings-tab settings-tab-highlight" data-tab="support">
+                        <span class="settings-emoji" aria-hidden="true">😊</span>
+                        <span data-i18n="supportUs">Support Us</span>
+                    </button>
+                    <button class="settings-tab" data-tab="whatsnew" data-i18n="whatsNew">What's New</button>
+                </nav>
+
+                <div class="settings-body">
+                    <section class="settings-tab-panel active" data-tab="visual">
+                        <div class="settings-section">
+                            <h3 data-i18n="visualSettings">Visual Settings</h3>
+
+                            <div class="setting-item">
+                                <label for="languageSelect" data-i18n="language">Language</label>
+                                <select id="languageSelect">
+                                    <option value="en">English</option>
+                                    <option value="de">Deutsch</option>
+                                    <option value="fr">Français</option>
+                                    <option value="es">Español</option>
+                                    <option value="pt_BR">Português (Brasil)</option>
+                                    <option value="pt_PT">Português (Portugal)</option>
+                                    <option value="it">Italiano</option>
+                                    <option value="nl">Nederlands</option>
+                                    <option value="sv">Svenska</option>
+                                    <option value="da">Dansk</option>
+                                    <option value="nb">Norsk Bokmål</option>
+                                    <option value="fi">Suomi</option>
+                                    <option value="pl">Polski</option>
+                                    <option value="cs">Čeština</option>
+                                    <option value="sk">Slovenčina</option>
+                                    <option value="hu">Magyar</option>
+                                    <option value="ro">Română</option>
+                                    <option value="bg">Български</option>
+                                    <option value="hr">Hrvatski</option>
+                                    <option value="sr">Српски</option>
+                                    <option value="sl">Slovenščina</option>
+                                    <option value="ru">Русский</option>
+                                    <option value="uk">Українська</option>
+                                    <option value="el">Ελληνικά</option>
+                                    <option value="tr">Türkçe</option>
+                                    <option value="az">Azərbaycan</option>
+                                    <option value="uz">O'zbek</option>
+                                    <option value="ar">العربية</option>
+                                    <option value="fa">فارسی</option>
+                                    <option value="he">עברית</option>
+                                    <option value="ur">اردو</option>
+                                    <option value="hi">हिन्दी</option>
+                                    <option value="bn">বাংলা</option>
+                                    <option value="mr">मराठी</option>
+                                    <option value="ta">தமிழ்</option>
+                                    <option value="te">తెలుగు</option>
+                                    <option value="gu">ગુજરાતી</option>
+                                    <option value="pa">ਪੰਜਾਬੀ</option>
+                                    <option value="kn">ಕನ್ನಡ</option>
+                                    <option value="ml">മലയാളം</option>
+                                    <option value="ja">日本語</option>
+                                    <option value="ko">한국어</option>
+                                    <option value="zh_CN">中文(简体)</option>
+                                    <option value="zh_TW">中文(繁體)</option>
+                                    <option value="vi">Tiếng Việt</option>
+                                    <option value="th">ไทย</option>
+                                    <option value="id">Bahasa Indonesia</option>
+                                    <option value="ms">Bahasa Melayu</option>
+                                    <option value="fil">Filipino</option>
+                                    <option value="sw">Kiswahili</option>
+                                </select>
+                            </div>
+
+                            <div class="setting-item">
+                                <label for="themeSelect" data-i18n="theme">Theme</label>
+                                <select id="themeSelect">
+                                    <option value="light" data-i18n="themeLight">Light</option>
+                                    <option value="dark" data-i18n="themeDark">Dark</option>
+                                    <option value="auto" data-i18n="themeAuto">Auto (System)</option>
+                                </select>
+                            </div>
+
+                            <div class="setting-item">
+                                <label for="linkOpenBehavior" data-i18n="linkOpenBehavior">How to open links?</label>
+                                <select id="linkOpenBehavior">
+                                    <option value="newWindow" data-i18n="linkOpenNewWindow">New window</option>
+                                    <option value="sameTab" data-i18n="linkOpenSameTab">Same tab</option>
+                                </select>
+                            </div>
+
+                            <div class="setting-item">
+                                <label>
+                                    <input type="checkbox" id="showLabels" checked>
+                                    <span data-i18n="showLabels">Show bookmark labels</span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <label>
+                                    <input type="checkbox" id="animationsEnabled" checked>
+                                    <span data-i18n="enableAnimations">Enable animations</span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <label>
+                                    <input type="checkbox" id="cleanMode">
+                                    <span data-i18n="cleanMode">Clean mode</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-tab-panel" data-tab="organization">
+                        <div class="settings-section">
+                            <h3 data-i18n="organization">Organization</h3>
+
+                            <button class="btn btn-primary" id="autoArrangeBookmarks">
+                                <span class="material-icons">grid_view</span>
+                                <span data-i18n="autoArrange">Auto-Arrange Bookmarks</span>
+                            </button>
+
+                            <p style="font-size: 12px; color: var(--text-secondary); margin-top: 8px;">
+                                <span data-i18n="autoArrangeDesc">Automatically organizes all bookmarks and folders in the current workspace into a neat grid layout.</span>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="settings-tab-panel" data-tab="backup">
+                        <div class="settings-section">
+                            <h3 data-i18n="backupRestore">Backup & Restore</h3>
+
+                            <button class="btn btn-primary" id="exportData">
+                                <span class="material-icons">upload</span>
+                                <span data-i18n="exportAllData">Export All Data</span>
+                            </button>
+
+                            <button class="btn btn-secondary" id="importData">
+                                <span class="material-icons">download</span>
+                                <span data-i18n="importData">Import Data</span>
+                            </button>
+
+                            <button class="btn btn-danger" id="resetData">
+                                <span class="material-icons">delete_forever</span>
+                                <span data-i18n="resetAllData">Reset All Data</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="settings-tab-panel" data-tab="support">
+                        <div class="settings-section">
+                            <h3>
+                                <span class="settings-emoji" aria-hidden="true">😊</span>
+                                <span data-i18n="supportUs">Support Us</span>
+                            </h3>
+
+                            <p style="color: var(--text-secondary); margin-bottom: 12px; font-size: 14px;" data-i18n="rateExtensionDescription">Enjoying our extension? Please rate and review us!</p>
+
+                            <button class="btn btn-primary" id="rateExtension">
+                                <span class="material-icons">star</span>
+                                <span data-i18n="rateExtension">Rate Our Extension</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="settings-tab-panel" data-tab="whatsnew">
+                        <div class="settings-section">
+                            <h3 data-i18n="whatsNew">What's New</h3>
+                            <p class="whats-new-version">v2.2.6 - 2026-01-14</p>
+                            <ul class="whats-new-list">
+                                <li data-i18n="whatsNew226Item1">Settings are now organized into tabs.</li>
+                                <li data-i18n="whatsNew226Item2">Choose how links open: new window or same tab.</li>
+                                <li data-i18n="whatsNew226Item3">Grid overlay with alignment highlights and clean mode.</li>
+                                <li data-i18n="whatsNew226Item4">Multi-select toolbar to delete and resize items.</li>
+                                <li data-i18n="whatsNew226Item5">Video backgrounds (.webm) supported (up to 25 MB).</li>
+                                <li data-i18n="whatsNew226Item6">Deleting a folder now removes its bookmarks.</li>
+                                <li data-i18n="whatsNew226Item7">Lock a workspace to prevent accidental changes.</li>
+                                <li data-i18n="whatsNew226Item8">Bookmark cards now show a pointer cursor on hover.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Bookmark Modal -->
+    <div class="modal" id="bookmarkModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" data-i18n="modalAddBookmark">Add Bookmark</h2>
+                <button class="icon-btn close-btn" id="closeModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="bookmarkTitle" data-i18n="title">Title</label>
+                    <input type="text" id="bookmarkTitle" data-i18n-placeholder="enterBookmarkTitle">
+                </div>
+
+                <div class="form-group">
+                    <label for="bookmarkUrl" data-i18n="url">URL</label>
+                    <input type="url" id="bookmarkUrl" placeholder="https://example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="bookmarkFolder" data-i18n="folderOptional">Folder (Optional)</label>
+                    <select id="bookmarkFolder">
+                        <option value="" data-i18n="noFolder">No folder</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="displayType">Display Type</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="displayType" value="preview" checked>
+                            <span data-i18n="displayPreview">Preview (Screenshot)</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="displayType" value="icon">
+                            <span data-i18n="displayIcon">Icon Only</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="displayType" value="custom">
+                            <span data-i18n="displayCustom">Custom Image</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="customImageGroup" style="display: none;">
+                    <label for="customImage" data-i18n="customImage">Custom Image</label>
+                    <input type="file" id="customImage" accept="image/*">
+                    <div id="imagePreview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="size">Size</label>
+                    <select id="bookmarkSize">
+                        <option value="150" data-i18n="sizeSmall">Small (150×150)</option>
+                        <option value="200" selected data-i18n="sizeMedium">Medium (200×200)</option>
+                        <option value="250" data-i18n="sizeLarge">Large (250×250)</option>
+                        <option value="300" data-i18n="sizeExtraLarge">Extra Large (300×300)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelModal"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveBookmark"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Workspace Modal -->
+    <div class="modal" id="editWorkspaceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="editWorkspaceTitle" data-i18n="editWorkspace">Edit Workspace</h2>
+                <button class="icon-btn close-btn" id="closeEditWorkspaceModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="workspaceName" data-i18n="workspaceName">Workspace Name</label>
+                    <input type="text" id="workspaceName" data-i18n-placeholder="enterWorkspaceName">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="icon">Icon</label>
+                    <div class="icon-picker" id="iconPicker">
+                        <button class="icon-option" data-icon="work">
+                            <span class="material-icons">work</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_esports">
+                            <span class="material-icons">sports_esports</span>
+                        </button>
+                        <button class="icon-option" data-icon="school">
+                            <span class="material-icons">school</span>
+                        </button>
+                        <button class="icon-option" data-icon="home">
+                            <span class="material-icons">home</span>
+                        </button>
+                        <button class="icon-option" data-icon="shopping_cart">
+                            <span class="material-icons">shopping_cart</span>
+                        </button>
+                        <button class="icon-option" data-icon="music_note">
+                            <span class="material-icons">music_note</span>
+                        </button>
+                        <button class="icon-option" data-icon="movie">
+                            <span class="material-icons">movie</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_soccer">
+                            <span class="material-icons">sports_soccer</span>
+                        </button>
+                        <button class="icon-option" data-icon="restaurant">
+                            <span class="material-icons">restaurant</span>
+                        </button>
+                        <button class="icon-option" data-icon="flight">
+                            <span class="material-icons">flight</span>
+                        </button>
+                        <button class="icon-option" data-icon="book">
+                            <span class="material-icons">book</span>
+                        </button>
+                        <button class="icon-option" data-icon="fitness_center">
+                            <span class="material-icons">fitness_center</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="background">Background</label>
+                    <div class="preset-backgrounds-grid" id="workspaceBackgroundPicker">
+                        <div class="preset-bg-item" data-preset="light-waves">
+                            <div class="preset-bg-preview light-waves"></div>
+                            <span data-i18n="bgLightWaves">Light Waves</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="soft-gradient">
+                            <div class="preset-bg-preview soft-gradient"></div>
+                            <span data-i18n="bgSoftGradient">Soft Gradient</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="dark-space">
+                            <div class="preset-bg-preview dark-space"></div>
+                            <span data-i18n="bgDarkSpace">Dark Space</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="night-sky">
+                            <div class="preset-bg-preview night-sky"></div>
+                            <span data-i18n="bgNightSky">Night Sky</span>
+                        </div>
+                        <div class="preset-bg-item selected" data-preset="aurora">
+                            <div class="preset-bg-preview aurora"></div>
+                            <span data-i18n="bgAurora">Aurora</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="sunset">
+                            <div class="preset-bg-preview sunset"></div>
+                            <span data-i18n="bgSunset">Sunset</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="ocean">
+                            <div class="preset-bg-preview ocean"></div>
+                            <span data-i18n="bgOcean">Ocean</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="forest">
+                            <div class="preset-bg-preview forest"></div>
+                            <span data-i18n="bgForest">Forest</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="lavender">
+                            <div class="preset-bg-preview lavender"></div>
+                            <span data-i18n="bgLavender">Lavender</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="midnight">
+                            <div class="preset-bg-preview midnight"></div>
+                            <span data-i18n="bgMidnight">Midnight</span>
+                        </div>
+                        <div class="preset-bg-item" id="customBackgroundOption" data-preset="custom">
+                            <div class="preset-bg-preview custom-bg-preview">
+                                <span class="material-icons">add_photo_alternate</span>
+                            </div>
+                            <span data-i18n="bgCustom">Custom</span>
+                        </div>
+                    </div>
+                    <input type="file" id="workspaceCustomBackground" accept="image/*,video/webm" style="display: none;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelEditWorkspace"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveWorkspace"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Folder Modal -->
+    <div class="modal" id="folderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="folderModalTitle" data-i18n="createFolder">Create Folder</h2>
+                <button class="icon-btn close-btn" id="closeFolderModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="folderName" data-i18n="folderName">Folder Name</label>
+                    <input type="text" id="folderName" data-i18n-placeholder="enterFolderName">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="folderColor">Folder Color</label>
+                    <div class="color-picker-grid">
+                        <div class="color-option" data-color="default" style="background: var(--bg-secondary); border: 2px solid var(--border-color);">
+                            <span data-i18n="colorDefault">Default</span>
+                        </div>
+                        <div class="color-option" data-color="red" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);"></div>
+                        <div class="color-option" data-color="blue" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                        <div class="color-option" data-color="green" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"></div>
+                        <div class="color-option" data-color="yellow" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+                        <div class="color-option" data-color="purple" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"></div>
+                        <div class="color-option" data-color="orange" style="background: linear-gradient(135deg, #fdbb2d, #22c1c3);"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="folderIcon">Folder Icon</label>
+                    <div class="icon-picker" id="folderIconPicker">
+                        <button class="icon-option selected" data-icon="none">
+                            <span class="material-icons">block</span>
+                        </button>
+                        <button class="icon-option" data-icon="work">
+                            <span class="material-icons">work</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_esports">
+                            <span class="material-icons">sports_esports</span>
+                        </button>
+                        <button class="icon-option" data-icon="school">
+                            <span class="material-icons">school</span>
+                        </button>
+                        <button class="icon-option" data-icon="home">
+                            <span class="material-icons">home</span>
+                        </button>
+                        <button class="icon-option" data-icon="shopping_cart">
+                            <span class="material-icons">shopping_cart</span>
+                        </button>
+                        <button class="icon-option" data-icon="music_note">
+                            <span class="material-icons">music_note</span>
+                        </button>
+                        <button class="icon-option" data-icon="movie">
+                            <span class="material-icons">movie</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_soccer">
+                            <span class="material-icons">sports_soccer</span>
+                        </button>
+                        <button class="icon-option" data-icon="restaurant">
+                            <span class="material-icons">restaurant</span>
+                        </button>
+                        <button class="icon-option" data-icon="flight">
+                            <span class="material-icons">flight</span>
+                        </button>
+                        <button class="icon-option" data-icon="book">
+                            <span class="material-icons">book</span>
+                        </button>
+                        <button class="icon-option" data-icon="fitness_center">
+                            <span class="material-icons">fitness_center</span>
+                        </button>
+                        <button class="icon-option" data-icon="code">
+                            <span class="material-icons">code</span>
+                        </button>
+                        <button class="icon-option" data-icon="travel_explore">
+                            <span class="material-icons">travel_explore</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelFolderModal"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveFolder"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Folder Modal -->
+    <div class="modal" id="editFolderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="editFolderModalTitle" data-i18n="editFolder">Edit Folder</h2>
+                <button class="icon-btn close-btn" id="closeEditFolderModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="editFolderName" data-i18n="folderName">Folder Name</label>
+                    <input type="text" id="editFolderName" data-i18n-placeholder="enterFolderName">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="folderColor">Folder Color</label>
+                    <div class="color-picker-grid" id="editFolderColorPicker">
+                        <div class="color-option" data-color="default" style="background: var(--bg-secondary); border: 2px solid var(--border-color);">
+                            <span data-i18n="colorDefault">Default</span>
+                        </div>
+                        <div class="color-option" data-color="red" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);"></div>
+                        <div class="color-option" data-color="blue" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                        <div class="color-option" data-color="green" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"></div>
+                        <div class="color-option" data-color="yellow" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+                        <div class="color-option" data-color="purple" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"></div>
+                        <div class="color-option" data-color="orange" style="background: linear-gradient(135deg, #fdbb2d, #22c1c3);"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="folderIcon">Folder Icon</label>
+                    <div class="icon-picker" id="editFolderIconPicker">
+                        <button class="icon-option" data-icon="none">
+                            <span class="material-icons">block</span>
+                        </button>
+                        <button class="icon-option" data-icon="work">
+                            <span class="material-icons">work</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_esports">
+                            <span class="material-icons">sports_esports</span>
+                        </button>
+                        <button class="icon-option" data-icon="school">
+                            <span class="material-icons">school</span>
+                        </button>
+                        <button class="icon-option" data-icon="home">
+                            <span class="material-icons">home</span>
+                        </button>
+                        <button class="icon-option" data-icon="shopping_cart">
+                            <span class="material-icons">shopping_cart</span>
+                        </button>
+                        <button class="icon-option" data-icon="music_note">
+                            <span class="material-icons">music_note</span>
+                        </button>
+                        <button class="icon-option" data-icon="movie">
+                            <span class="material-icons">movie</span>
+                        </button>
+                        <button class="icon-option" data-icon="sports_soccer">
+                            <span class="material-icons">sports_soccer</span>
+                        </button>
+                        <button class="icon-option" data-icon="restaurant">
+                            <span class="material-icons">restaurant</span>
+                        </button>
+                        <button class="icon-option" data-icon="flight">
+                            <span class="material-icons">flight</span>
+                        </button>
+                        <button class="icon-option" data-icon="book">
+                            <span class="material-icons">book</span>
+                        </button>
+                        <button class="icon-option" data-icon="fitness_center">
+                            <span class="material-icons">fitness_center</span>
+                        </button>
+                        <button class="icon-option" data-icon="code">
+                            <span class="material-icons">code</span>
+                        </button>
+                        <button class="icon-option" data-icon="travel_explore">
+                            <span class="material-icons">travel_explore</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelEditFolderModal"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveEditFolder"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bookmark Color Modal -->
+    <div class="modal" id="bookmarkColorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="chooseBookmarkColor">Choose Bookmark Color</h2>
+                <button class="icon-btn close-btn" id="closeColorModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="bookmark-color-grid">
+                    <div class="bookmark-color-option" data-color="none">
+                        <div class="color-preview" style="background: var(--bg-secondary); border: 2px solid var(--border-color);">
+                            <span class="material-icons">close</span>
+                        </div>
+                        <span data-i18n="colorNone">None</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="red">
+                        <div class="color-preview gradient-red"></div>
+                        <span data-i18n="colorRed">Red</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="blue">
+                        <div class="color-preview gradient-blue"></div>
+                        <span data-i18n="colorBlue">Blue</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="green">
+                        <div class="color-preview gradient-green"></div>
+                        <span data-i18n="colorGreen">Green</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="yellow">
+                        <div class="color-preview gradient-yellow"></div>
+                        <span data-i18n="colorYellow">Yellow</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="purple">
+                        <div class="color-preview gradient-purple"></div>
+                        <span data-i18n="colorPurple">Purple</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="orange">
+                        <div class="color-preview gradient-orange"></div>
+                        <span data-i18n="colorOrange">Orange</span>
+                    </div>
+                    <div class="bookmark-color-option" data-color="pink">
+                        <div class="color-preview gradient-pink"></div>
+                        <span data-i18n="colorPink">Pink</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelColorModal"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveBookmarkColor"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Folder Modal -->
+    <div class="modal" id="openFolderModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="openFolderTitle" data-i18n="folder">Folder</h2>
+                <button class="btn btn-primary" id="addBookmarkToFolderBtn" style="margin-left: auto; margin-right: 16px;">
+                    <span class="material-icons" style="font-size: 18px;">add</span>
+                    <span data-i18n="addBookmark">Add Bookmark</span>
+                </button>
+                <button class="icon-btn close-btn" id="closeOpenFolderModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="folder-bookmarks-grid" id="folderBookmarksGrid">
+                    <!-- Bookmarks inside folder will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workspace Background Modal -->
+    <div class="modal" id="workspaceBackgroundModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 data-i18n="changeWorkspaceBackground">Change Workspace Background</h2>
+                <button class="icon-btn close-btn" id="closeBackgroundModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="background-tabs">
+                    <button class="bg-tab active" data-tab="presets"><span data-i18n="presetBackgrounds">Preset Backgrounds</span></button>
+                    <button class="bg-tab" data-tab="custom"><span data-i18n="customImageTab">Custom Image/Video</span></button>
+                </div>
+
+                <div class="background-tab-content" id="presetsTab">
+                    <div class="preset-backgrounds-grid">
+                        <div class="preset-bg-item" data-preset="light-waves">
+                            <div class="preset-bg-preview light-waves"></div>
+                            <span data-i18n="bgLightWaves">Light Waves</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="soft-gradient">
+                            <div class="preset-bg-preview soft-gradient"></div>
+                            <span data-i18n="bgSoftGradient">Soft Gradient</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="dark-space">
+                            <div class="preset-bg-preview dark-space"></div>
+                            <span data-i18n="bgDarkSpace">Dark Space</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="night-sky">
+                            <div class="preset-bg-preview night-sky"></div>
+                            <span data-i18n="bgNightSky">Night Sky</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="aurora">
+                            <div class="preset-bg-preview aurora"></div>
+                            <span data-i18n="bgAurora">Aurora</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="sunset">
+                            <div class="preset-bg-preview sunset"></div>
+                            <span data-i18n="bgSunset">Sunset</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="ocean">
+                            <div class="preset-bg-preview ocean"></div>
+                            <span data-i18n="bgOcean">Ocean</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="forest">
+                            <div class="preset-bg-preview forest"></div>
+                            <span data-i18n="bgForest">Forest</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="lavender">
+                            <div class="preset-bg-preview lavender"></div>
+                            <span data-i18n="bgLavender">Lavender</span>
+                        </div>
+                        <div class="preset-bg-item" data-preset="midnight">
+                            <div class="preset-bg-preview midnight"></div>
+                            <span data-i18n="bgMidnight">Midnight</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="background-tab-content" id="customTab" style="display: none;">
+                    <div class="custom-upload-area">
+                        <input type="file" id="workspaceBackgroundUpload" accept="image/*,video/webm" style="display: none;">
+                        <button class="btn btn-primary" id="uploadBackgroundBtn">
+                            <span class="material-icons">upload_file</span>
+                            <span data-i18n="chooseImage">Choose Image or Video</span>
+                        </button>
+                        <p class="hint-text" data-i18n="backgroundVideoLimit">Video: up to 25 MB</p>
+                        <div id="workspaceBackgroundPreview"></div>
+                        <button class="btn btn-secondary" id="removeWorkspaceBackground" style="display: none; margin-top: 12px;">
+                            <span class="material-icons">delete</span>
+                            <span data-i18n="removeBackground">Remove Background</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelBackground"><span data-i18n="cancel">Cancel</span></button>
+                <button class="btn btn-primary" id="saveBackground"><span data-i18n="save">Save</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Move to Workspace Modal -->
+    <div class="modal" id="moveToWorkspaceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="selectWorkspace">Select Workspace</h2>
+                <button class="icon-btn close-btn" id="closeMoveToWorkspaceModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="workspaceSelectionList" class="workspace-selection-list">
+                    <!-- Workspaces will be populated here dynamically -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelMoveToWorkspace"><span data-i18n="cancel">Cancel</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/indexeddb-storage.js"></script>
+    <script src="../js/hybrid-storage.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/dragdrop.js"></script>
+    <script src="../js/bookmarks.js"></script>
+    <script src="newtab.js"></script>
+</body>
+</html>

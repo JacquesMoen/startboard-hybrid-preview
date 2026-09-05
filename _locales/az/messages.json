@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Əlfəcin əlavə et"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard-a əlfəcin əlavə et"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Qovluq əlavə et"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Yeni iş sahəsi əlavə et"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "İş sahəsi əlavə et"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Əlfəcinləri avtomatik düzənlə"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Cari iş sahəsindəki bütün əlfəcinləri və qovluqları səliqəli şəbəkə düzəninə avtomatik yerləşdirir."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Fon"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Fayl emal edilə bilmədi. Başqa fayl cəhd edin."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Zəhmət olmasa şəkil və ya .webm video seçin."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Fayl çox böyükdür. Maksimum 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Dəstəklənməyən fayl. Şəkil və ya .webm video istifadə edin."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: 25 MB-a qədər"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Yedəkləmə və bərpa"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Xüsusi"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Qaranlıq kosmos"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Meşə"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavanda"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Açıq dalğalar"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Gecə yarısı"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Gecə səması"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Okean"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Yumşaq qradient"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Gün batımı"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Ləğv et"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Bütün ekran görüntülərini çəkin"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Ekran görüntüləri çəkilir..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Fon dəyişdir"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Rəngi dəyişdir"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "İkonu dəyişdir"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "İş sahəsi fonunu dəyişdir"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Cari yaddaşı yoxla"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Əlfəcin rəngini seç"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Şəkil və ya video seçin"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome yaddaşı"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Təmiz rejim"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Mavi"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Defolt"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Yaşıl"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Yoxdur"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Narıncı"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Çəhrayı"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Bənövşəyi"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Qırmızı"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Sarı"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Qovluq yarat"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Xüsusi şəkil"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Fərdi şəkil/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Qovluğu sil"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Bu qovluğu və içindəki bütün əlfəcinləri silmək?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Seçilənləri sil"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Seçilən elementlər silinsin?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "İş sahəsini sil"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Xüsusi şəkil"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Yalnız ikon"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Önizləmə (Ekran görüntüsü)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Göstərmə növü"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Qovluğu redaktə et"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "İş sahəsini redaktə et"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Animasiya aktiv et"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Əlfəcin başlığını daxil edin"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Qovluq adını daxil edin"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "İş sahəsi adını daxil edin"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Bütün məlumatları ixrac et"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Yeni tab səhifəniz üçün sürüklə-burax dəstəyi olan gözəl vizual əlfəcinlər"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Qovluq"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Qovluq rəngi"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Qovluq ikonu"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Qovluq adı"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Qovluq (İstəyə bağlı)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Qovluq ayarları"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "İkon"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Məlumatları idxal et"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "İngilis"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Fransız"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Alman"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portuqal (Braziliya)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "İspan"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Dil"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Keçidləri necə açmaq olar?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Yeni pəncərə"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Eyni vərəq"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "İş sahəsini kilidlə"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Vizual əlfəcinlərinizi chrome.storage-dan IndexedDB-yə miqrasiya edin"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Yaddaş miqrasiyası aləti"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Əlfəcin əlavə et"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "İş sahəsinə köçür"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Qovluq yoxdur"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Təşkilat"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Önayar fonlar"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Genişlənməmizi qiymətləndirin"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Genişlənməmiz xoşunuza gəlir? Zəhmət olmasa qiymətləndirin və rəy yazın!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Bütün ekran görüntülərini yenilə"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Fonunu sil"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Qovluğu yenidən adlandır"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Bütün məlumatları sıfırla"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Yadda saxla"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Ekran görüntüləri idarəetməsi"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "İş sahəsini seç"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Seçilən"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Rəng təyin et"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Ayarlar"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Şəbəkəni göstər"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Əlfəcin etiketlərini göstər"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Jurnalı göstər"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Ölçü"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Çox böyük (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Böyük (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Orta (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Kiçik (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Miqrasiyanı başlat"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Bizi qiymətləndirin"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Avto (Sistem)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Tünd"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Açıq"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Başlıq"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "İş sahəsinin kilidini aç"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Vizual ayarlar"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Yeniliklər"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Parametrlər artıq nişanlarda təşkil olunub."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Keçidlərin necə açılacağını seçin: yeni pəncərə və ya eyni nişan."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Hizalama vurğusu olan şəbəkə və təmiz rejim."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Silmək və ölçünü dəyişmək üçün çoxseçimli panel."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Video fonlar (.webm) dəstəklənir (25 MB-a qədər)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Qovluq silinərkən daxilindəki əlfəcinlər də silinir."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Təsadüfi dəyişikliklərin qarşısını almaq üçün iş sahəsini kilidləyin."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Əlfəcin kartları indi üzərinə gəldikdə göstərici kursorunu göstərir."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "İş sahəsi adı"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "İş sahəsi ayarları"
+   }
+}

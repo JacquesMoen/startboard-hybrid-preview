@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "إضافة إشارة مرجعية"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "إضافة إشارة مرجعية إلى StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "إضافة مجلد"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "إضافة مساحة عمل جديدة"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "إضافة مساحة عمل"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "ترتيب الإشارات المرجعية تلقائيًا"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "ينظم تلقائيًا جميع الإشارات المرجعية والمجلدات في مساحة العمل الحالية ضمن تخطيط شبكي مرتب."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "الخلفية"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "فشل معالجة الملف. يرجى تجربة ملف آخر."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "يرجى اختيار صورة أو فيديو ‎.webm‎."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "الملف كبير جدًا. الحد الأقصى 25 ميغابايت."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "ملف غير مدعوم. استخدم صورة أو فيديو ‎.webm‎."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "الفيديو: حتى 25 ميغابايت"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "نسخ احتياطي واستعادة"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "الشفق القطبي"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "مخصص"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "فضاء داكن"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "الغابة"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "الخزامى"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "أمواج فاتحة"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "منتصف الليل"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "سماء ليلية"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "المحيط"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "تدرج ناعم"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "غروب الشمس"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "إلغاء"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "التقاط جميع لقطات الشاشة"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "جارٍ التقاط لقطات الشاشة..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "تغيير الخلفية"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "تغيير اللون"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "تغيير الأيقونة"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "تغيير خلفية مساحة العمل"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "تحقق من التخزين الحالي"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "اختر لون الإشارة المرجعية"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "اختر صورة أو فيديو"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "تخزين Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "الوضع النظيف"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "أزرق"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "افتراضي"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "أخضر"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "بدون"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "برتقالي"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "وردي"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "أرجواني"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "أحمر"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "أصفر"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "إنشاء مجلد"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "صورة مخصصة"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "صورة/فيديو مخصص"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "حذف المجلد"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "هل تريد حذف هذا المجلد وجميع الإشارات المرجعية داخله؟"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "حذف المحدد"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "حذف العناصر المحددة؟"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "حذف مساحة العمل"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "صورة مخصصة"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "أيقونة فقط"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "معاينة (لقطة شاشة)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "نوع العرض"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "تعديل المجلد"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "تعديل مساحة العمل"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "تفعيل الرسوم المتحركة"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "أدخل عنوان الإشارة المرجعية"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "أدخل اسم المجلد"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "أدخل اسم مساحة العمل"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "تصدير جميع البيانات"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "إشارات مرجعية مرئية جميلة مع دعم السحب والإفلات لصفحة علامة التبويب الجديدة"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "مجلد"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "لون المجلد"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "أيقونة المجلد"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "اسم المجلد"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "مجلد (اختياري)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "إعدادات المجلد"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "أيقونة"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "استيراد البيانات"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "الإنجليزية"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "الفرنسية"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "الألمانية"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "البرتغالية (البرازيل)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "الإسبانية"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "اللغة"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "كيف تفتح الروابط؟"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "نافذة جديدة"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "نفس علامة التبويب"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "قفل مساحة العمل"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "انقل إشاراتك المرجعية المرئية من chrome.storage إلى IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "أداة ترحيل التخزين"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "إضافة إشارة مرجعية"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "نقل إلى مساحة العمل"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "بدون مجلد"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "تنظيم"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "خلفيات معدة مسبقًا"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "قيّم الإضافة"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "هل تستمتع بالإضافة؟ يرجى تقييمنا وترك مراجعة!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "تحديث جميع لقطات الشاشة"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "إزالة الخلفية"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "إعادة تسمية المجلد"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "إعادة تعيين جميع البيانات"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "حفظ"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "إدارة لقطات الشاشة"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "اختيار مساحة العمل"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "تم التحديد"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "تعيين اللون"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "الإعدادات"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "إظهار الشبكة"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "إظهار تسميات الإشارات المرجعية"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "عرض السجل"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "الحجم"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "كبير جدًا (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "كبير (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "متوسط (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "صغير (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "بدء الترحيل"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "قيّمنا"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "السمة"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "تلقائي (النظام)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "داكنة"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "فاتحة"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "العنوان"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "إلغاء قفل مساحة العمل"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "الإعدادات المرئية"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "ما الجديد"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "تم تنظيم الإعدادات الآن في علامات تبويب."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "اختر كيفية فتح الروابط: نافذة جديدة أو علامة التبويب نفسها."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "شبكة مع إبراز المحاذاة والوضع النظيف."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "شريط تحديد متعدد للحذف وتغيير الحجم."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "دعم خلفيات الفيديو (.webm) (حتى 25 ميجابايت)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "عند حذف مجلد يتم الآن حذف إشاراته المرجعية."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "اقفل مساحة العمل لمنع التغييرات العرضية."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "بطاقات الإشارات المرجعية تعرض الآن مؤشراً عند التحويم."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "اسم مساحة العمل"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "إعدادات مساحة العمل"
+   }
+}

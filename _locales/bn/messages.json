@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "বুকমার্ক যোগ করুন"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard-এ বুকমার্ক যোগ করুন"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "ফোল্ডার যোগ করুন"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "নতুন ওয়ার্কস্পেস যোগ করুন"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "ওয়ার্কস্পেস যোগ করুন"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "বুকমার্ক স্বয়ংক্রিয়ভাবে সাজান"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "বর্তমান ওয়ার্কস্পেসের সব বুকমার্ক ও ফোল্ডারকে স্বয়ংক্রিয়ভাবে একটি পরিপাটি গ্রিড লেআউটে সাজায়।"
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "পটভূমি"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "ফাইল প্রক্রিয়াকরণ ব্যর্থ হয়েছে। অন্য ফাইল চেষ্টা করুন।"
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "অনুগ্রহ করে ছবি বা .webm ভিডিও নির্বাচন করুন।"
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "ফাইলটি খুব বড়। সর্বোচ্চ 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "অসমর্থিত ফাইল। ছবি বা .webm ভিডিও ব্যবহার করুন।"
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "ভিডিও: সর্বোচ্চ 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "ব্যাকআপ ও রিস্টোর"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "অরোরা"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "কাস্টম"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "অন্ধকার মহাকাশ"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "বন"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "ল্যাভেন্ডার"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "হালকা ঢেউ"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "মধ্যরাত"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "রাতের আকাশ"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "মহাসাগর"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "নরম গ্রেডিয়েন্ট"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "সূর্যাস্ত"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "বাতিল"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "সব স্ক্রিনশট ক্যাপচার করুন"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "স্ক্রিনশট ক্যাপচার হচ্ছে..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "পটভূমি পরিবর্তন করুন"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "রং পরিবর্তন করুন"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "আইকন পরিবর্তন করুন"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "ওয়ার্কস্পেসের পটভূমি পরিবর্তন করুন"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "বর্তমান স্টোরেজ পরীক্ষা করুন"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "বুকমার্কের রং বেছে নিন"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "ছবি বা ভিডিও নির্বাচন করুন"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome স্টোরেজ"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "পরিষ্কার মোড"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "নীল"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "ডিফল্ট"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "সবুজ"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "কিছুই নয়"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "কমলা"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "গোলাপি"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "বেগুনি"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "লাল"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "হলুদ"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "ফোল্ডার তৈরি করুন"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "কাস্টম ছবি"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "কাস্টম ছবি/ভিডিও"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "ফোল্ডার মুছে ফেলুন"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "এই ফোল্ডার ও এর ভিতরের সব বুকমার্ক মুছে ফেলবেন?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "নির্বাচিতগুলো মুছুন"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "নির্বাচিত আইটেমগুলো মুছতে চান?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "ওয়ার্কস্পেস মুছে ফেলুন"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "কাস্টম ছবি"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "শুধু আইকন"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "প্রিভিউ (স্ক্রিনশট)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "ডিসপ্লে ধরণ"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "ফোল্ডার সম্পাদনা করুন"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "ওয়ার্কস্পেস সম্পাদনা করুন"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "অ্যানিমেশন সক্রিয় করুন"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "বুকমার্কের শিরোনাম লিখুন"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "ফোল্ডারের নাম লিখুন"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "ওয়ার্কস্পেসের নাম লিখুন"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "সব ডেটা এক্সপোর্ট করুন"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "আপনার নতুন ট্যাব পৃষ্ঠার জন্য ড্র্যাগ ও ড্রপ সমর্থিত সুন্দর ভিজ্যুয়াল বুকমার্ক"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "ফোল্ডার"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "ফোল্ডারের রঙ"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "ফোল্ডারের আইকন"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "ফোল্ডারের নাম"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "ফোল্ডার (ঐচ্ছিক)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "ফোল্ডার সেটিংস"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "আইকন"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "ডেটা ইম্পোর্ট করুন"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "ইংরেজি"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "ফরাসি"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "জার্মান"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "পর্তুগিজ (ব্রাজিল)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "স্প্যানিশ"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "ভাষা"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "লিঙ্ক কীভাবে খুলবেন?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "নতুন উইন্ডো"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "একই ট্যাব"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "ওয়ার্কস্পেস লক করুন"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "আপনার ভিজ্যুয়াল বুকমার্কগুলোকে chrome.storage থেকে IndexedDB-তে মাইগ্রেট করুন"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "স্টোরেজ মাইগ্রেশন টুল"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "বুকমার্ক যোগ করুন"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "ওয়ার্কস্পেসে সরান"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "কোনো ফোল্ডার নেই"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "সংগঠন"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "প্রিসেট পটভূমি"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "আমাদের এক্সটেনশন রেট করুন"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "আমাদের এক্সটেনশন ভালো লাগছে? দয়া করে রেটিং দিন এবং রিভিউ লিখুন!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "সব স্ক্রিনশট রিফ্রেশ করুন"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "পটভূমি সরান"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "ফোল্ডারের নাম পরিবর্তন করুন"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "সব ডেটা রিসেট করুন"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "সংরক্ষণ"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "স্ক্রিনশট ব্যবস্থাপনা"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "ওয়ার্কস্পেস নির্বাচন করুন"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "নির্বাচিত"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "রং নির্ধারণ করুন"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "সেটিংস"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "গ্রিড দেখান"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "বুকমার্ক লেবেল দেখান"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "লগ দেখান"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "আকার"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "খুব বড় (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "বড় (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "মাঝারি (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "ছোট (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "মাইগ্রেশন শুরু করুন"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "আমাদের রেট করুন"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "থিম"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "অটো (সিস্টেম)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "গাঢ়"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "হালকা"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "শিরোনাম"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "ওয়ার্কস্পেস আনলক করুন"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "ভিজ্যুয়াল সেটিংস"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "নতুন কী"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "সেটিংস এখন ট্যাবে সাজানো হয়েছে।"
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "লিঙ্ক কীভাবে খুলবে নির্বাচন করুন: নতুন উইন্ডো বা একই ট্যাব।"
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "অ্যালাইনমেন্ট হাইলাইটসহ গ্রিড এবং ক্লিন মোড।"
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "মুছতে ও আকার বদলাতে মাল্টি-সিলেক্ট টুলবার।"
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "ভিডিও ব্যাকগ্রাউন্ড (.webm) সমর্থিত (২৫ MB পর্যন্ত)।"
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "ফোল্ডার মুছে দিলে তার বুকমার্কও মুছে যায়।"
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "অপ্রত্যাশিত পরিবর্তন ঠেকাতে ওয়ার্কস্পেস লক করুন।"
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "বুকমার্ক কার্ড এখন হোভার করলে পয়েন্টার কার্সর দেখায়।"
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "ওয়ার্কস্পেসের নাম"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "ওয়ার্কস্পেস সেটিংস"
+   }
+}

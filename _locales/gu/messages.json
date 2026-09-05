@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "બુકમાર્ક ઉમેરો"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard માં બુકમાર્ક ઉમેરો"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "ફોલ્ડર ઉમેરો"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "નવું વર્કસ્પેસ ઉમેરો"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "વર્કસ્પેસ ઉમેરો"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "બુકમાર્ક આપમેળે ગોઠવો"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "હાલના વર્કસ્પેસમાં તમામ બુકમાર્ક્સ અને ફોલ્ડરને આપમેળે ગોઠવેલી ગ્રિડ લેઆઉટમાં ગોઠવે છે."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "પૃષ્ઠભૂમિ"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "ફાઇલ પ્રક્રિયા નિષ્ફળ રહી. બીજી ફાઇલ અજમાવો."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "કૃપા કરીને છબી અથવા .webm વિડિઓ પસંદ કરો."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "ફાઇલ બહુ મોટી છે. મહત્તમ 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "સમર્થિત ન હોય તેવી ફાઇલ. છબી અથવા .webm વિડિઓ ઉપયોગ કરો."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "વિડિયો: 25 MB સુધી"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "બેકઅપ અને રિસ્ટોર"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "ઔરોરા"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "કસ્ટમ"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "ડાર્ક સ્પેસ"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "જંગલ"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "લેવેન્ડર"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "હળવા તરંગો"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "મધરાત"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "રાત્રી આકાશ"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "મહાસાગર"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "મૃદુ ગ્રેડિયન્ટ"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "સૂર્યાસ્ત"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "રદ કરો"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "બધા સ્ક્રીનશોટ કૅપ્ચર કરો"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "સ્ક્રીનશોટ કૅપ્ચર થઈ રહ્યા છે..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "પૃષ્ઠભૂમિ બદલો"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "રંગ બદલો"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "આઇકન બદલો"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "વર્કસ્પેસ પૃષ્ઠભૂમિ બદલો"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "હાલનું સ્ટોરેજ તપાસો"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "બુકમાર્ક રંગ પસંદ કરો"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "છબી અથવા વિડિઓ પસંદ કરો"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome સ્ટોરેજ"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "સ્વચ્છ મોડ"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "વાદળી"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "ડિફોલ્ટ"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "લીલો"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "કઈ નથી"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "નારંગી"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "ગુલાબી"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "જાંબલી"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "લાલ"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "પીળો"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "ફોલ્ડર બનાવો"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "કસ્ટમ છબી"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "કસ્ટમ છબી/વિડિઓ"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "ફોલ્ડર કાઢી નાખો"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "આ ફોલ્ડર અને અંદરના બધાં બુકમાર્ક્સ કાઢી નાખવા?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "પસંદ કરેલને કાઢી નાખો"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "પસંદ કરેલ વસ્તુઓ કાઢી નાખવી?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "વર્કસ્પેસ કાઢી નાખો"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "કસ્ટમ છબી"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "માત્ર આઇકન"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "પૂર્વદર્શન (સ્ક્રીનશોટ)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "ડિસ્પ્લે પ્રકાર"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "ફોલ્ડર સંપાદિત કરો"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "વર્કસ્પેસ સંપાદિત કરો"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "એનિમેશન સક્રિય કરો"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "બુકમાર્કનું શીર્ષક દાખલ કરો"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "ફોલ્ડરનું નામ દાખલ કરો"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "વર્કસ્પેસ નામ દાખલ કરો"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "બધા ડેટા એક્સપોર્ટ કરો"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "તમારા નવા ટેબ પેજ માટે ડ્રેગ & ડ્રોપ સપોર્ટ સાથે સુંદર દૃશ્ય બુકમાર્ક્સ"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "ફોલ્ડર"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "ફોલ્ડર રંગ"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "ફોલ્ડર આઇકન"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "ફોલ્ડરનું નામ"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "ફોલ્ડર (વૈકલ્પિક)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "ફોલ્ડર સેટિંગ્સ"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "આઇકન"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "ડેટા ઇમ્પોર્ટ કરો"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "અંગ્રેજી"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "ફ્રેન્ચ"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "જર્મન"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "પોર્ટુગીઝ (બ્રાઝિલ)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "સ્પેનિશ"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "ભાષા"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "લિંક્સ કેવી રીતે ખોલવા?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "નવું વિંડો"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "એજ ટૅબ"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "વર્કસ્પેસ લોક કરો"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "તમારા દૃશ્ય બુકમાર્ક્સને chrome.storage થી IndexedDB માં માઈગ્રેટ કરો"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "સ્ટોરેજ માઈગ્રેશન ટૂલ"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "બુકમાર્ક ઉમેરો"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "વર્કસ્પેસમાં ખસેડો"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "કોઈ ફોલ્ડર નથી"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "વ્યવસ્થા"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "પ્રીસેટ પૃષ્ઠભૂમિઓ"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "અમારા એક્સ્ટેન્શનને રેટ કરો"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "અમારા એક્સ્ટેન્શનનો આનંદ માણી રહ્યા છો? કૃપા કરીને રેટ કરો અને સમીક્ષા આપો!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "બધા સ્ક્રીનશોટ રિફ્રેશ કરો"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "પૃષ્ઠભૂમિ દૂર કરો"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "ફોલ્ડરનું નામ બદલો"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "બધા ડેટા રીસેટ કરો"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "સેવ કરો"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "સ્ક્રીનશોટ વ્યવસ્થાપન"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "વર્કસ્પેસ પસંદ કરો"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "પસંદ કરેલ"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "રંગ સેટ કરો"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "સેટિંગ્સ"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "ગ્રિડ બતાવો"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "બુકમાર્ક લેબલ્સ બતાવો"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "લોગ બતાવો"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "કદ"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "ખૂબ મોટું (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "મોટું (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "મધ્યમ (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "નાનું (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "માઈગ્રેશન શરૂ કરો"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "અમને રેટ કરો"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "થીમ"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "ઓટો (સિસ્ટમ)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "ડાર્ક"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "લાઇટ"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "શીર્ષક"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "વર્કસ્પેસ અનલોક કરો"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "વિઝ્યુઅલ સેટિંગ્સ"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "નવું શું છે"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "સેટિંગ્સ હવે ટૅબમાં ગોઠવાયેલા છે."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "લિંક કેવી રીતે ખૂલશે પસંદ કરો: નવી વિન્ડો અથવા એ જ ટૅબ."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "અલાઇનમેન્ટ હાઇલાઇટ સાથે ગ્રીડ અને ક્લીન મોડ."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "ડિલીટ અને સાઇઝ બદલવા માટે મલ્ટી-સિલેક્ટ ટૂલબાર."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "વિડિયો બેકગ્રાઉન્ડ (.webm) સપોર્ટેડ (25 MB સુધી)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "ફોલ્ડર ડિલીટ કરતી વખતે અંદરના બુકમાર્ક પણ દૂર થાય છે."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "અચાનક ફેરફારો અટકાવવા વર્કસ્પેસ લોક કરો."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "બુકમાર્ક કાર્ડ્સ હવે હવર પર પોઇન્ટર કર્સર બતાવે છે."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "વર્કસ્પેસ નામ"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "વર્કસ્પેસ સેટિંગ્સ"
+   }
+}

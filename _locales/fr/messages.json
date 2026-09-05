@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Ajouter un marque-page"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Ajouter un favori à StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Ajouter un dossier"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Nouvel espace de travail"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Ajouter un espace de travail"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Organiser automatiquement les favoris"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Réorganiser automatiquement tous les favoris et dossiers dans l'espace de travail actuel ?\n\nIls seront réorganisés en grille avec une taille minimale."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organise automatiquement tous les favoris et dossiers de l'espace de travail actuel dans une grille ordonnée."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "$1 favoris et $2 dossiers organisés !"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Arrière-plan"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Échec du traitement du fichier. Essayez un autre fichier."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Veuillez choisir une image ou une vidéo .webm."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Le fichier est trop volumineux. Max 25 Mo."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Fichier non pris en charge. Utilisez une image ou une vidéo .webm."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Vidéo : jusqu'à 25 Mo"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Sauvegarde et restauration"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurore"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Personnalisé"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Espace sombre"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Forêt"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavande"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Vagues claires"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Minuit"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Ciel nocturne"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Océan"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Dégradé doux"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Coucher de soleil"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Favori déplacé vers \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Annuler"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Impossible de supprimer le dernier espace de travail !"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Capturer toutes les captures d'écran"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capture de $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Des captures d'écran seront prises pour $1 favoris. Cela peut prendre quelques minutes. Continuer ?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Impossible de capturer les captures d'écran. Réessayez."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Capture des captures d'écran..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Changer l'arrière-plan"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Changer la couleur"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Changer l'icône"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Changer l'arrière-plan de l'espace de travail"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Vérifier le stockage actuel"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Choisir la couleur du marque-page"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Choisir une image ou une vidéo"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Stockage Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Mode épuré"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Bleu"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Par défaut"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Vert"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Aucune"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Orange"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rose"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Violet"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Rouge"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Jaune"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Créer un dossier"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Image personnalisée"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Image/Vidéo personnalisée"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Voulez-vous vraiment supprimer ce favori ?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Supprimer le dossier"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Supprimer ce dossier et tous les favoris qu'il contient ?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Supprimer la sélection"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Supprimer les éléments sélectionnés ?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Supprimer l'espace de travail"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Supprimer l'espace de travail \"$1\" ? Tous les favoris de cet espace seront supprimés."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Image personnalisée"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Icône uniquement"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Aperçu (Capture d'écran)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Type d'affichage"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Modifier le dossier"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Modifier l'espace de travail"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Cliquez sur \"$1\" pour commencer"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Aucun favori pour l'instant"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Activer les animations"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Entrez le titre du marque-page"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Entrez le nom du dossier"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Entrez le nom de l'espace de travail"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Exporter toutes les données"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Échec de l'exportation des données : $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Données exportées avec succès !"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Beaux marque-pages visuels avec support glisser-déposer pour votre page nouvel onglet"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Veuillez remplir tous les champs obligatoires."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Dossier"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Couleur du dossier"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Dossier : $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Icône du dossier"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 éléments"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Nom du dossier"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Dossier (Optionnel)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Paramètres du dossier"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Icône"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "$1 favoris trouvés. Tout importer ?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Aucun favori à importer."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 favoris importés avec succès !"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Importer les données du $1 ?\n\nCela remplacera toutes les données actuelles !"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Importer des données"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Échec de l'importation des données : $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Données importées avec succès ! Rechargement de la page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Sélection invalide."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Veuillez saisir une URL valide."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Anglais"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Français"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Allemand"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugais (Brésil)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Espagnol"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Langue"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Comment ouvrir les liens ?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Nouvelle fenêtre"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Même onglet"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Verrouiller l'espace de travail"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrez vos marque-pages visuels de chrome.storage vers IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Outil de migration du stockage"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Ajouter un marque-page"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Modifier le favori"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Impossible de déplacer le favori : $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Impossible de déplacer le favori. Réessayez."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Sélectionnez le dossier de destination :\n\n$1\n\nEntrez le numéro :"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Impossible de déplacer le favori vers le dossier : $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Impossible de déplacer le favori vers le dossier. Réessayez."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Déplacer vers le bureau"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Déplacer vers un autre dossier"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Déplacer vers l'espace de travail"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Nouveau favori"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Aucun favori dans ce dossier."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Aucun dossier"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Aucun autre dossier disponible. Créez d'abord un dossier."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Aucun favori en mode aperçu trouvé."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organisation"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Arrière-plans prédéfinis"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Terminé !"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Évaluez notre extension"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Vous appréciez notre extension ? Veuillez nous évaluer et nous laisser un avis !"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Actualiser toutes les captures d'écran"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Mise à jour de $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Impossible d'actualiser la capture : $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Actualiser la capture"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Les captures d'écran de $1 favoris seront mises à jour. Continuer ?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Impossible de mettre à jour les captures d'écran. Réessayez."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Supprimer l'arrière-plan"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Renommer le dossier"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Êtes-vous sûr ? Cela supprimera TOUS vos favoris et paramètres !"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Vraiment sûr ? Cette action est irréversible !"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Réinitialiser toutes les données"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Enregistrer"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capture..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Gestion des captures d'écran"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Cliquez sur actualiser pour réessayer"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Sélectionner l'espace de travail"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Veuillez sélectionner une icône."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Sélectionné"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Définir la couleur"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Paramètres"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Afficher la grille"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Afficher les étiquettes des marque-pages"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Afficher le journal"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Taille"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Très grand (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Grand (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Moyen (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Petit (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Démarrer la migration"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Notez-nous"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Thème"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Automatique (Système)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Sombre"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Clair"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titre"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Déverrouiller l'espace de travail"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Impossible de mettre à jour l'espace de travail : $1\n\nVos données sont sûres — les modifications n'ont pas été appliquées."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Paramètres visuels"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Nouveautés"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Les paramètres sont désormais organisés en onglets."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Choisissez comment ouvrir les liens : nouvelle fenêtre ou même onglet."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Grille avec surlignage de l'alignement et mode épuré."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Barre de sélection multiple pour supprimer et redimensionner."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Arrière-plans vidéo (.webm) pris en charge (jusqu'à 25 Mo)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "La suppression d'un dossier supprime désormais ses marque-pages."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Verrouillez un espace de travail pour éviter les modifications accidentelles."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Les cartes de marque-pages affichent désormais un curseur pointeur au survol."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Espace de travail : $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Nom de l'espace de travail"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Paramètres de l'espace de travail"
+   }
+}

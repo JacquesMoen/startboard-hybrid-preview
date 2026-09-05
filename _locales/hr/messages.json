@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Dodaj oznaku"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Dodaj oznaku u StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Dodaj mapu"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Dodaj novi radni prostor"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Dodaj radni prostor"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Automatski rasporedi oznake"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Automatski organizira sve oznake i mape u trenutnom radnom prostoru u uredan raspored mreže."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Pozadina"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Obrada datoteke nije uspjela. Pokušajte drugu datoteku."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Odaberite sliku ili .webm video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Datoteka je prevelika. Maks 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Nepodržana datoteka. Koristite sliku ili .webm video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: do 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Sigurnosna kopija i vraćanje"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Prilagođeno"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Tamni svemir"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Šuma"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavanda"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Svijetli valovi"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Ponoć"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Noćno nebo"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Ocean"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Nježni gradijent"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Zalazak sunca"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Odustani"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Snimi sve snimke zaslona"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Snimanje snimki zaslona..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Promijeni pozadinu"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Promijeni boju"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Promijeni ikonu"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Promijeni pozadinu radnog prostora"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Provjeri trenutnu pohranu"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Odaberi boju oznake"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Odaberite sliku ili video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome pohrana"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Čisti način"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Plava"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Zadano"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Zelena"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Nijedna"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Narančasta"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Ružičasta"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Ljubičasta"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Crvena"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Žuta"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Stvori mapu"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Prilagođena slika"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Prilagođena slika/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Izbriši mapu"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Izbrisati ovu mapu i sve oznake unutar nje?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Izbriši odabrano"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Izbrisati odabrane stavke?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Izbriši radni prostor"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Prilagođena slika"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Samo ikona"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Pregled (Snimka zaslona)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Vrsta prikaza"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Uredi mapu"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Uredi radni prostor"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Omogući animacije"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Unesite naslov oznake"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Unesite naziv mape"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Unesite naziv radnog prostora"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Izvezi sve podatke"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Lijepe vizualne oznake s podrškom za povlačenje i ispuštanje za vašu novu karticu"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Mapa"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Boja mape"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Ikona mape"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Naziv mape"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Mapa (Opcionalno)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Postavke mape"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Ikona"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Uvezi podatke"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Engleski"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Francuski"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Njemački"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugalski (Brazil)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Španjolski"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Jezik"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Kako otvarati poveznice?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Novi prozor"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Ista kartica"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Zaključaj radni prostor"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrirajte svoje vizualne oznake iz chrome.storage u IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Alat za migraciju pohrane"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Dodaj oznaku"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Premjesti u radni prostor"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Bez mape"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organizacija"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Unaprijed postavljene pozadine"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Ocijenite naše proširenje"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Sviđa vam se naše proširenje? Molimo ocijenite i ostavite recenziju!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Osvježi sve snimke zaslona"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Ukloni pozadinu"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Preimenuj mapu"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Resetiraj sve podatke"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Spremi"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Upravljanje snimkama zaslona"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Odaberi radni prostor"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Odabrano"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Postavi boju"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Postavke"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Prikaži mrežu"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Prikaži oznake oznaka"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Prikaži zapisnik"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Veličina"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Vrlo veliko (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Veliko (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Srednje (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Malo (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Pokreni migraciju"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Ocijeni nas"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (Sustav)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Tamna"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Svijetla"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Naslov"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Otključaj radni prostor"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Vizualne postavke"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Novosti"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Postavke su sada organizirane u kartice."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Odaberite kako se veze otvaraju: novi prozor ili ista kartica."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Mreža s isticanjem poravnanja i čistim načinom."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Alatna traka za višestruki odabir za brisanje i promjenu veličine."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Video pozadine (.webm) podržane (do 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Brisanje mape sada uklanja i njezine oznake."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Zaključajte radni prostor kako biste spriječili slučajne promjene."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Kartice oznaka sada prikazuju pokazivač pri prelasku mišem."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Naziv radnog prostora"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Postavke radnog prostora"
+   }
+}

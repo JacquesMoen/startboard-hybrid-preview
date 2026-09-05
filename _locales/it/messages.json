@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Aggiungi segnalibro"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Aggiungi segnalibro a StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Aggiungi cartella"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Aggiungi nuovo spazio di lavoro"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Aggiungi spazio di lavoro"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Organizza automaticamente i segnalibri"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Disporre automaticamente tutti i segnalibri e le cartelle nello spazio di lavoro corrente?\n\nVerranno riorganizzati in una griglia con dimensione minima."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organizza automaticamente tutti i segnalibri e le cartelle nello spazio di lavoro corrente in una griglia ordinata."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organizzati $1 segnalibri e $2 cartelle!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Sfondo"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Impossibile elaborare il file. Prova un altro file."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Seleziona un'immagine o un video .webm."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Il file è troppo grande. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "File non supportato. Usa un'immagine o un video .webm."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: fino a 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Backup e ripristino"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Personalizzato"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Spazio scuro"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Foresta"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavanda"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Onde chiare"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Mezzanotte"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Cielo notturno"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Oceano"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Gradiente morbido"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Tramonto"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Segnalibro spostato in \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Annulla"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Impossibile eliminare l'ultimo spazio di lavoro!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Cattura tutti gli screenshot"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Acquisizione di $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Verranno catturate schermate per $1 segnalibri. Potrebbe richiedere alcuni minuti. Continuare?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Impossibile catturare le schermate. Riprova."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Cattura screenshot in corso..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Cambia sfondo"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Cambia colore"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Cambia icona"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Cambia sfondo dello spazio di lavoro"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Controlla lo storage corrente"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Scegli colore del segnalibro"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Scegli immagine o video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Storage di Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Modalità pulita"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Blu"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Predefinito"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Verde"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Nessuno"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Arancione"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rosa"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Viola"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Rosso"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Giallo"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Crea cartella"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Immagine personalizzata"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Immagine/Video personalizzata"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Vuoi eliminare questo segnalibro?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Elimina cartella"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Eliminare questa cartella e tutti i segnalibri al suo interno?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Elimina selezionati"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Eliminare gli elementi selezionati?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Elimina spazio di lavoro"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Eliminare lo spazio di lavoro \"$1\"? Tutti i segnalibri in questo spazio verranno eliminati."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Immagine personalizzata"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Solo icona"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Anteprima (Screenshot)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Tipo di visualizzazione"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Modifica cartella"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Modifica spazio di lavoro"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Fai clic su \"$1\" per iniziare"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Nessun segnalibro ancora"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Abilita animazioni"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Inserisci il titolo del segnalibro"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Inserisci il nome della cartella"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Inserisci il nome dello spazio di lavoro"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Esporta tutti i dati"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Impossibile esportare i dati: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Dati esportati con successo!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Segnalibri visivi bellissimi con supporto drag & drop per la tua pagina Nuova scheda"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Per favore, compila tutti i campi obbligatori."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Cartella"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Colore cartella"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Cartella: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Icona cartella"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 elementi"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Nome cartella"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Cartella (Opzionale)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Impostazioni cartella"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Icona"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Trovati $1 segnalibri. Importare tutti?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Nessun segnalibro trovato da importare."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Importati $1 segnalibri con successo!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Importare i dati da $1?\n\nQuesto sostituirà tutti i dati attuali!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Importa dati"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Impossibile importare i dati: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Dati importati con successo! Ricaricamento della pagina..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Selezione non valida."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Inserisci un URL valido."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Inglese"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Francese"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Tedesco"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portoghese (Brasile)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spagnolo"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Lingua"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Come aprire i link?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Nuova finestra"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Stessa scheda"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Blocca area di lavoro"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migra i tuoi segnalibri visivi da chrome.storage a IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Strumento di migrazione dello storage"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Aggiungi segnalibro"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Modifica segnalibro"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Impossibile spostare il segnalibro: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Impossibile spostare il segnalibro. Riprova."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Seleziona la cartella in cui spostare:\n\n$1\n\nInserisci il numero:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Impossibile spostare il segnalibro nella cartella: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Impossibile spostare il segnalibro nella cartella. Riprova."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Sposta sul desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Sposta in un'altra cartella"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Sposta nello spazio di lavoro"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Nuovo segnalibro"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Nessun segnalibro in questa cartella."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Nessuna cartella"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Nessun'altra cartella disponibile. Crea prima una nuova cartella."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Nessun segnalibro in modalità anteprima trovato."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organizzazione"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Sfondi preimpostati"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Completato!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Valuta la nostra estensione"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Ti piace la nostra estensione? Per favore valutaci e lascia una recensione!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Aggiorna tutti gli screenshot"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Aggiornamento di $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Impossibile aggiornare lo screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Aggiorna screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Le schermate di $1 segnalibri verranno aggiornate. Continuare?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Impossibile aggiornare le schermate. Riprova."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Rimuovi sfondo"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Rinomina cartella"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Sei sicuro? Questo eliminerà TUTTI i tuoi segnalibri e le impostazioni!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Davvero sicuro? Non è possibile annullare!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Reimposta tutti i dati"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Salva"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Acquisizione..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Gestione screenshot"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Fai clic su aggiorna per riprovare"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Seleziona spazio di lavoro"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Seleziona un'icona."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Selezionati"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Imposta colore"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Impostazioni"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Mostra griglia"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Mostra etichette dei segnalibri"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Mostra log"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Dimensione"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Extra grande (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Grande (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Medio (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Piccolo (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Avvia migrazione"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Valutaci"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Automatico (Sistema)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Scuro"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Chiaro"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titolo"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Sblocca area di lavoro"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Impossibile aggiornare lo spazio di lavoro: $1\n\nI tuoi dati sono al sicuro: le modifiche non sono state applicate."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Impostazioni visive"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Novità"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Le impostazioni ora sono organizzate in schede."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Scegli come aprire i link: nuova finestra o stessa scheda."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Griglia con evidenziazione dell'allineamento e modalità pulita."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Barra di selezione multipla per eliminare e ridimensionare."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Sfondi video (.webm) supportati (fino a 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Eliminando una cartella, ora vengono rimossi anche i suoi segnalibri."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Blocca un'area di lavoro per evitare modifiche accidentali."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Le schede dei segnalibri ora mostrano il cursore a mano al passaggio del mouse."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Spazio di lavoro: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Nome spazio di lavoro"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Impostazioni spazio di lavoro"
+   }
+}

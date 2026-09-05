@@ -1,0 +1,36 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "chrome_url_overrides": {
+      "newtab": "newtab/newtab.html"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4qYeVdGsXj3tIgW2PNW3IPN+HDuRdt9wUHu0Fjl3AMGSvbp3Vp1mQC4nYWYwOK57Hy2A8adt3Vm5DNqhkNvjsjkRh0iBkJ620OGPbmOSFfl3wW6xmNeBFbWqD5f88QLwp8UzBDbH/gx9MiX6GYpYQ4ZuMCE/gNz4y2cKFFkH7KrCOZCAtqcI8k5XHJ0FSHcMGNmO4xdRzWDcjDJvT05SmIkfIw0pXhKZ5CY1cA9Ed6SDE2c3bJSDLcTH666G2UGu0Pow8cP83b/aV9kTs8PNO+MxPhxu93AczZEo8CIH9M+0LzPnX9Th725nHp1i5XLSCnriOOA6J/cXmuOmhnqvswIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "permissions": [ "storage", "unlimitedStorage", "tabs", "contextMenus", "bookmarks" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.6",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "migrate.html" ]
+   } ]
+}

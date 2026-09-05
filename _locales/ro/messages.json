@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Adaugă marcaj"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Adaugă marcaj la StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Adaugă folder"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Adaugă spațiu de lucru nou"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Adaugă spațiu de lucru"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Aranjează automat marcajele"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organizează automat toate marcajele și folderele din spațiul de lucru curent într-un aspect de grilă ordonat."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Fundal"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Nu s-a putut procesa fișierul. Încearcă alt fișier."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Te rog să alegi o imagine sau un videoclip .webm."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Fișierul este prea mare. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Fișier neacceptat. Folosește o imagine sau un videoclip .webm."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: până la 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Backup și restaurare"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Auroră"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Personalizat"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Spațiu întunecat"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Pădure"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavandă"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Valuri luminoase"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Miezul nopții"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Cer de noapte"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Ocean"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Gradient fin"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Apus"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Anulează"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Captură toate capturile de ecran"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Se capturează capturi de ecran..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Schimbă fundalul"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Schimbă culoarea"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Schimbă pictograma"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Schimbă fundalul spațiului de lucru"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Verifică stocarea curentă"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Alege culoarea marcajului"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Alege o imagine sau un videoclip"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Stocare Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Mod curat"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Albastru"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Implicit"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Verde"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Niciuna"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Portocaliu"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Roz"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Mov"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Roșu"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Galben"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Creează folder"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Imagine personalizată"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Imagine/Video personalizat"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Șterge folderul"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Ștergeți acest folder și toate marcajele din interior?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Șterge selectatele"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Șterge elementele selectate?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Șterge spațiul de lucru"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Imagine personalizată"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Doar pictogramă"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Previzualizare (Captură de ecran)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Tip de afișare"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Editează folder"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Editează spațiul de lucru"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Activează animațiile"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Introdu titlul marcajului"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Introdu numele folderului"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Introdu numele spațiului de lucru"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Exportă toate datele"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Marcaje vizuale frumoase cu suport drag & drop pentru pagina ta de tab nou"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Folder"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Culoare folder"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Pictogramă folder"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Nume folder"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Folder (Opțional)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Setări folder"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Pictogramă"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Importă date"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Engleză"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Franceză"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Germană"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugheză (Brazilia)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spaniolă"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Limbă"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Cum să deschizi linkurile?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Fereastră nouă"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Aceeași filă"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Blochează spațiul de lucru"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrează marcajele vizuale din chrome.storage în IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Instrument de migrare a stocării"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Adaugă marcaj"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Mută în spațiul de lucru"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Fără folder"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organizare"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Fundaluri predefinite"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Evaluează extensia noastră"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Îți place extensia noastră? Te rugăm să ne evaluezi și să lași o recenzie!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Reîmprospătează toate capturile de ecran"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Elimină fundalul"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Redenumește folderul"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Resetează toate datele"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Salvează"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Gestionare capturi de ecran"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Selectează spațiul de lucru"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Selectate"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Setează culoarea"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Setări"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Afișează grila"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Afișează etichetele marcajelor"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Afișează jurnalul"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Dimensiune"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Foarte mare (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Mare (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Mediu (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Mic (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Pornește migrarea"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Evaluează-ne"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Temă"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (Sistem)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Întunecat"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Luminos"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titlu"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Deblochează spațiul de lucru"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Setări vizuale"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Noutăți"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Setările sunt acum organizate pe file."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Alege cum se deschid linkurile: fereastră nouă sau aceeași filă."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Grilă cu evidențiere de aliniere și modul curat."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Bară de selecție multiplă pentru ștergere și redimensionare."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Fundaluri video (.webm) suportate (până la 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Ștergerea unui folder elimină acum și marcajele din el."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Blochează un spațiu de lucru pentru a preveni modificările accidentale."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Cardurile de marcaje afișează acum cursor de tip pointer la hover."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Nume spațiu de lucru"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Setări spațiu de lucru"
+   }
+}

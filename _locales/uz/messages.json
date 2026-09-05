@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Xatcho‘p qo‘shish"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard-ga xatcho‘p qo‘shish"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Jild qo‘shish"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Yangi ish maydoni qo‘shish"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Ish maydoni qo‘shish"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Xatcho‘plarni avtomatik joylash"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Joriy ish maydonidagi barcha xatcho‘plar va jildlarni tartibli panjara joylashuviga avtomatik joylaydi."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Fon"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Faylni qayta ishlash muvaffaqiyatsiz. Boshqa faylni sinab ko‘ring."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Iltimos, rasm yoki .webm video tanlang."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Fayl juda katta. Maks 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Qo‘llab-quvvatlanmaydigan fayl. Rasm yoki .webm video ishlating."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: 25 MB gacha"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Zaxira va tiklash"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Maxsus"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Qorong‘u kosmos"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "O‘rmon"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavanda"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Yengil to‘lqinlar"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Yarim tun"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Tungi osmon"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Okean"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Yumshoq gradient"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Quyosh botishi"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Bekor qilish"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Barcha skrinshotlarni olish"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Skrinshotlar olinmoqda..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Fonini o‘zgartirish"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Rangni o‘zgartirish"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Belgini o‘zgartirish"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Ish maydoni fonini o‘zgartirish"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Joriy xotirani tekshirish"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Xatcho‘p rangini tanlang"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Rasm yoki video tanlang"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome xotirasi"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Toza rejim"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Ko‘k"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Standart"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Yashil"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Yo‘q"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "To‘q sariq"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Pushti"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Binafsha"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Qizil"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Sariq"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Jild yaratish"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Maxsus rasm"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Maxsus rasm/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Jildni o‘chirish"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Bu papka va ichidagi barcha xatcho‘plarni o‘chirilsinmi?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Tanlanganlarni o'chirish"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Tanlangan elementlar o'chirilsinmi?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Ish maydonini o‘chirish"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Maxsus rasm"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Faqat belgi"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Oldindan ko‘rish (Skrinshot)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Ko‘rsatish turi"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Jildni tahrirlash"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Ish maydonini tahrirlash"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Animatsiyalarni yoqish"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Xatcho‘p sarlavhasini kiriting"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Jild nomini kiriting"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Ish maydoni nomini kiriting"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Barcha ma’lumotlarni eksport qilish"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Yangi tab sahifangiz uchun sudrab‑tashlash qo‘llab-quvvatloviga ega chiroyli vizual xatcho‘plar"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Jild"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Jild rangi"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Jild belgisi"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Jild nomi"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Jild (Ixtiyoriy)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Jild sozlamalari"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Belgi"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Ma’lumotlarni import qilish"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Ingliz"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Fransuz"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Nemis"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugal (Braziliya)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Ispan"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Til"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Havolalarni qanday ochish?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Yangi oyna"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Xuddi shu yorliq"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Ish maydonini qulflang"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Vizual xatcho‘plaringizni chrome.storage dan IndexedDB ga ko‘chiring"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Xotira migratsiyasi vositasi"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Xatcho‘p qo‘shish"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Ish maydoniga ko‘chirish"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Jild yo‘q"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Tashkillashtirish"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Oldindan o‘rnatilgan fonlar"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Kengaytmamizni baholang"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Kengaytmamiz yoqdimi? Iltimos baholang va fikr qoldiring!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Barcha skrinshotlarni yangilash"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Fonni olib tashlash"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Jild nomini o‘zgartirish"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Barcha ma’lumotlarni tiklash"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Saqlash"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Skrinshotlarni boshqarish"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Ish maydonini tanlash"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Tanlangan"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Rangni sozlash"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Sozlamalar"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "To'rni ko'rsatish"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Xatcho‘p yorliqlarini ko‘rsatish"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Jurnalni ko‘rsatish"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "O‘lcham"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Juda katta (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Katta (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "O‘rtacha (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Kichik (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Migratsiyani boshlash"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Bizni baholang"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Mavzu"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Avto (Tizim)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Qorong‘u"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Yorug‘"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Sarlavha"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Ish maydonini qulfdan chiqaring"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Vizual sozlamalar"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Yangiliklar"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Sozlamalar endi yorliqlarga ajratildi."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Havolalar qanday ochilishini tanlang: yangi oyna yoki shu yorliq."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Tekislash yoritgichli to'r va toza rejim."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "O'chirish va o'lchamni o'zgartirish uchun ko'p tanlov paneli."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Video fonlar (.webm) qo'llab-quvvatlanadi (25 MB gacha)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Jild o'chirilganda ichidagi xatcho'plar ham o'chiriladi."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Tasodifiy o'zgarishlarning oldini olish uchun ish maydonini qulflang."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Xatcho'p kartalari endi ustiga kelganda ko'rsatkich kursorini ko'rsatadi."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Ish maydoni nomi"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Ish maydoni sozlamalari"
+   }
+}

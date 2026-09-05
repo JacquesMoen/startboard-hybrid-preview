@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Lisää kirjanmerkki"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Lisää kirjanmerkki StartBoardiin"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Lisää kansio"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Lisää uusi työtila"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Lisää työtila"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Järjestä kirjanmerkit automaattisesti"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Järjestetäänkö kaikki kirjanmerkit ja kansiot automaattisesti nykyisessä työtilassa?\n\nNe järjestetään ruudukkoon minimikoolla."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Järjestää automaattisesti kaikki kirjanmerkit ja kansiot nykyisessä työtilassa siistiin ruudukkoasetteluun."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Järjestetty $1 kirjanmerkkiä ja $2 kansiota!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Tausta"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Tiedoston käsittely epäonnistui. Kokeile toista tiedostoa."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Valitse kuva tai .webm-video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Tiedosto on liian suuri. Enintään 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Tiedostoa ei tueta. Käytä kuvaa tai .webm-videota."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: enintään 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Varmuuskopio ja palautus"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Revontulet"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Mukautettu"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Tumma avaruus"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Metsä"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Laventeli"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Vaaleat aallot"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Keskiyö"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Yötaivas"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Valtameri"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Pehmeä liukuväri"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Auringonlasku"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Kirjanmerkki siirretty kansioon \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Peruuta"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Viimeistä työtilaa ei voi poistaa!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Tallenna kaikki näyttökuvat"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Kaapataan $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Näyttökuvat otetaan $1 kirjanmerkistä. Tämä voi kestää muutaman minuutin. Jatketaanko?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Näyttökuvien ottaminen epäonnistui. Yritä uudelleen."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Tallennetaan näyttökuvia..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Vaihda tausta"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Vaihda väri"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Vaihda kuvake"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Vaihda työtilan tausta"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Tarkista nykyinen tallennus"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Valitse kirjanmerkin väri"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Valitse kuva tai video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome-tallennus"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Siisti tila"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Sininen"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Oletus"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Vihreä"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Ei mitään"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Oranssi"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Vaaleanpunainen"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Violetti"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Punainen"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Keltainen"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Luo kansio"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Mukautettu kuva"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Muokattu kuva/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Haluatko varmasti poistaa tämän kirjanmerkin?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Poista kansio"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Poistetaanko tämä kansio ja kaikki sen sisältämät kirjanmerkit?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Poista valitut"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Poistetaanko valitut kohteet?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Poista työtila"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Poistetaanko työtila \"$1\"? Kaikki tämän työtilan kirjanmerkit poistetaan."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Mukautettu kuva"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Vain kuvake"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Esikatselu (Näyttökuva)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Näyttötyyppi"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Muokkaa kansiota"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Muokkaa työtilaa"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Aloita napsauttamalla \"$1\""
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Ei vielä kirjanmerkkejä"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Ota animaatiot käyttöön"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Anna kirjanmerkin otsikko"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Anna kansion nimi"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Anna työtilan nimi"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Vie kaikki tiedot"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Tietojen vienti epäonnistui: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Tiedot viety onnistuneesti!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Kauniit visuaaliset kirjanmerkit, joissa on vedä ja pudota -tuki uudelle välilehdelle"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Täytä kaikki pakolliset kentät."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Kansio"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Kansion väri"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Kansio: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Kansion kuvake"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 kohdetta"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Kansion nimi"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Kansio (Valinnainen)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Kansion asetukset"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Kuvake"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Löytyi $1 kirjanmerkkiä. Tuodaanko kaikki?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Ei kirjanmerkkejä tuotavaksi."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 kirjanmerkkiä tuotu onnistuneesti!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Tuodaanko tiedot ajankohdasta $1?\n\nTämä korvaa kaikki nykyiset tiedot!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Tuo tiedot"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Tietojen tuonti epäonnistui: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Tiedot tuotu onnistuneesti! Ladataan sivu uudelleen..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Virheellinen valinta."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Anna kelvollinen URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Englanti"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Ranska"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Saksa"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugali (Brasilia)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Espanja"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Kieli"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Miten linkit avataan?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Uusi ikkuna"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Sama välilehti"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Lukitse työtila"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Siirrä visuaaliset kirjanmerkkisi chrome.storage:sta IndexedDB:hen"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Tallennuksen migraatiotyökalu"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Lisää kirjanmerkki"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Muokkaa kirjanmerkkiä"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Kirjanmerkkiä ei voitu siirtää: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Kirjanmerkkiä ei voitu siirtää. Yritä uudelleen."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Valitse kansio siirtoa varten:\n\n$1\n\nSyötä numero:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Kirjanmerkkiä ei voitu siirtää kansioon: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Kirjanmerkkiä ei voitu siirtää kansioon. Yritä uudelleen."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Siirrä työpöydälle"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Siirrä toiseen kansioon"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Siirrä työtilaan"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Uusi kirjanmerkki"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Tässä kansiossa ei ole kirjanmerkkejä."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Ei kansiota"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Muita kansioita ei ole. Luo ensin uusi kansio."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Esikatselutilassa ei löytynyt kirjanmerkkejä."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Järjestely"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Esiasetetut taustat"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Valmis!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Arvioi laajennuksemme"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Pidätkö laajennuksestamme? Arvioi ja jätä arvostelu!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Päivitä kaikki näyttökuvat"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Päivitetään $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Näyttökuvan päivitys epäonnistui: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Päivitä näyttökuva"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Näyttökuvat päivitetään $1 kirjanmerkille. Jatketaanko?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Näyttökuvien päivitys epäonnistui. Yritä uudelleen."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Poista tausta"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Nimeä kansio uudelleen"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Oletko varma? Tämä poistaa KAIKKI kirjanmerkit ja asetukset!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Oletko aivan varma? Tätä ei voi perua!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Palauta kaikki tiedot"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Tallenna"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Kaapataan..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Näyttökuvien hallinta"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Napsauta Päivitä yrittääksesi uudelleen"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Valitse työtila"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Valitse kuvake."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Valittu"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Aseta väri"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Asetukset"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Näytä ruudukko"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Näytä kirjanmerkkien nimet"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Näytä loki"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Koko"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Erittäin suuri (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Suuri (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Keskikoko (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Pieni (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Aloita migraatio"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Arvostele meidät"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Teema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (Järjestelmä)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Tumma"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Vaalea"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Otsikko"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Avaa työtilan lukitus"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Työtilan päivittäminen epäonnistui: $1\n\nTietosi ovat turvassa – muutoksia ei tehty."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Visuaaliset asetukset"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Uutta"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Asetukset on nyt järjestetty välilehtiin."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Valitse miten linkit avataan: uusi ikkuna tai sama välilehti."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Ruudukko, jossa kohdistuksen korostus ja siisti tila."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Monivalintatyökalurivi poistamiseen ja koon muuttamiseen."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videotaustat (.webm) tuettu (enintään 25 Mt)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Kansion poistaminen poistaa nyt myös sen kirjanmerkit."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Lukitse työtila estääksesi vahingossa tehdyt muutokset."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Kirjanmerkkikortit näyttävät nyt osoitinkursorin, kun niitä osoitetaan."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Työtila: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Työtilan nimi"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Työtilan asetukset"
+   }
+}

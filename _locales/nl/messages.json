@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Bladwijzer toevoegen"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Bladwijzer toevoegen aan StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Map toevoegen"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Nieuwe werkruimte toevoegen"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Werkruimte toevoegen"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Bladwijzers automatisch ordenen"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Alle bladwijzers en mappen in de huidige werkruimte automatisch rangschikken?\n\nZe worden in een raster met minimale grootte geplaatst."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Ordent automatisch alle bladwijzers en mappen in de huidige werkruimte in een nette rasterindeling."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "$1 bladwijzers en $2 mappen georganiseerd!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Achtergrond"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Bestand kon niet worden verwerkt. Probeer een ander bestand."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Kies een afbeelding of .webm-video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Bestand is te groot. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Bestand niet ondersteund. Gebruik een afbeelding of .webm-video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: tot 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Back-up en herstellen"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Aangepast"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Donkere ruimte"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Bos"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavendel"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Lichte golven"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Middernacht"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Nachtelijke hemel"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Oceaan"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Zachte gradiënt"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Zonsondergang"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bladwijzer verplaatst naar \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Annuleren"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Kan de laatste werkruimte niet verwijderen!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Alle schermafbeeldingen vastleggen"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Bezig met vastleggen van $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Er worden screenshots gemaakt voor $1 bladwijzers. Dit kan enkele minuten duren. Doorgaan?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Screenshots maken mislukt. Probeer het opnieuw."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Schermafbeeldingen worden vastgelegd..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Achtergrond wijzigen"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Kleur wijzigen"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Pictogram wijzigen"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Achtergrond van werkruimte wijzigen"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Huidige opslag controleren"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Bladwijzerkleur kiezen"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Kies afbeelding of video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome-opslag"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Schone modus"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Blauw"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Standaard"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Groen"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Geen"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Oranje"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Roze"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Paars"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Rood"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Geel"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Map maken"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Aangepaste afbeelding"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Aangepaste afbeelding/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Weet je zeker dat je deze bladwijzer wilt verwijderen?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Map verwijderen"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Deze map en alle bladwijzers erin verwijderen?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Geselecteerde verwijderen"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Geselecteerde items verwijderen?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Werkruimte verwijderen"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Werkruimte \"$1\" verwijderen? Alle bladwijzers in deze werkruimte worden verwijderd."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Aangepaste afbeelding"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Alleen pictogram"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Voorbeeld (Schermafbeelding)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Weergavetype"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Map bewerken"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Werkruimte bewerken"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Klik op \"$1\" om te beginnen"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Nog geen bladwijzers"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Animaties inschakelen"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Bladwijzertitel invoeren"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Mapnaam invoeren"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Naam van werkruimte invoeren"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Alle gegevens exporteren"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Gegevens exporteren mislukt: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Gegevens succesvol geëxporteerd!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Mooie visuele bladwijzers met slepen en neerzetten voor je nieuwe tabblad"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Vul alle verplichte velden in."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Map"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Mapkleur"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Map: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Mappictogram"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Mapnaam"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Map (Optioneel)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mapinstellingen"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Pictogram"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "$1 bladwijzers gevonden. Alles importeren?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Geen bladwijzers gevonden om te importeren."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 bladwijzers succesvol geïmporteerd!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Gegevens importeren van $1?\n\nDit vervangt alle huidige gegevens!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Gegevens importeren"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Gegevens importeren mislukt: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Gegevens succesvol geïmporteerd! Pagina wordt herladen..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Ongeldige selectie."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Voer een geldige URL in."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Engels"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Frans"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Duits"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugees (Brazilië)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spaans"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Taal"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Hoe links openen?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Nieuw venster"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Zelfde tabblad"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Werkruimte vergrendelen"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migreer je visuele bladwijzers van chrome.storage naar IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Tool voor opslagmigratie"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Bladwijzer toevoegen"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Bladwijzer bewerken"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Kan bladwijzer niet verplaatsen: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Kan bladwijzer niet verplaatsen. Probeer het opnieuw."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Selecteer map om naartoe te verplaatsen:\n\n$1\n\nVoer nummer in:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Kan bladwijzer niet naar map verplaatsen: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Kan bladwijzer niet naar map verplaatsen. Probeer het opnieuw."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Naar bureaublad verplaatsen"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Naar andere map verplaatsen"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Verplaatsen naar werkruimte"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Nieuwe bladwijzer"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Geen bladwijzers in deze map."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Geen map"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Geen andere mappen beschikbaar. Maak eerst een nieuwe map."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Geen bladwijzers in voorbeeldmodus gevonden."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organisatie"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Voorinstelde achtergronden"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Voltooid!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Beoordeel onze extensie"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Geniet je van onze extensie? Geef ons een beoordeling en laat een review achter!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Alle schermafbeeldingen vernieuwen"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Bezig met vernieuwen van $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Screenshot vernieuwen mislukt: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Screenshot vernieuwen"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Screenshots voor $1 bladwijzers worden vernieuwd. Doorgaan?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Screenshots vernieuwen mislukt. Probeer het opnieuw."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Achtergrond verwijderen"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Map hernoemen"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Weet je het zeker? Dit verwijdert AL je bladwijzers en instellingen!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Echt zeker? Dit kan niet ongedaan worden gemaakt!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Alle gegevens resetten"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Opslaan"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Bezig met vastleggen..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Beheer van schermafbeeldingen"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Klik op vernieuwen om opnieuw te proberen"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Werkruimte selecteren"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Selecteer een pictogram."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Geselecteerd"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Kleur instellen"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Instellingen"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Raster tonen"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Bladwijzerlabels tonen"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Log tonen"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Grootte"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Extra groot (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Groot (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Middel (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Klein (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Migratie starten"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Beoordeel ons"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Thema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (Systeem)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Donker"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Licht"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titel"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Werkruimte ontgrendelen"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Werkruimte bijwerken mislukt: $1\n\nJe gegevens zijn veilig — wijzigingen zijn niet toegepast."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Visuele instellingen"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Nieuw"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Instellingen zijn nu georganiseerd in tabbladen."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Kies hoe links openen: nieuw venster of hetzelfde tabblad."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Raster met uitlijningsaccenten en schone modus."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Multiselect-werkbalk om te verwijderen en te schalen."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videobackgrounds (.webm) ondersteund (tot 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Bij het verwijderen van een map worden de bladwijzers ook verwijderd."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Vergrendel een werkruimte om onbedoelde wijzigingen te voorkomen."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Bladwijzerkaarten tonen nu een aanwijscursor bij hover."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Werkruimte: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Naam van werkruimte"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Werkruimte-instellingen"
+   }
+}

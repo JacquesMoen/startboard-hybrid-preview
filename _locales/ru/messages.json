@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Добавить закладку"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Добавить закладку в StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Добавить папку"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Добавить новое рабочее пространство"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Добавить рабочее пространство"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Автоупорядочить закладки"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Авто-расставить все закладки и папки в текущем рабочем пространстве?\n\nЭлементы будут выстроены в сетку с минимальным размером."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Автоматически упорядочивает все закладки и папки в текущем рабочем пространстве в аккуратную сетку."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Организовано закладок: $1, папок: $2!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Фон"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Не удалось обработать файл. Попробуйте другой файл."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Пожалуйста, выберите изображение или .webm видео."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Файл слишком большой. Максимум 25 МБ."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Неподдерживаемый файл. Используйте изображение или .webm видео."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Видео: до 25 МБ"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Резервное копирование и восстановление"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Северное сияние"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Пользовательский"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Тёмный космос"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Лес"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Лаванда"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Светлые волны"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Полночь"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Ночное небо"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Океан"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Мягкий градиент"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Закат"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Закладка перемещена в \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Отмена"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Нельзя удалить последнее рабочее пространство!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Сделать все скриншоты"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Делаем скриншот: $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Будут сделаны скриншоты для $1 закладок. Это может занять несколько минут. Продолжить?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Не удалось сделать скриншоты. Попробуйте еще раз."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Создание скриншотов..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Изменить фон"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Изменить цвет"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Изменить значок"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Изменить фон рабочего пространства"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Проверить текущее хранилище"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Выбрать цвет закладки"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Выбрать изображение или видео"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Хранилище Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Чистый режим"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Синий"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "По умолчанию"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Зелёный"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Нет"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Оранжевый"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Розовый"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Фиолетовый"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Красный"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Жёлтый"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Создать папку"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Пользовательское изображение"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Свое изображение/видео"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Удалить эту закладку?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Удалить папку"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Удалить эту папку и все закладки внутри?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Удалить выбранные"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Удалить выбранные элементы?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Удалить рабочее пространство"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Удалить рабочее пространство \"$1\"? Все закладки в этом рабочем пространстве будут удалены."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Пользовательское изображение"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Только значок"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Превью (скриншот)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Тип отображения"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Редактировать папку"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Редактировать рабочее пространство"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Нажмите \"$1\", чтобы начать"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Закладок пока нет"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Включить анимации"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Введите название закладки"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Введите название папки"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Введите название рабочего пространства"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Экспортировать все данные"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Не удалось экспортировать данные: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Данные успешно экспортированы!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Красивые визуальные закладки с поддержкой перетаскивания для новой вкладки"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Пожалуйста, заполните все обязательные поля."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Папка"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Цвет папки"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Папка: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Значок папки"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 элементов"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Название папки"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Папка (необязательно)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Настройки папки"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Значок"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Найдено закладок: $1. Импортировать все?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Закладки для импорта не найдены."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Импортировано закладок: $1!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Импортировать данные от $1?\n\nЭто заменит все текущие данные!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Импортировать данные"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Не удалось импортировать данные: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Данные импортированы! Перезагрузка страницы..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Неверный выбор."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Пожалуйста, введите корректный URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Английский"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Французский"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Немецкий"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Португальский (Бразилия)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Испанский"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Язык"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Как открывать ссылки?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Новое окно"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Та же вкладка"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Заблокировать рабочее пространство"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Перенесите визуальные закладки из chrome.storage в IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Инструмент миграции хранилища"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Добавить закладку"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Редактировать закладку"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Не удалось переместить закладку: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Не удалось переместить закладку. Попробуйте еще раз."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Выберите папку для переноса:\n\n$1\n\nВведите номер:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Не удалось переместить закладку в папку: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Не удалось переместить закладку в папку. Попробуйте еще раз."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Переместить на рабочий стол"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Переместить в другую папку"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Переместить в рабочее пространство"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Новая закладка"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "В этой папке нет закладок."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Без папки"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Нет других папок. Сначала создайте новую папку."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Нет закладок с режимом предпросмотра."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Организация"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Предустановленные фоны"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Готово!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Оценить расширение"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Нравится наше расширение? Пожалуйста, оцените и оставьте отзыв!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Обновить все скриншоты"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Обновляем: $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Не удалось обновить скриншот: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Обновить скриншот"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Будут обновлены скриншоты для $1 закладок. Продолжить?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Не удалось обновить скриншоты. Попробуйте еще раз."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Удалить фон"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Переименовать папку"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Вы уверены? Это удалит ВСЕ ваши закладки и настройки!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Точно? Это действие нельзя отменить!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Сбросить все данные"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Сохранить"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Снимок экрана..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Управление скриншотами"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Нажмите обновить, чтобы повторить"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Выбрать рабочее пространство"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Пожалуйста, выберите значок."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Выбрано"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Установить цвет"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Настройки"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Показать сетку"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Показывать подписи закладок"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Показать журнал"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Размер"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Очень большой (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Большой (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Средний (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Маленький (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Начать миграцию"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Оцените нас"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Тема"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Авто (система)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Тёмная"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Светлая"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Название"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Разблокировать рабочее пространство"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Не удалось обновить рабочее пространство: $1\n\nВаши данные в безопасности — изменения не были применены."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Визуальные настройки"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Что нового"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Настройки теперь сгруппированы по вкладкам."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Выбор, как открывать ссылки: новое окно или та же вкладка."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Сетка с подсветкой выравнивания и чистый режим."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Панель множественного выбора для удаления и изменения размера."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Поддержка видеофонов (.webm) (до 25 МБ)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "При удалении папки теперь удаляются и её закладки."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Добавили блокировку рабочего пространства, чтобы избежать случайных изменений."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Карточки закладок теперь показывают курсор‑указатель при наведении."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Рабочее пространство: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Название рабочего пространства"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Настройки рабочего пространства"
+   }
+}

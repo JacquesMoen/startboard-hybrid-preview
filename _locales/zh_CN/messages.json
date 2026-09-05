@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "添加书签"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "添加书签到 StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "添加文件夹"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "添加新工作区"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "添加工作区"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "自动排列书签"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "自动将当前工作区中的所有书签和文件夹整理为整齐的网格布局。"
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "背景"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "无法处理文件。请尝试其他文件。"
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "请选择图片或 .webm 视频。"
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "文件太大。最大 25 MB。"
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "不支持的文件。请使用图片或 .webm 视频。"
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "视频：最多 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "备份与恢复"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "极光"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "自定义"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "黑暗太空"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "森林"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "薰衣草"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "浅色波纹"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "午夜"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "夜空"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "海洋"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "柔和渐变"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "日落"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "取消"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "捕获所有截图"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "正在捕获截图..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "更改背景"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "更改颜色"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "更改图标"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "更改工作区背景"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "检查当前存储"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "选择书签颜色"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "选择图片或视频"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome 存储"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "纯净模式"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "蓝色"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "默认"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "绿色"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "无"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "橙色"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "粉色"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "紫色"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "红色"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "黄色"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "创建文件夹"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "自定义图片"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "自定义图片/视频"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "删除文件夹"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "删除此文件夹及其中所有书签？"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "删除已选择"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "删除所选项目？"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "删除工作区"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "自定义图片"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "仅图标"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "预览（截图）"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "显示类型"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "编辑文件夹"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "编辑工作区"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "启用动画"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "输入书签标题"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "输入文件夹名称"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "输入工作区名称"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "导出所有数据"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "为新标签页提供拖放支持的精美可视化书签"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "文件夹"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "文件夹颜色"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "文件夹图标"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "文件夹名称"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "文件夹（可选）"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "文件夹设置"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "图标"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "导入数据"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "英语"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "法语"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "德语"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "葡萄牙语（巴西）"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "西班牙语"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "语言"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "如何打开链接？"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "新窗口"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "同一标签页"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "锁定工作区"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "将你的可视化书签从 chrome.storage 迁移到 IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "存储迁移工具"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "添加书签"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "移动到工作区"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "无文件夹"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "整理"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "预设背景"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "为扩展评分"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "喜欢我们的扩展吗？请为我们评分并留下评论！"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "刷新所有截图"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "移除背景"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "重命名文件夹"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "重置所有数据"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "保存"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "截图管理"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "选择工作区"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "已选择"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "设置颜色"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "设置"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "显示网格"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "显示书签标签"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "显示日志"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "大小"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "特大 (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "大 (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "中 (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "小 (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "开始迁移"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "给我们评分"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "主题"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "自动（系统）"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "深色"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "浅色"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "标题"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "解锁工作区"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "视觉设置"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "新内容"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "设置现在按选项卡组织。"
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "选择链接打开方式：新窗口或同一标签页。"
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "带对齐高亮的网格和简洁模式。"
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "多选工具栏用于删除和调整大小。"
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "支持视频背景（.webm，最大 25 MB）。"
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "删除文件夹时也会删除其中的书签。"
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "新增工作区锁定，防止误操作。"
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "书签卡片悬停时显示指针光标。"
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "工作区名称"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "工作区设置"
+   }
+}

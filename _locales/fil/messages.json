@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Magdagdag ng bookmark"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Magdagdag ng bookmark sa StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Magdagdag ng folder"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Magdagdag ng bagong workspace"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Magdagdag ng workspace"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Awtomatikong ayusin ang mga bookmark"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Awtomatikong inaayos ang lahat ng bookmark at folder sa kasalukuyang workspace sa maayos na grid layout."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Background"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Hindi naproseso ang file. Subukan ang ibang file."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Pakipili ang larawan o .webm video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Masyadong malaki ang file. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Hindi suportadong file. Gumamit ng larawan o .webm video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: hanggang 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Backup at Restore"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Custom"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Madilim na kalawakan"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Gubat"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavender"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Maliwanag na alon"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Hatinggabi"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Gabi na langit"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Karagatan"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Malambot na gradient"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Paglubog ng araw"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Kanselahin"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Kunin ang lahat ng screenshot"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Kinukuha ang mga screenshot..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Palitan ang background"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Palitan ang kulay"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Palitan ang icon"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Palitan ang background ng workspace"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Suriin ang kasalukuyang storage"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Pumili ng kulay ng bookmark"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Pumili ng larawan o video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome Storage"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Malinis na mode"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Asul"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Default"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Berde"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Wala"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Kahel"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rosas"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Lila"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Pula"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Dilaw"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Gumawa ng folder"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Custom na larawan"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Custom na larawan/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Tanggalin ang folder"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Tanggalin ang folder na ito at lahat ng bookmark sa loob?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Tanggalin ang napili"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Tanggalin ang mga napiling item?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Tanggalin ang workspace"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Custom na larawan"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Icon lang"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Preview (Screenshot)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Uri ng display"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "I-edit ang folder"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "I-edit ang workspace"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "I-enable ang mga animation"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Ilagay ang pamagat ng bookmark"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Ilagay ang pangalan ng folder"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Ilagay ang pangalan ng workspace"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "I-export ang lahat ng data"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Magagandang visual na bookmark na may drag & drop na suporta para sa iyong bagong tab page"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Folder"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Kulay ng folder"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Icon ng folder"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Pangalan ng folder"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Folder (Opsyonal)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mga setting ng folder"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Icon"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Mag-import ng data"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Ingles"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Pranses"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Aleman"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portuges (Brazil)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Espanyol"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Wika"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Paano buksan ang mga link?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Bagong window"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Parehong tab"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "I-lock ang workspace"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Ilipat ang iyong visual na bookmark mula chrome.storage patungong IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Kasangkapan sa paglipat ng storage"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Magdagdag ng bookmark"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Ilipat sa workspace"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Walang folder"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Pag-aayos"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Mga preset na background"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "I-rate ang aming extension"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Nag-eenjoy ka ba sa aming extension? Paki-rate at mag-iwan ng review!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "I-refresh ang lahat ng screenshot"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Alisin ang background"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Palitan ang pangalan ng folder"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "I-reset ang lahat ng data"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "I-save"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Pamamahala ng screenshot"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Pumili ng workspace"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Napili"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Itakda ang kulay"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Mga setting"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Ipakita ang grid"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Ipakita ang mga label ng bookmark"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Ipakita ang log"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Laki"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Sobrang laki (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Malaki (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Katamtaman (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Maliit (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Simulan ang paglipat"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "I-rate kami"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (System)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Madilim"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Maliwanag"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Pamagat"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "I-unlock ang workspace"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Mga visual na setting"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Ano'ng Bago"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Ang mga setting ay nakaayos na sa mga tab."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Piliin kung paano bubuksan ang mga link: bagong window o parehong tab."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Grid na may alignment highlight at clean mode."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Multi-select toolbar para mag-delete at mag-resize."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Suportado ang video backgrounds (.webm) (hanggang 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Kapag nag-delete ng folder, mabubura rin ang mga bookmark nito."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "I-lock ang workspace para maiwasan ang hindi sinasadyang pagbabago."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Nagpapakita na ng pointer cursor ang mga bookmark card kapag naka-hover."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Pangalan ng workspace"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Mga setting ng workspace"
+   }
+}

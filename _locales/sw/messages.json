@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Ongeza alamisho"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Ongeza alamisho kwenye StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Ongeza folda"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Ongeza nafasi mpya ya kazi"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Ongeza nafasi ya kazi"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Panga alamisho kiotomatiki"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Hupanga kiotomatiki alamisho na folda zote kwenye nafasi ya kazi ya sasa katika mpangilio wa gridi nadhifu."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Usuli"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Imeshindwa kuchakata faili. Jaribu faili nyingine."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Tafadhali chagua picha au video ya .webm."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Faili ni kubwa sana. Upeo 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Faili halitumiki. Tumia picha au video ya .webm."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: hadi 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Hifadhi nakala na rudisha"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Aurora"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Maalum"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Nafasi ya giza"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Msitu"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavender"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Mawimbi meupe"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Usiku wa manane"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Anga ya usiku"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Bahari"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Mpito laini"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Machweo"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Ghairi"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Piga picha za skrini zote"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Inapiga picha za skrini..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Badilisha usuli"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Badilisha rangi"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Badilisha ikoni"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Badilisha usuli wa nafasi ya kazi"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Kagua hifadhi ya sasa"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Chagua rangi ya alamisho"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Chagua picha au video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Hifadhi ya Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Hali safi"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Bluu"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Chaguo-msingi"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Kijani"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Hakuna"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Machungwa"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Waridi"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Zambarau"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Nyekundu"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Njano"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Unda folda"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Picha maalum"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Picha/Video maalum"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Futa folda"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Futa folda hii na alamisho zote zilizo ndani?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Futa zilizochaguliwa"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Futa vipengee vilivyochaguliwa?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Futa nafasi ya kazi"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Picha maalum"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Ikoni pekee"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Hakiki (Picha ya skrini)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Aina ya onyesho"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Hariri folda"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Hariri nafasi ya kazi"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Wezesha uhuishaji"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Ingiza kichwa cha alamisho"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Ingiza jina la folda"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Ingiza jina la nafasi ya kazi"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Hamisha data yote"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Vialamisho vya kuona vizuri vyenye msaada wa buruta na udondoshe kwa ukurasa wako wa kichupo kipya"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Folda"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Rangi ya folda"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Ikoni ya folda"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Jina la folda"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Folda (Hiari)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mipangilio ya folda"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Ikoni"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Leta data"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Kiingereza"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Kifaransa"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Kijerumani"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Kireno (Brazili)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Kihispania"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Lugha"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Jinsi ya kufungua viungo?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Dirisha jipya"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Kichupo hicho hicho"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Funga sehemu ya kazi"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Hamisha alamisho zako za kuona kutoka chrome.storage hadi IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Zana ya uhamishaji wa hifadhi"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Ongeza alamisho"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Hamisha kwenda nafasi ya kazi"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Hakuna folda"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Mpangilio"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Usuli uliowekwa tayari"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Kadiria kiendelezi chetu"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Unafurahia kiendelezi chetu? Tafadhali kadiria na acha hakiki!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Sasisha picha za skrini zote"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Ondoa usuli"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Badilisha jina la folda"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Weka upya data yote"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Hifadhi"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Usimamizi wa picha za skrini"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Chagua nafasi ya kazi"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Imechaguliwa"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Weka rangi"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Mipangilio"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Onyesha gridi"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Onyesha lebo za alamisho"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Onyesha kumbukumbu"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Ukubwa"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Kubwa sana (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Kubwa (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Wastani (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Ndogo (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Anza uhamishaji"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Tupatie ukadiriaji"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Mandhari"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Otomatiki (Mfumo)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Giza"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Angavu"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Kichwa"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Fungua sehemu ya kazi"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Mipangilio ya mwonekano"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Nini Kipya"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Mipangilio sasa imepangwa kwenye vichupo."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Chagua jinsi viungo vinafunguliwa: dirisha jipya au kichupo hicho."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Gridi yenye kuangazia mpangilio na hali safi."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Upau wa kuchagua nyingi kwa kufuta na kubadili ukubwa."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Mandhari ya video (.webm) yanaungwa mkono (hadi 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Kufuta folda sasa kunafuta pia alamisho zake."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Funga sehemu ya kazi ili kuzuia mabadiliko ya bahati mbaya."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Kadi za alamisho sasa zinaonyesha kielekezi unapopeleka kipanya."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Jina la nafasi ya kazi"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Mipangilio ya nafasi ya kazi"
+   }
+}

@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "북마크 추가"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard에 북마크 추가"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "폴더 추가"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "새 작업공간 추가"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "작업공간 추가"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "북마크 자동 정렬"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "현재 작업공간의 모든 북마크와 폴더를 깔끔한 그리드 레이아웃으로 자동 정리합니다."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "배경"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "파일 처리에 실패했습니다. 다른 파일을 시도하세요."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "이미지 또는 .webm 비디오를 선택하세요."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "파일이 너무 큽니다. 최대 25MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "지원되지 않는 파일입니다. 이미지 또는 .webm 비디오를 사용하세요."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "동영상: 최대 25MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "백업 및 복원"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "오로라"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "사용자 지정"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "다크 스페이스"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "숲"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "라벤더"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "라이트 웨이브"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "한밤"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "밤하늘"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "바다"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "부드러운 그라디언트"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "일몰"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "취소"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "모든 스크린샷 캡처"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "스크린샷 캡처 중..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "배경 변경"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "색상 변경"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "아이콘 변경"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "작업공간 배경 변경"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "현재 저장소 확인"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "북마크 색상 선택"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "이미지 또는 비디오 선택"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome 저장소"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "클린 모드"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "파랑"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "기본값"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "초록"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "없음"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "주황"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "분홍"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "보라"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "빨강"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "노랑"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "폴더 만들기"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "사용자 이미지"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "사용자 지정 이미지/비디오"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "폴더 삭제"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "이 폴더와 안의 모든 북마크를 삭제할까요?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "선택 항목 삭제"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "선택한 항목을 삭제할까요?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "작업공간 삭제"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "사용자 이미지"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "아이콘만"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "미리보기(스크린샷)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "표시 유형"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "폴더 편집"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "작업공간 편집"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "애니메이션 사용"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "북마크 제목 입력"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "폴더 이름 입력"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "작업공간 이름 입력"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "모든 데이터 내보내기"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "새 탭 페이지를 위한 아름다운 비주얼 북마크, 드래그 앤 드롭 지원"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "폴더"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "폴더 색상"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "폴더 아이콘"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "폴더 이름"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "폴더(선택 사항)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "폴더 설정"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "아이콘"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "데이터 가져오기"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "영어"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "프랑스어"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "독일어"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "포르투갈어(브라질)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "스페인어"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "언어"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "링크를 여는 방법"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "새 창"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "같은 탭"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "워크스페이스 잠금"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "chrome.storage에서 IndexedDB로 비주얼 북마크를 마이그레이션합니다"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "저장소 마이그레이션 도구"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "북마크 추가"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "작업공간으로 이동"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "폴더 없음"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "정리"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "기본 배경"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "확장 프로그램 평가"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "확장 프로그램이 마음에 드시나요? 평가와 리뷰를 부탁드립니다!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "모든 스크린샷 새로고침"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "배경 제거"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "폴더 이름 변경"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "모든 데이터 재설정"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "저장"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "스크린샷 관리"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "작업공간 선택"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "선택됨"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "색상 설정"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "설정"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "그리드 표시"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "북마크 라벨 표시"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "로그 표시"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "크기"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "아주 크게 (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "크게 (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "보통 (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "작게 (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "마이그레이션 시작"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "평가해 주세요"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "테마"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "자동(시스템)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "다크"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "라이트"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "제목"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "워크스페이스 잠금 해제"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "시각 설정"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "새로운 기능"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "설정이 이제 탭으로 정리되었습니다."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "링크를 여는 방법을 선택하세요: 새 창 또는 같은 탭."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "정렬 강조가 있는 그리드와 깔끔 모드."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "삭제 및 크기 조정을 위한 다중 선택 툴바."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "비디오 배경(.webm) 지원 (최대 25MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "폴더를 삭제하면 안의 북마크도 삭제됩니다."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "실수로 변경되는 것을 막기 위해 워크스페이스를 잠글 수 있습니다."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "북마크 카드에 마우스를 올리면 포인터 커서가 표시됩니다."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "작업공간 이름"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "작업공간 설정"
+   }
+}

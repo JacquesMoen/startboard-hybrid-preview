@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "புக்மார்க் சேர்க்கவும்"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "StartBoard-இல் புக்மார்க் சேர்க்கவும்"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "கோப்புறை சேர்க்கவும்"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "புதிய பணிமனை சேர்க்கவும்"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "பணிமனை சேர்க்கவும்"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "புக்மார்க்களை தானாக ஒழுங்கமைக்கவும்"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "தற்போதைய பணிமனையில் உள்ள அனைத்து புக்மார்க்களையும் கோப்புறைகளையும் ஒழுங்கான கட்ட வடிவில் தானாக அமைக்கிறது."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "பின்னணி"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "கோப்பு செயலாக்க முடியவில்லை. வேறு கோப்பை முயற்சிக்கவும்."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "தயவு செய்து படம் அல்லது .webm வீடியோ தேர்வு செய்யவும்."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "கோப்பு மிகவும் பெரியது. அதிகபட்சம் 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "ஆதரிக்கப்படாத கோப்பு. படம் அல்லது .webm வீடியோ பயன்படுத்தவும்."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "வீடியோ: அதிகபட்சம் 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "காப்புப்பிரதி மற்றும் மீட்பு"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "ஔரோரா"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "தனிப்பயன்"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "இருண்ட விண்வெளி"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "காடு"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "லாவென்டர்"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "ஒளியலைகள்"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "நள்ளிரவு"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "இரவுக் ஆகாயம்"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "கடல்"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "மென்மையான சாய்வு"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "சூரிய அஸ்தமனம்"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "ரத்து"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "அனைத்து திரைப் படங்களையும் எடுக்கவும்"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "திரைப் படங்கள் எடுக்கப்படுகிறது..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "பின்னணியை மாற்றவும்"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "நிறத்தை மாற்றவும்"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "ஐகானை மாற்றவும்"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "பணிமனை பின்னணியை மாற்றவும்"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "தற்போதைய சேமிப்பை சரிபார்க்கவும்"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "புக்மார்க் நிறத்தைத் தேர்ந்தெடுக்கவும்"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "படம் அல்லது வீடியோ தேர்வு செய்யவும்"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome சேமிப்பு"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "சுத்தமான முறை"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "நீலம்"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "இயல்புநிலை"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "பச்சை"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "இல்லை"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "ஆரஞ்சு"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "இளஞ்சிவப்பு"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "ஊதா"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "சிவப்பு"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "மஞ்சள்"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "கோப்புறை உருவாக்கவும்"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "தனிப்பயன் படம்"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "தனிப்பயன் படம்/வீடியோ"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "கோப்புறை நீக்கவும்"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "இந்த கோப்புறையும் உள்ளேயுள்ள அனைத்து புத்தகக்குறிகளையும் நீக்கவா?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "தேர்ந்தெடுத்தவற்றை நீக்கு"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "தேர்ந்தெடுத்த உருப்படிகளை நீக்கவா?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "பணிமனை நீக்கவும்"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "தனிப்பயன் படம்"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "ஐகான் மட்டும்"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "முன்னோட்டம் (திரைப் படம்)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "காட்சித் தன்மை"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "கோப்புறைத் திருத்தம்"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "பணிமனைத் திருத்தம்"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "அனிமேஷன்களை இயக்கு"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "புக்மார்க் தலைப்பை உள்ளிடவும்"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "கோப்புறை பெயரை உள்ளிடவும்"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "பணிமனை பெயரை உள்ளிடவும்"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "அனைத்து தரவையும் ஏற்றுமதி செய்யவும்"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "உங்கள் புதிய தாவல் பக்கத்திற்கான அழகான காட்சி புக்மார்க்குகள், இழுத்து விடுதல் ஆதரவுடன்"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "கோப்புறை"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "கோப்புறை நிறம்"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "கோப்புறை ஐகான்"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "கோப்புறை பெயர்"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "கோப்புறை (விருப்பம்)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "கோப்புறை அமைப்புகள்"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "ஐகான்"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "தரவை இறக்குமதி செய்யவும்"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "ஆங்கிலம்"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "பிரெஞ்சு"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "ஜெர்மன்"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "போர்ச்சுகீஸ் (பிரேசில்)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "ஸ்பானிஷ்"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "மொழி"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "இணைப்புகளை எப்படித் திறக்கலாம்?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "புதிய சாளரம்"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "அதே தாவல்"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "பணியிடத்தை பூட்டு"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "உங்கள் காட்சி புக்மார்க்குகளை chrome.storage இருந்து IndexedDB க்கு இடமாற்றுங்கள்"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "சேமிப்பு இடமாற்று கருவி"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "புக்மார்க் சேர்க்கவும்"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "பணிமனைக்கு நகர்த்தவும்"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "கோப்புறை இல்லை"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "ஒழுங்கமைப்பு"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "முன்னமைக்கப்பட்ட பின்னணிகள்"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "எங்கள் நீட்டிப்பை மதிப்பிடுங்கள்"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "எங்கள் நீட்டிப்பு பிடித்ததா? தயவுசெய்து மதிப்பிடவும் மற்றும் விமர்சனம் எழுதவும்!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "அனைத்து திரைப் படங்களையும் புதுப்பிக்கவும்"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "பின்னணியை நீக்கு"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "கோப்புறை பெயரை மாற்றவும்"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "அனைத்து தரவையும் மீட்டமைக்கவும்"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "சேமிக்கவும்"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "திரைப் படம் மேலாண்மை"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "பணிமனை தேர்வு செய்யவும்"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "தேர்ந்தெடுக்கப்பட்டது"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "நிறத்தை அமைக்கவும்"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "அமைப்புகள்"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "கிரிட் காட்டு"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "புக்மார்க் லேபிள்களை காட்டவும்"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "பதிவை காண்பி"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "அளவு"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "மிகப் பெரியது (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "பெரியது (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "நடுத்தரம் (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "சிறியது (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "இடமாற்றத்தை தொடங்கு"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "எங்களை மதிப்பிடுங்கள்"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "தீம்"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "தானாக (கணினி)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "இருள்"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "ஒளிர்"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "தலைப்பு"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "பணியிடத்தை திற"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "காட்சி அமைப்புகள்"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "புதியது என்ன"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "அமைப்புகள் இப்போது தாவல்கள் ஆக ஒழுங்குபடுத்தப்பட்டுள்ளன."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "இணைப்புகள் எப்படி திறக்க வேண்டும் என்பதை தேர்வு செய்யுங்கள்: புதிய சாளரம் அல்லது அதே தாவல்."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "ஒழுங்கமைப்பு ஹைலைட்டுடன் கட்டமைப்பு மற்றும் சுத்தமான முறை."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "பலத் தேர்வு கருவிப்பட்டி: நீக்கு மற்றும் அளவு மாற்று."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "வீடியோ பின்னணி (.webm) ஆதரிக்கப்படுகிறது (25 MB வரை)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "கோப்புறையை நீக்கியால் அதன் புத்தகக்குறிகளும் நீக்கப்படும்."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "தற்செயலான மாற்றங்களைத் தடுக்கும் வகையில் பணியிடத்தை பூட்டுங்கள்."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "புக் மார்க் கார்டுகள் இப்போது ஹோவர் செய்யும் போது pointer cursor ஐ காட்டும்."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "பணிமனை பெயர்"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "பணிமனை அமைப்புகள்"
+   }
+}

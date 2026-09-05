@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Lesezeichen hinzufügen"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Lesezeichen zu StartBoard hinzufügen"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Ordner hinzufügen"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Neuer Arbeitsbereich"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Arbeitsbereich hinzufügen"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Lesezeichen automatisch anordnen"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Alle Lesezeichen und Ordner im aktuellen Arbeitsbereich automatisch anordnen?\n\nSie werden in ein Raster mit minimaler Größe einsortiert."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organisiert automatisch alle Lesezeichen und Ordner im aktuellen Arbeitsbereich in einem ordentlichen Rasterlayout."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "$1 Lesezeichen und $2 Ordner organisiert!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Hintergrund"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Datei konnte nicht verarbeitet werden. Bitte versuchen Sie eine andere Datei."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Bitte wählen Sie ein Bild oder ein .webm-Video aus."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Datei ist zu groß. Max. 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Datei nicht unterstützt. Verwenden Sie ein Bild oder ein .webm-Video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: bis zu 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Sichern & Wiederherstellen"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Polarlicht"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Benutzerdefiniert"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Dunkler Raum"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Wald"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavendel"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Helle Wellen"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Mitternacht"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Nachthimmel"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Ozean"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Weicher Verlauf"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Sonnenuntergang"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Lesezeichen in \"$1\" verschoben"
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Abbrechen"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Der letzte Arbeitsbereich kann nicht gelöscht werden."
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Alle Screenshots erfassen"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Erfasse $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Für $1 Lesezeichen werden Screenshots erstellt. Das kann einige Minuten dauern. Fortfahren?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Screenshots konnten nicht erstellt werden. Bitte versuche es erneut."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Screenshots werden erfasst..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Hintergrund ändern"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Farbe ändern"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Symbol ändern"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Arbeitsbereich-Hintergrund ändern"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Aktuellen Speicher überprüfen"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Lesezeichen-Farbe wählen"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Bild oder Video auswählen"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome-Speicher"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Aufgeräumter Modus"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Blau"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Standard"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Grün"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Keine"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Orange"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rosa"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Lila"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Rot"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Gelb"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Ordner erstellen"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Eigenes Bild"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Benutzerdefiniertes Bild/Video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Möchtest du dieses Lesezeichen wirklich löschen?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Ordner löschen"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Diesen Ordner und alle darin enthaltenen Lesezeichen löschen?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Ausgewählte löschen"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Ausgewählte Elemente löschen?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Arbeitsbereich löschen"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Arbeitsbereich \"$1\" löschen? Alle Lesezeichen in diesem Arbeitsbereich werden gelöscht."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Eigenes Bild"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Nur Symbol"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Vorschau (Screenshot)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Anzeigetyp"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Ordner bearbeiten"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Arbeitsbereich bearbeiten"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Klicke auf \"$1\", um zu starten"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Noch keine Lesezeichen"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Animationen aktivieren"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Lesezeichen-Titel eingeben"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Ordner-Name eingeben"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Arbeitsbereich-Name eingeben"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Alle Daten exportieren"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Daten konnten nicht exportiert werden: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Daten erfolgreich exportiert!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Schöne visuelle Lesezeichen mit Drag & Drop-Unterstützung für Ihre neue Tab-Seite"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Bitte fülle alle Pflichtfelder aus."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Ordner"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Ordner-Farbe"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Ordner: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Ordner-Symbol"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 Elemente"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Ordner-Name"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Ordner (Optional)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Ordner-Einstellungen"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Symbol"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "$1 Lesezeichen gefunden. Alle importieren?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Keine Lesezeichen zum Importieren gefunden."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 Lesezeichen erfolgreich importiert!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Daten von $1 importieren?\n\nDadurch werden alle aktuellen Daten ersetzt!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Daten importieren"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Daten konnten nicht importiert werden: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Daten erfolgreich importiert! Seite wird neu geladen..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Ungültige Auswahl."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Bitte gib eine gültige URL ein."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Englisch"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Französisch"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Deutsch"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugiesisch (Brasilien)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spanisch"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Sprache"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Wie sollen Links geöffnet werden?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Neues Fenster"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Gleicher Tab"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Arbeitsbereich sperren"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrieren Sie Ihre visuellen Lesezeichen von chrome.storage zu IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Speicher-Migrationstool"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Lesezeichen hinzufügen"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Lesezeichen bearbeiten"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Lesezeichen konnte nicht verschoben werden: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Lesezeichen konnte nicht verschoben werden. Bitte versuche es erneut."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Ordner zum Verschieben auswählen:\n\n$1\n\nNummer eingeben:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Lesezeichen konnte nicht in den Ordner verschoben werden: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Lesezeichen konnte nicht in den Ordner verschoben werden. Bitte versuche es erneut."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Auf Desktop verschieben"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "In anderen Ordner verschieben"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Zu Arbeitsbereich verschieben"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Neues Lesezeichen"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Keine Lesezeichen in diesem Ordner."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Kein Ordner"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Keine anderen Ordner verfügbar. Erstelle zuerst einen neuen Ordner."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Keine Lesezeichen im Vorschaumodus gefunden."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organisation"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Voreingestellte Hintergründe"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Fertig!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Bewerten Sie unsere Erweiterung"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Gefällt Ihnen unsere Erweiterung? Bitte bewerten und rezensieren Sie uns!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Alle Screenshots aktualisieren"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Aktualisiere $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Screenshot konnte nicht aktualisiert werden: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Screenshot aktualisieren"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Screenshots für $1 Lesezeichen werden aktualisiert. Fortfahren?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Screenshots konnten nicht aktualisiert werden. Bitte versuche es erneut."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Hintergrund entfernen"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Ordner umbenennen"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Bist du sicher? Dadurch werden ALLE Lesezeichen und Einstellungen gelöscht!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Wirklich sicher? Dies kann nicht rückgängig gemacht werden!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Alle Daten zurücksetzen"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Speichern"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Erfassen..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Screenshot-Verwaltung"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Zum erneuten Versuch auf Aktualisieren klicken"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Arbeitsbereich auswählen"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Bitte wähle ein Symbol aus."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Ausgewählt"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Farbe festlegen"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Einstellungen"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Raster anzeigen"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Lesezeichen-Beschriftungen anzeigen"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Protokoll anzeigen"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Größe"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Extra groß (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Groß (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Mittel (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Klein (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Migration starten"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Bewerten Sie uns"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Design"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Automatisch (System)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Dunkel"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Hell"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titel"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Arbeitsbereich entsperren"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Arbeitsbereich konnte nicht aktualisiert werden: $1\n\nDeine Daten sind sicher – Änderungen wurden nicht übernommen."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Visuelle Einstellungen"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Neuigkeiten"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Einstellungen sind jetzt in Tabs organisiert."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Wähle, wie Links geöffnet werden: neues Fenster oder gleicher Tab."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Raster mit Ausrichtungsmarkierungen und Clean-Modus."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Mehrfachauswahl-Leiste zum Löschen und Ändern der Größe."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videohintergründe (.webm) werden unterstützt (bis zu 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Beim Löschen eines Ordners werden nun dessen Lesezeichen entfernt."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Arbeitsbereich sperren, um versehentliche Änderungen zu verhindern."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Lesezeichen zeigen jetzt beim Hover einen Zeiger-Cursor."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Arbeitsbereich: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Arbeitsbereich-Name"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Arbeitsbereich-Einstellungen"
+   }
+}

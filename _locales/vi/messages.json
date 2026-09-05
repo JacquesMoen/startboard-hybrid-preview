@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Thêm dấu trang"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Thêm dấu trang vào StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Thêm thư mục"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Thêm không gian làm việc mới"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Thêm không gian làm việc"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Tự động sắp xếp dấu trang"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Tự động sắp xếp tất cả dấu trang và thư mục trong không gian làm việc hiện tại thành bố cục lưới gọn gàng."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Nền"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Không xử lý được tệp. Hãy thử tệp khác."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Vui lòng chọn hình hoặc video .webm."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Tệp quá lớn. Tối đa 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Tệp không được hỗ trợ. Dùng hình hoặc video .webm."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: tối đa 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Sao lưu & khôi phục"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Cực quang"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Tùy chỉnh"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Không gian tối"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Rừng"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Oải hương"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Sóng sáng"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Nửa đêm"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Bầu trời đêm"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Đại dương"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Chuyển màu nhẹ"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Hoàng hôn"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Hủy"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Chụp tất cả ảnh màn hình"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Đang chụp ảnh màn hình..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Đổi nền"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Đổi màu"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Đổi biểu tượng"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Đổi nền không gian làm việc"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Kiểm tra bộ nhớ hiện tại"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Chọn màu dấu trang"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Chọn hình hoặc video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Bộ nhớ Chrome"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Chế độ sạch"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Xanh dương"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Mặc định"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Xanh lá"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Không"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Cam"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Hồng"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Tím"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Đỏ"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Vàng"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Tạo thư mục"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Hình ảnh tùy chỉnh"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Hình/Video tùy chỉnh"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Xóa thư mục"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Xóa thư mục này và tất cả dấu trang bên trong?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Xóa mục đã chọn"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Xóa các mục đã chọn?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Xóa không gian làm việc"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Hình ảnh tùy chỉnh"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Chỉ biểu tượng"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Xem trước (Ảnh chụp màn hình)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Kiểu hiển thị"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Chỉnh sửa thư mục"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Chỉnh sửa không gian làm việc"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Bật hiệu ứng"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Nhập tiêu đề dấu trang"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Nhập tên thư mục"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Nhập tên không gian làm việc"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Xuất tất cả dữ liệu"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Dấu trang trực quan đẹp mắt với hỗ trợ kéo & thả cho trang tab mới của bạn"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Thư mục"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Màu thư mục"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Biểu tượng thư mục"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Tên thư mục"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Thư mục (Tùy chọn)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Cài đặt thư mục"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Biểu tượng"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Nhập dữ liệu"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Tiếng Anh"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Tiếng Pháp"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Tiếng Đức"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Tiếng Bồ Đào Nha (Brazil)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Tiếng Tây Ban Nha"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Ngôn ngữ"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Cách mở liên kết?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Cửa sổ mới"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Cùng thẻ"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Khóa không gian làm việc"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Di chuyển dấu trang trực quan của bạn từ chrome.storage sang IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Công cụ di chuyển lưu trữ"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Thêm dấu trang"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Chuyển đến không gian làm việc"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Không có thư mục"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Sắp xếp"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Nền đặt sẵn"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Đánh giá tiện ích"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Bạn thích tiện ích của chúng tôi? Hãy đánh giá và để lại nhận xét!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Làm mới tất cả ảnh màn hình"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Xóa nền"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Đổi tên thư mục"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Đặt lại tất cả dữ liệu"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Lưu"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Quản lý ảnh chụp màn hình"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Chọn không gian làm việc"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Đã chọn"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Đặt màu"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Cài đặt"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Hiển thị lưới"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Hiển thị nhãn dấu trang"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Hiển thị nhật ký"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Kích thước"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Rất lớn (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Lớn (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Vừa (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Nhỏ (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Bắt đầu di chuyển"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Hãy đánh giá chúng tôi"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Chủ đề"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Tự động (Hệ thống)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Tối"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Sáng"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Tiêu đề"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Mở khóa không gian làm việc"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Cài đặt hiển thị"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Có gì mới"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Cài đặt hiện được sắp xếp theo tab."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Chọn cách mở liên kết: cửa sổ mới hoặc cùng tab."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Lưới có tô sáng căn chỉnh và chế độ sạch."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Thanh đa chọn để xóa và thay đổi kích thước."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Hỗ trợ nền video (.webm) (tối đa 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Xóa thư mục sẽ xóa luôn các dấu trang bên trong."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Khóa không gian làm việc để tránh thay đổi ngoài ý muốn."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Thẻ dấu trang giờ hiển thị con trỏ khi di chuột."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Tên không gian làm việc"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Cài đặt không gian làm việc"
+   }
+}

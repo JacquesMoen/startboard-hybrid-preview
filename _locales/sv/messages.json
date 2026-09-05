@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Lägg till bokmärke"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Lägg till bokmärke i StartBoard"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Lägg till mapp"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Lägg till ny arbetsyta"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Lägg till arbetsyta"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Ordna bokmärken automatiskt"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto‑ordna alla bokmärken och mappar i aktuell arbetsyta?\n\nDe ordnas i ett rutnät med minsta storlek."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Organiserar automatiskt alla bokmärken och mappar i den aktuella arbetsytan i en snygg rutnätslayout."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Ordnat $1 bokmärken och $2 mappar!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Bakgrund"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "Det gick inte att behandla filen. Prova en annan fil."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Välj en bild eller .webm-video."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "Filen är för stor. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Filen stöds inte. Använd en bild eller .webm-video."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Video: upp till 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Säkerhetskopiering och återställning"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Norrsken"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Anpassad"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Mörk rymd"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Skog"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Lavendel"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Ljusa vågor"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Midnatt"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Natthimmel"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Hav"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Mjuk gradient"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Solnedgång"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bokmärke flyttat till \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Avbryt"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Kan inte ta bort den sista arbetsytan!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Ta alla skärmbilder"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Tar skärmbild av $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "Detta tar skärmbilder för $1 bokmärken. Det kan ta några minuter. Fortsätta?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Det gick inte att ta skärmbilder. Försök igen."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Tar skärmbilder..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Ändra bakgrund"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Ändra färg"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Ändra ikon"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Ändra arbetsytans bakgrund"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Kontrollera aktuell lagring"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Välj bokmärkesfärg"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Välj bild eller video"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome-lagring"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Rent läge"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Blå"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Standard"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Grön"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Ingen"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Orange"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rosa"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Lila"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Röd"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Gul"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Skapa mapp"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Anpassad bild"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Anpassad bild/video"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Vill du ta bort detta bokmärke?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Ta bort mapp"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Ta bort den här mappen och alla bokmärken i den?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Ta bort valda"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Ta bort valda objekt?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Ta bort arbetsyta"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Ta bort arbetsytan \"$1\"? Alla bokmärken i denna arbetsyta tas bort."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Anpassad bild"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Endast ikon"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Förhandsvisning (Skärmbild)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Visningstyp"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Redigera mapp"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Redigera arbetsyta"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Klicka på \"$1\" för att komma igång"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "Inga bokmärken ännu"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Aktivera animationer"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Ange bokmärkets titel"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Ange mappnamn"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Ange arbetsytans namn"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Exportera all data"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Kunde inte exportera data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exporterades!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Vackra visuella bokmärken med dra-och-släpp-stöd för din nya flik-sida"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Fyll i alla obligatoriska fält."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Mapp"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Mappfärg"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Mapp: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Mappikon"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 objekt"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Mappnamn"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Mapp (Valfri)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mappinställningar"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Ikon"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "$1 bokmärken hittades. Importera alla?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "Inga bokmärken hittades att importera."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "$1 bokmärken importerades!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Importera data från $1?\n\nDetta ersätter all nuvarande data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Importera data"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Kunde inte importera data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data importerades! Laddar om sidan..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Ogiltigt val."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Ange en giltig URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Engelska"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Franska"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Tyska"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugisiska (Brasilien)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spanska"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Språk"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Hur ska länkar öppnas?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Nytt fönster"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Samma flik"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Lås arbetsyta"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migrera dina visuella bokmärken från chrome.storage till IndexedDB"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Verktyg för lagringsmigrering"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Lägg till bokmärke"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Redigera bokmärke"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Det gick inte att flytta bokmärket: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Det gick inte att flytta bokmärket. Försök igen."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Välj mapp att flytta till:\n\n$1\n\nAnge nummer:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Det gick inte att flytta bokmärket till mappen: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Det gick inte att flytta bokmärket till mappen. Försök igen."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Flytta till skrivbordet"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Flytta till en annan mapp"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Flytta till arbetsyta"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "Nytt bokmärke"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "Inga bokmärken i den här mappen."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Ingen mapp"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "Inga andra mappar tillgängliga. Skapa en ny mapp först."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "Inga bokmärken i förhandsgranskningsläge hittades."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Organisering"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Förinställda bakgrunder"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Klart!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Betygsätt vårt tillägg"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Gillar du vårt tillägg? Betygsätt och lämna en recension!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Uppdatera alla skärmbilder"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Uppdaterar $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Kunde inte uppdatera skärmbilden: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Uppdatera skärmbild"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "Skärmbilder för $1 bokmärken kommer att uppdateras. Fortsätta?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Det gick inte att uppdatera skärmbilder. Försök igen."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Ta bort bakgrund"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Byt namn på mapp"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Är du säker? Detta tar bort ALLA dina bokmärken och inställningar!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Helt säker? Detta kan inte ångras!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Återställ all data"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Spara"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Tar skärmbild..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Hantering av skärmbilder"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Klicka på uppdatera för att försöka igen"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Välj arbetsyta"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Välj en ikon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Valt"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Ställ in färg"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Inställningar"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Visa rutnät"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Visa bokmärksetiketter"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Visa logg"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Storlek"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Extra stor (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Stor (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Medel (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Liten (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Starta migrering"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Betygsätt oss"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Tema"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (System)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Mörkt"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Ljust"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Titel"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Lås upp arbetsyta"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Det gick inte att uppdatera arbetsytan: $1\n\nDina data är säkra – ändringarna har inte tillämpats."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Visuella inställningar"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Nyheter"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "Inställningarna är nu organiserade i flikar."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Välj hur länkar öppnas: nytt fönster eller samma flik."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Rutnät med justeringsmarkeringar och rent läge."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Flervalsverktygsfält för att radera och ändra storlek."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videobakgrunder (.webm) stöds (upp till 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "När en mapp tas bort tas även dess bokmärken bort."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Lås en arbetsyta för att förhindra oavsiktliga ändringar."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "Bokmärkskort visar nu pekarkursor vid hovring."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Arbetsyta: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Arbetsytans namn"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Inställningar för arbetsyta"
+   }
+}

@@ -1,0 +1,734 @@
+{
+   "addBookmark": {
+      "description": "Add bookmark button tooltip",
+      "message": "Könyvjelző hozzáadása"
+   },
+   "addBookmarkToStartBoard": {
+      "description": "Context menu root title for adding bookmark",
+      "message": "Könyvjelző hozzáadása a StartBoardhoz"
+   },
+   "addFolder": {
+      "description": "Add folder button tooltip",
+      "message": "Mappa hozzáadása"
+   },
+   "addNewWorkspace": {
+      "description": "Add new workspace modal title",
+      "message": "Új munkaterület hozzáadása"
+   },
+   "addWorkspace": {
+      "description": "Add workspace button tooltip",
+      "message": "Munkaterület hozzáadása"
+   },
+   "autoArrange": {
+      "description": "Auto-arrange bookmarks button",
+      "message": "Könyvjelzők automatikus rendezése"
+   },
+   "autoArrangeConfirm": {
+      "description": "Confirm auto-arranging bookmarks",
+      "message": "Auto-arrange all bookmarks and folders in the current workspace?\n\nThis will reorganize them into a grid layout with minimum size."
+   },
+   "autoArrangeDesc": {
+      "description": "Auto-arrange description",
+      "message": "Automatikusan rendezi az aktuális munkaterület összes könyvjelzőjét és mappáját egy rendezett rácsos elrendezésbe."
+   },
+   "autoArrangeSuccess": {
+      "description": "Alert when auto-arrange completes",
+      "message": "Organized $1 bookmarks and $2 folders!"
+   },
+   "background": {
+      "description": "Background field label",
+      "message": "Háttér"
+   },
+   "backgroundMediaFailed": {
+      "description": "Background media processing failed alert",
+      "message": "A fájl feldolgozása sikertelen. Próbáljon másik fájlt."
+   },
+   "backgroundMediaMissing": {
+      "description": "Background media missing alert",
+      "message": "Kérjük, válasszon képet vagy .webm videót."
+   },
+   "backgroundMediaTooLarge": {
+      "description": "Background media too large alert",
+      "message": "A fájl túl nagy. Max 25 MB."
+   },
+   "backgroundMediaUnsupported": {
+      "description": "Unsupported background media alert",
+      "message": "Nem támogatott fájl. Használjon képet vagy .webm videót."
+   },
+   "backgroundVideoLimit": {
+      "description": "Video size limit hint",
+      "message": "Videó: legfeljebb 25 MB"
+   },
+   "backupRestore": {
+      "description": "Backup & Restore section header",
+      "message": "Biztonsági mentés és visszaállítás"
+   },
+   "bgAurora": {
+      "description": "Aurora background preset",
+      "message": "Sarki fény"
+   },
+   "bgCustom": {
+      "description": "Custom background option",
+      "message": "Egyéni"
+   },
+   "bgDarkSpace": {
+      "description": "Dark Space background preset",
+      "message": "Sötét űr"
+   },
+   "bgForest": {
+      "description": "Forest background preset",
+      "message": "Erdő"
+   },
+   "bgLavender": {
+      "description": "Lavender background preset",
+      "message": "Levendula"
+   },
+   "bgLightWaves": {
+      "description": "Light Waves background preset",
+      "message": "Világos hullámok"
+   },
+   "bgMidnight": {
+      "description": "Midnight background preset",
+      "message": "Éjfél"
+   },
+   "bgNightSky": {
+      "description": "Night Sky background preset",
+      "message": "Éjszakai ég"
+   },
+   "bgOcean": {
+      "description": "Ocean background preset",
+      "message": "Óceán"
+   },
+   "bgSoftGradient": {
+      "description": "Soft Gradient background preset",
+      "message": "Lágy színátmenet"
+   },
+   "bgSunset": {
+      "description": "Sunset background preset",
+      "message": "Naplemente"
+   },
+   "bookmarkMovedToFolder": {
+      "description": "Alert after moving a bookmark to a folder",
+      "message": "Bookmark moved to \"$1\""
+   },
+   "cancel": {
+      "description": "Cancel button",
+      "message": "Mégse"
+   },
+   "cannotDeleteLastWorkspace": {
+      "description": "Alert when trying to delete the last workspace",
+      "message": "Cannot delete the last workspace!"
+   },
+   "captureAllScreenshots": {
+      "description": "Capture all screenshots button",
+      "message": "Összes képernyőkép rögzítése"
+   },
+   "captureProgress": {
+      "description": "Progress text while capturing a screenshot",
+      "message": "Capturing $1..."
+   },
+   "captureScreenshotsConfirm": {
+      "description": "Confirm before capturing screenshots",
+      "message": "This will capture screenshots for $1 bookmarks. This may take a few minutes. Continue?"
+   },
+   "captureScreenshotsFailedRetry": {
+      "description": "Alert when capture screenshots fails",
+      "message": "Failed to capture screenshots. Please try again."
+   },
+   "capturingScreenshots": {
+      "description": "Capturing screenshots progress text",
+      "message": "Képernyőképek rögzítése..."
+   },
+   "changeBackground": {
+      "description": "Change background menu item",
+      "message": "Háttér módosítása"
+   },
+   "changeColor": {
+      "description": "Change color menu item",
+      "message": "Szín módosítása"
+   },
+   "changeIcon": {
+      "description": "Change icon menu item",
+      "message": "Ikon módosítása"
+   },
+   "changeWorkspaceBackground": {
+      "description": "Change workspace background modal title",
+      "message": "Munkaterület hátterének módosítása"
+   },
+   "checkCurrentStorage": {
+      "description": "Check current storage button",
+      "message": "Jelenlegi tárhely ellenőrzése"
+   },
+   "chooseBookmarkColor": {
+      "description": "Bookmark color modal title",
+      "message": "Könyvjelző színének kiválasztása"
+   },
+   "chooseImage": {
+      "description": "Choose background image or video",
+      "message": "Kép vagy videó kiválasztása"
+   },
+   "chromeStorage": {
+      "description": "Chrome Storage label",
+      "message": "Chrome tárhely"
+   },
+   "cleanMode": {
+      "description": "Clean mode toggle",
+      "message": "Tiszta mód"
+   },
+   "colorBlue": {
+      "description": "Blue color",
+      "message": "Kék"
+   },
+   "colorDefault": {
+      "description": "Default color option",
+      "message": "Alapértelmezett"
+   },
+   "colorGreen": {
+      "description": "Green color",
+      "message": "Zöld"
+   },
+   "colorNone": {
+      "description": "No color option",
+      "message": "Nincs"
+   },
+   "colorOrange": {
+      "description": "Orange color",
+      "message": "Narancs"
+   },
+   "colorPink": {
+      "description": "Pink color",
+      "message": "Rózsaszín"
+   },
+   "colorPurple": {
+      "description": "Purple color",
+      "message": "Lila"
+   },
+   "colorRed": {
+      "description": "Red color",
+      "message": "Piros"
+   },
+   "colorYellow": {
+      "description": "Yellow color",
+      "message": "Sárga"
+   },
+   "createFolder": {
+      "description": "Create folder modal title",
+      "message": "Mappa létrehozása"
+   },
+   "customImage": {
+      "description": "Custom image field label",
+      "message": "Egyéni kép"
+   },
+   "customImageTab": {
+      "description": "Custom image/video tab label",
+      "message": "Egyéni kép/videó"
+   },
+   "deleteBookmarkConfirm": {
+      "description": "Confirm deleting a bookmark",
+      "message": "Are you sure you want to delete this bookmark?"
+   },
+   "deleteFolder": {
+      "description": "Delete folder menu item",
+      "message": "Mappa törlése"
+   },
+   "deleteFolderConfirm": {
+      "description": "Delete folder confirmation (also deletes bookmarks inside)",
+      "message": "Törli ezt a mappát és az összes benne lévő könyvjelzőt?"
+   },
+   "deleteSelected": {
+      "description": "Delete selected button",
+      "message": "Kijelöltek törlése"
+   },
+   "deleteSelectedConfirm": {
+      "description": "Delete selected confirmation",
+      "message": "Törli a kijelölt elemeket?"
+   },
+   "deleteWorkspace": {
+      "description": "Delete workspace menu item",
+      "message": "Munkaterület törlése"
+   },
+   "deleteWorkspaceConfirm": {
+      "description": "Confirm deleting a workspace",
+      "message": "Delete workspace \"$1\"? All bookmarks in this workspace will be deleted."
+   },
+   "displayCustom": {
+      "description": "Custom image display type option",
+      "message": "Egyéni kép"
+   },
+   "displayIcon": {
+      "description": "Icon display type option",
+      "message": "Csak ikon"
+   },
+   "displayPreview": {
+      "description": "Preview display type option",
+      "message": "Előnézet (Képernyőkép)"
+   },
+   "displayType": {
+      "description": "Display type field label",
+      "message": "Megjelenítés típusa"
+   },
+   "editFolder": {
+      "description": "Edit folder modal title",
+      "message": "Mappa szerkesztése"
+   },
+   "editWorkspace": {
+      "description": "Edit workspace menu item",
+      "message": "Munkaterület szerkesztése"
+   },
+   "emptyStateSubtitle": {
+      "description": "Empty state subtitle on desktop",
+      "message": "Click \"$1\" to get started"
+   },
+   "emptyStateTitle": {
+      "description": "Empty state title on desktop",
+      "message": "No bookmarks yet"
+   },
+   "enableAnimations": {
+      "description": "Enable animations checkbox",
+      "message": "Animációk engedélyezése"
+   },
+   "enterBookmarkTitle": {
+      "description": "Title field placeholder",
+      "message": "Könyvjelző címének megadása"
+   },
+   "enterFolderName": {
+      "description": "Folder name placeholder",
+      "message": "Mappa nevének megadása"
+   },
+   "enterWorkspaceName": {
+      "description": "Workspace name placeholder",
+      "message": "Munkaterület nevének megadása"
+   },
+   "exportAllData": {
+      "description": "Export all data button",
+      "message": "Összes adat exportálása"
+   },
+   "exportFailed": {
+      "description": "Alert when export fails",
+      "message": "Failed to export data: $1"
+   },
+   "exportSuccess": {
+      "description": "Alert when export succeeds",
+      "message": "Data exported successfully!"
+   },
+   "extDescription": {
+      "description": "Extension description",
+      "message": "Gyönyörű vizuális könyvjelzők húzd és ejtsd támogatással az új lap oldalához"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "StartBoard Visual Bookmarks [SVB] - new tab"
+   },
+   "fillRequiredFields": {
+      "description": "Alert when required fields are missing",
+      "message": "Please fill in all required fields."
+   },
+   "folder": {
+      "description": "Folder label",
+      "message": "Mappa"
+   },
+   "folderColor": {
+      "description": "Folder color field label",
+      "message": "Mappa színe"
+   },
+   "folderContextLabel": {
+      "description": "Folder context menu header with name",
+      "message": "Folder: $1"
+   },
+   "folderIcon": {
+      "description": "Folder icon field label",
+      "message": "Mappa ikonja"
+   },
+   "folderItemCount": {
+      "description": "Folder card item count label",
+      "message": "$1 items"
+   },
+   "folderName": {
+      "description": "Folder name field label",
+      "message": "Mappa neve"
+   },
+   "folderOptional": {
+      "description": "Folder field label",
+      "message": "Mappa (Opcionális)"
+   },
+   "folderSettings": {
+      "description": "Folder context menu header",
+      "message": "Mappa beállításai"
+   },
+   "icon": {
+      "description": "Icon field label",
+      "message": "Ikon"
+   },
+   "importChromeConfirm": {
+      "description": "Confirm importing Chrome bookmarks",
+      "message": "Found $1 bookmarks. Import all?"
+   },
+   "importChromeNone": {
+      "description": "Alert when no Chrome bookmarks are found",
+      "message": "No bookmarks found to import."
+   },
+   "importChromeSuccess": {
+      "description": "Alert after importing Chrome bookmarks",
+      "message": "Successfully imported $1 bookmarks!"
+   },
+   "importConfirm": {
+      "description": "Confirm data import",
+      "message": "Import data from $1?\n\nThis will replace all current data!"
+   },
+   "importData": {
+      "description": "Import data button",
+      "message": "Adatok importálása"
+   },
+   "importFailed": {
+      "description": "Alert when import fails",
+      "message": "Failed to import data: $1"
+   },
+   "importSuccessReload": {
+      "description": "Alert when import succeeds",
+      "message": "Data imported successfully! Reloading page..."
+   },
+   "indexedDB": {
+      "description": "IndexedDB label",
+      "message": "IndexedDB"
+   },
+   "invalidSelection": {
+      "description": "Alert for invalid selection input",
+      "message": "Invalid selection."
+   },
+   "invalidUrl": {
+      "description": "Alert when URL validation fails",
+      "message": "Please enter a valid URL."
+   },
+   "langEnglish": {
+      "description": "English language option",
+      "message": "Angol"
+   },
+   "langFrench": {
+      "description": "French language option",
+      "message": "Francia"
+   },
+   "langGerman": {
+      "description": "German language option",
+      "message": "Német"
+   },
+   "langPortuguese": {
+      "description": "Portuguese (Brazil) language option",
+      "message": "Portugál (Brazília)"
+   },
+   "langSpanish": {
+      "description": "Spanish language option",
+      "message": "Spanyol"
+   },
+   "language": {
+      "description": "Language setting label",
+      "message": "Nyelv"
+   },
+   "linkOpenBehavior": {
+      "description": "Link open behavior setting label",
+      "message": "Hogyan nyíljanak meg a linkek?"
+   },
+   "linkOpenNewWindow": {
+      "description": "Open links in new window option",
+      "message": "Új ablak"
+   },
+   "linkOpenSameTab": {
+      "description": "Open links in same tab option",
+      "message": "Ugyanaz a lap"
+   },
+   "lockWorkspace": {
+      "description": "Lock workspace menu item",
+      "message": "Munkaterület zárolása"
+   },
+   "migrationDescription": {
+      "description": "Migration page description",
+      "message": "Migráld vizuális könyvjelzőidet a chrome.storage-ból IndexedDB-be"
+   },
+   "migrationTitle": {
+      "description": "Migration page title",
+      "message": "Tároló migrációs eszköz"
+   },
+   "modalAddBookmark": {
+      "description": "Add bookmark modal title",
+      "message": "Könyvjelző hozzáadása"
+   },
+   "modalEditBookmark": {
+      "description": "Edit bookmark modal title",
+      "message": "Edit Bookmark"
+   },
+   "moveBookmarkFailed": {
+      "description": "Alert when moving a bookmark fails with error details",
+      "message": "Failed to move bookmark: $1"
+   },
+   "moveBookmarkFailedRetry": {
+      "description": "Alert when moving a bookmark fails without details",
+      "message": "Failed to move bookmark. Please try again."
+   },
+   "moveBookmarkSelectFolderPrompt": {
+      "description": "Prompt to select a folder for moving a bookmark",
+      "message": "Select folder to move to:\n\n$1\n\nEnter number:"
+   },
+   "moveBookmarkToFolderFailed": {
+      "description": "Alert when moving bookmark to folder fails with error details",
+      "message": "Failed to move bookmark to folder: $1"
+   },
+   "moveBookmarkToFolderFailedRetry": {
+      "description": "Alert when moving bookmark to folder fails without details",
+      "message": "Failed to move bookmark to folder. Please try again."
+   },
+   "moveToDesktopTooltip": {
+      "description": "Tooltip for move bookmark to desktop button",
+      "message": "Move to desktop"
+   },
+   "moveToFolderTooltip": {
+      "description": "Tooltip for move bookmark to folder button",
+      "message": "Move to another folder"
+   },
+   "moveToWorkspace": {
+      "description": "Move to workspace menu item",
+      "message": "Áthelyezés a munkaterületre"
+   },
+   "newBookmarkTitle": {
+      "description": "Default title when creating a bookmark from drag/drop",
+      "message": "New Bookmark"
+   },
+   "noBookmarksInFolder": {
+      "description": "Empty state text for folder modal",
+      "message": "No bookmarks in this folder."
+   },
+   "noFolder": {
+      "description": "No folder option",
+      "message": "Nincs mappa"
+   },
+   "noOtherFoldersAvailable": {
+      "description": "Alert when no target folders exist",
+      "message": "No other folders available. Create a new folder first."
+   },
+   "noPreviewBookmarks": {
+      "description": "Alert when no preview bookmarks exist",
+      "message": "No bookmarks with preview mode found."
+   },
+   "organization": {
+      "description": "Organization section header",
+      "message": "Rendszerezés"
+   },
+   "presetBackgrounds": {
+      "description": "Preset backgrounds tab",
+      "message": "Előre beállított hátterek"
+   },
+   "progressComplete": {
+      "description": "Progress text for completion",
+      "message": "Complete!"
+   },
+   "rateExtension": {
+      "description": "Rate extension button",
+      "message": "Értékeld a bővítményünket"
+   },
+   "rateExtensionDescription": {
+      "description": "Rate extension description text",
+      "message": "Tetszik a bővítményünk? Kérjük, értékelj és írj véleményt!"
+   },
+   "refreshAllScreenshots": {
+      "description": "Refresh all screenshots button",
+      "message": "Összes képernyőkép frissítése"
+   },
+   "refreshProgress": {
+      "description": "Progress text while refreshing a screenshot",
+      "message": "Refreshing $1..."
+   },
+   "refreshScreenshotFailed": {
+      "description": "Alert when refreshing a screenshot fails",
+      "message": "Failed to refresh screenshot: $1"
+   },
+   "refreshScreenshotTooltip": {
+      "description": "Tooltip for refresh screenshot button",
+      "message": "Refresh screenshot"
+   },
+   "refreshScreenshotsConfirm": {
+      "description": "Confirm before refreshing screenshots",
+      "message": "This will refresh screenshots for $1 bookmarks. Continue?"
+   },
+   "refreshScreenshotsFailedRetry": {
+      "description": "Alert when refresh screenshots fails",
+      "message": "Failed to refresh screenshots. Please try again."
+   },
+   "removeBackground": {
+      "description": "Remove background button",
+      "message": "Háttér eltávolítása"
+   },
+   "renameFolder": {
+      "description": "Rename folder menu item",
+      "message": "Mappa átnevezése"
+   },
+   "resetAllConfirm": {
+      "description": "First reset all data confirmation",
+      "message": "Are you sure? This will delete ALL your bookmarks and settings!"
+   },
+   "resetAllConfirmFinal": {
+      "description": "Final reset all data confirmation",
+      "message": "Really sure? This cannot be undone!"
+   },
+   "resetAllData": {
+      "description": "Reset all data button",
+      "message": "Összes adat visszaállítása"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Mentés"
+   },
+   "screenshotCapturing": {
+      "description": "Bookmark screenshot capture text",
+      "message": "Capturing..."
+   },
+   "screenshotManagement": {
+      "description": "Screenshot management section header",
+      "message": "Képernyőkép-kezelés"
+   },
+   "screenshotRetry": {
+      "description": "Bookmark screenshot retry hint",
+      "message": "Click refresh to retry"
+   },
+   "selectWorkspace": {
+      "description": "Select workspace modal title",
+      "message": "Munkaterület kiválasztása"
+   },
+   "selectWorkspaceIcon": {
+      "description": "Alert when workspace icon is not selected",
+      "message": "Please select an icon."
+   },
+   "selectedItems": {
+      "description": "Selected items label",
+      "message": "Kijelölt"
+   },
+   "setColor": {
+      "description": "Set color menu item",
+      "message": "Szín beállítása"
+   },
+   "settings": {
+      "description": "Settings button tooltip",
+      "message": "Beállítások"
+   },
+   "showGrid": {
+      "description": "Show grid toggle",
+      "message": "Rács megjelenítése"
+   },
+   "showLabels": {
+      "description": "Show labels checkbox",
+      "message": "Könyvjelzőcímkék megjelenítése"
+   },
+   "showLog": {
+      "description": "Show log button",
+      "message": "Napló megjelenítése"
+   },
+   "size": {
+      "description": "Size field label",
+      "message": "Méret"
+   },
+   "sizeExtraLarge": {
+      "description": "Extra large size option",
+      "message": "Extra nagy (300×300)"
+   },
+   "sizeLarge": {
+      "description": "Large size option",
+      "message": "Nagy (250×250)"
+   },
+   "sizeMedium": {
+      "description": "Medium size option",
+      "message": "Közepes (200×200)"
+   },
+   "sizeSmall": {
+      "description": "Small size option",
+      "message": "Kicsi (150×150)"
+   },
+   "startMigration": {
+      "description": "Start migration button",
+      "message": "Migráció indítása"
+   },
+   "supportUs": {
+      "description": "Support us section header",
+      "message": "Értékelj minket"
+   },
+   "theme": {
+      "description": "Theme setting label",
+      "message": "Téma"
+   },
+   "themeAuto": {
+      "description": "Auto theme option",
+      "message": "Auto (Rendszer)"
+   },
+   "themeDark": {
+      "description": "Dark theme option",
+      "message": "Sötét"
+   },
+   "themeLight": {
+      "description": "Light theme option",
+      "message": "Világos"
+   },
+   "title": {
+      "description": "Title field label",
+      "message": "Cím"
+   },
+   "unlockWorkspace": {
+      "description": "Unlock workspace menu item",
+      "message": "Munkaterület feloldása"
+   },
+   "updateWorkspaceFailed": {
+      "description": "Alert when workspace update fails",
+      "message": "Failed to update workspace: $1\n\nYour data is safe - changes were not applied."
+   },
+   "url": {
+      "description": "URL field label",
+      "message": "URL"
+   },
+   "visualSettings": {
+      "description": "Visual settings section header",
+      "message": "Vizuális beállítások"
+   },
+   "whatsNew": {
+      "description": "What's new tab label",
+      "message": "Újdonságok"
+   },
+   "whatsNew226Item1": {
+      "description": "What's new 2.2.6 item 1",
+      "message": "A beállítások mostantól fülekbe vannak rendezve."
+   },
+   "whatsNew226Item2": {
+      "description": "What's new 2.2.6 item 2",
+      "message": "Válaszd ki, hogyan nyíljanak meg a linkek: új ablak vagy ugyanaz a lap."
+   },
+   "whatsNew226Item3": {
+      "description": "What's new 2.2.6 item 3",
+      "message": "Rács igazítási kiemeléssel és tiszta móddal."
+   },
+   "whatsNew226Item4": {
+      "description": "What's new 2.2.6 item 4",
+      "message": "Többszörös kijelölő sáv törléshez és átméretezéshez."
+   },
+   "whatsNew226Item5": {
+      "description": "What's new 2.2.6 item 5",
+      "message": "Videós hátterek (.webm) támogatottak (legfeljebb 25 MB)."
+   },
+   "whatsNew226Item6": {
+      "description": "What's new 2.2.6 item 6",
+      "message": "Mappa törlésekor a benne lévő könyvjelzők is törlődnek."
+   },
+   "whatsNew226Item7": {
+      "description": "What's new 2.2.6 item 7",
+      "message": "Zárolj egy munkaterületet a véletlen módosítások elkerüléséhez."
+   },
+   "whatsNew226Item8": {
+      "description": "What's new 2.2.6 item 8",
+      "message": "A könyvjelzőkártyák mostantól mutató kurzort jeleznek rámutatáskor."
+   },
+   "workspaceContextLabel": {
+      "description": "Workspace context menu header with name",
+      "message": "Workspace: $1"
+   },
+   "workspaceName": {
+      "description": "Workspace name field label",
+      "message": "Munkaterület neve"
+   },
+   "workspaceSettings": {
+      "description": "Workspace context menu header",
+      "message": "Munkaterület beállításai"
+   }
+}
