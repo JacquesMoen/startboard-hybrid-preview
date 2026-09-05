@@ -2,11 +2,19 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.4.3-blue)
+![Version](https://img.shields.io/badge/version-2.4.4-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.4.3
+## ⭐ What's New in 2.4.4
+
+- Transparent representative thumbnails now reveal the workspace wallpaper
+  through both the preview and the bookmark card underlay.
+- Edge-color detection follows YASD's behavior more closely: a stable dominant
+  opaque edge color is retained, while genuinely transparent edges produce a
+  transparent plate.
+
+## What's New in 2.4.3
 
 - Icon Only thumbnails now preserve transparent image edges like YASD, allowing
   the StartBoard wallpaper to show behind transparent logos and illustrations.

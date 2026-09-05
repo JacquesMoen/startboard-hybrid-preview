@@ -128,36 +128,58 @@
 
     function sampleEdgeColor(pixelData, width, height) {
         if (!pixelData || !width || !height) return 'rgb(255, 255, 255)';
-        const step = Math.max(1, Math.floor(Math.min(width, height) / 64));
-        let red = 0;
-        let green = 0;
-        let blue = 0;
-        let count = 0;
+        const samples = [];
         let hasTransparentPixel = false;
 
         function addPixel(x, y) {
             const index = (y * width + x) * 4;
-            const alpha = pixelData[index + 3];
+            const color = Array.from(pixelData.slice(index, index + 4));
+            const alpha = color[3];
             if (alpha < 255) hasTransparentPixel = true;
-            if (!alpha) return;
-            red += pixelData[index];
-            green += pixelData[index + 1];
-            blue += pixelData[index + 2];
-            count += 1;
+            samples.push(color);
         }
 
-        for (let x = 0; x < width; x += step) {
-            addPixel(x, 0);
-            if (height > 1) addPixel(x, height - 1);
+        const depth = Math.min(2, Math.ceil(width / 2), Math.ceil(height / 2));
+        for (let x = 0; x < width; x += 2) {
+            for (let offset = 0; offset < depth; offset += 1) {
+                addPixel(x, offset);
+                const bottom = height - 1 - offset;
+                if (bottom !== offset) addPixel(x, bottom);
+            }
         }
-        for (let y = step; y < height - 1; y += step) {
-            addPixel(0, y);
-            if (width > 1) addPixel(width - 1, y);
+        for (let y = depth; y < height - depth; y += 2) {
+            for (let offset = 0; offset < depth; offset += 1) {
+                addPixel(offset, y);
+                const right = width - 1 - offset;
+                if (right !== offset) addPixel(right, y);
+            }
+        }
+
+        const colorGroups = [];
+        for (const color of samples) {
+            const group = colorGroups.find((item) => item.color.every((value, index) =>
+                Math.abs(value - color[index]) <= 2));
+            if (group) group.count += 1;
+            else colorGroups.push({ color, count: 1 });
+        }
+
+        const dominant = colorGroups.reduce((best, item) =>
+            !best || item.count > best.count ? item : best, null);
+        if (dominant && dominant.count > samples.length / 2) {
+            const [red, green, blue, alpha] = dominant.color;
+            if (alpha === 0) return 'transparent';
+            if (alpha < 255) return `rgba(${red}, ${green}, ${blue}, ${alpha / 255})`;
+            return `rgb(${red}, ${green}, ${blue})`;
         }
 
         if (hasTransparentPixel) return 'transparent';
-        if (!count) return 'rgb(255, 255, 255)';
-        return `rgb(${Math.round(red / count)}, ${Math.round(green / count)}, ${Math.round(blue / count)})`;
+        if (!samples.length) return 'rgb(255, 255, 255)';
+        const totals = samples.reduce((sum, color) => [
+            sum[0] + color[0],
+            sum[1] + color[1],
+            sum[2] + color[2]
+        ], [0, 0, 0]);
+        return `rgb(${totals.map(value => Math.round(value / samples.length)).join(', ')})`;
     }
 
     function resizeToThumbnail(imageDataUrl, options = {}) {

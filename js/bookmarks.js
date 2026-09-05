@@ -372,6 +372,9 @@ class BookmarkManager {
 
     renderFaviconPreview(preview, bookmark) {
         preview.classList.remove('representative-thumbnail', 'screenshot-preview');
+        if (preview.parentElement) {
+            preview.parentElement.classList.remove('transparent-thumbnail-card');
+        }
         preview.style.backgroundImage = '';
         preview.style.backgroundColor = '';
         preview.innerHTML = '';

@@ -7,6 +7,9 @@
         preview.classList.remove('representative-thumbnail', 'screenshot-preview');
         preview.style.backgroundImage = '';
         preview.style.backgroundColor = '';
+        if (preview.parentElement) {
+            preview.parentElement.classList.remove('transparent-thumbnail-card');
+        }
     }
 
     function applyRepresentativeThumbnail(preview, thumbnail) {
@@ -15,6 +18,9 @@
         preview.classList.add('representative-thumbnail');
         preview.style.backgroundColor = thumbnail.plateColor || 'var(--bg-tertiary)';
         preview.style.backgroundImage = `url("${thumbnail.imageDataUrl}")`;
+        if (thumbnail.plateColor === 'transparent' && preview.parentElement) {
+            preview.parentElement.classList.add('transparent-thumbnail-card');
+        }
     }
 
     function applyScreenshot(preview, imageDataUrl, title, createElement) {

@@ -315,6 +315,10 @@ body.has-video-background {
     z-index: 10;
 }
 
+.bookmark-card.transparent-thumbnail-card {
+    background: transparent;
+}
+
 .bookmark-card.selected,
 .folder-card.selected {
     box-shadow: 0 0 0 3px var(--accent), 0 8px 16px var(--shadow-hover);

@@ -24,6 +24,17 @@ function previewElement() {
     };
 }
 
+function cardElement() {
+    const classes = new Set(['bookmark-card']);
+    return {
+        classList: {
+            add: (...names) => names.forEach(name => classes.add(name)),
+            remove: (...names) => names.forEach(name => classes.delete(name)),
+            contains: name => classes.has(name)
+        }
+    };
+}
+
 test('representative thumbnail uses contain presentation and its sampled plate color', () => {
     const preview = previewElement();
     applyRepresentativeThumbnail(preview, {
@@ -36,6 +47,23 @@ test('representative thumbnail uses contain presentation and its sampled plate c
     assert.equal(preview.style.backgroundColor, 'rgb(12, 34, 56)');
     assert.match(preview.style.backgroundImage, /data:image\/webp;base64,dGh1bWI=/);
     assert.equal(preview.children.length, 0);
+});
+
+test('transparent representative thumbnail also clears the opaque card underlay', () => {
+    const card = cardElement();
+    const preview = previewElement();
+    preview.parentElement = card;
+
+    applyRepresentativeThumbnail(preview, {
+        imageDataUrl: 'data:image/webp;base64,dHJhbnNwYXJlbnQ=',
+        plateColor: 'transparent'
+    });
+
+    assert.equal(preview.style.backgroundColor, 'transparent');
+    assert.equal(card.classList.contains('transparent-thumbnail-card'), true);
+
+    applyScreenshot(preview, 'data:image/jpeg;base64,c2NyZWVu', 'Example', () => ({}));
+    assert.equal(card.classList.contains('transparent-thumbnail-card'), false);
 });
 
 test('real screenshot renders as a dedicated image and clears thumbnail presentation', () => {
