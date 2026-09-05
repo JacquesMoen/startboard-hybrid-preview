@@ -569,6 +569,12 @@ function setupSettingsListeners() {
         await refreshBookmarks();
     });
 
+    // Bookmark frames
+    document.getElementById('showBookmarkFrames').addEventListener('change', async (e) => {
+        await updateSetting('showBookmarkFrames', e.target.checked);
+        VisualRendering.applyBookmarkFrameSetting(document.body, e.target.checked);
+    });
+
     // Animations enabled
     document.getElementById('animationsEnabled').addEventListener('change', async (e) => {
         await updateSetting('animationsEnabled', e.target.checked);
@@ -669,6 +675,7 @@ async function loadSettingsToPanel() {
     document.getElementById('themeSelect').value = currentSettings.theme || 'light';
     document.getElementById('linkOpenBehavior').value = currentSettings.linkOpenBehavior || 'newWindow';
     document.getElementById('showLabels').checked = currentSettings.showLabels !== false;
+    document.getElementById('showBookmarkFrames').checked = currentSettings.showBookmarkFrames !== false;
     document.getElementById('animationsEnabled').checked = currentSettings.animationsEnabled !== false;
     document.getElementById('cleanMode').checked = currentSettings.cleanMode === true;
 }
@@ -677,6 +684,7 @@ async function applySettings(settings) {
     applyTheme(settings.theme);
     await applyWorkspaceBackground();
     applyCleanMode(settings.cleanMode === true);
+    VisualRendering.applyBookmarkFrameSetting(document.body, settings.showBookmarkFrames);
 
     if (!settings.animationsEnabled) {
         document.body.style.setProperty('--transition-normal', '0s');

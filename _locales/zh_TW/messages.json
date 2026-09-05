@@ -631,6 +631,10 @@
       "description": "Show labels checkbox",
       "message": "顯示書籤標籤"
    },
+   "showBookmarkFrames": {
+      "description": "Show bookmark frames checkbox",
+      "message": "顯示書籤外框"
+   },
    "showLog": {
       "description": "Show log button",
       "message": "顯示記錄"

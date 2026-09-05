@@ -2,11 +2,17 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.4.4-blue)
+![Version](https://img.shields.io/badge/version-2.4.5-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.4.4
+## ⭐ What's New in 2.4.5
+
+- Added a synced **Show bookmark frames** option under Visual Settings.
+- Turning it off removes normal and hover bookmark shadows while retaining the
+  selected-item outline and drag feedback.
+
+## What's New in 2.4.4
 
 - Transparent representative thumbnails now reveal the workspace wallpaper
   through both the preview and the bookmark card underlay.

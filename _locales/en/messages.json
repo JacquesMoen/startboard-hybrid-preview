@@ -631,6 +631,10 @@
       "description": "Show labels checkbox",
       "message": "Show bookmark labels"
    },
+   "showBookmarkFrames": {
+      "description": "Show bookmark frames checkbox",
+      "message": "Show bookmark frames"
+   },
    "showLog": {
       "description": "Show log button",
       "message": "Show Log"

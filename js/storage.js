@@ -22,6 +22,7 @@ const StorageManager = {
         backgroundType: 'solid',
         backgroundColor: '#f5f5f5',
         showLabels: true,
+        showBookmarkFrames: true,
         animationsEnabled: true,
         linkOpenBehavior: 'newWindow',
         cleanMode: false,

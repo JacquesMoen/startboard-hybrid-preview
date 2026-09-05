@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const {
     applyRepresentativeThumbnail,
     applyScreenshot,
+    applyBookmarkFrameSetting,
     requestVisualRefresh
 } = require('../js/visual-rendering.js');
 
@@ -109,4 +110,27 @@ test('manual refresh delegates by bookmark id without changing its display type'
         source: 'manual'
     }]);
     assert.equal(bookmark.displayType, 'icon');
+});
+
+test('bookmark frame setting hides ordinary frames only when explicitly disabled', () => {
+    const classes = new Set();
+    const body = {
+        classList: {
+            toggle(name, enabled) {
+                if (enabled) classes.add(name);
+                else classes.delete(name);
+            },
+            contains: name => classes.has(name)
+        }
+    };
+
+    assert.equal(typeof applyBookmarkFrameSetting, 'function');
+    applyBookmarkFrameSetting(body, false);
+    assert.equal(body.classList.contains('bookmark-frames-hidden'), true);
+
+    applyBookmarkFrameSetting(body, true);
+    assert.equal(body.classList.contains('bookmark-frames-hidden'), false);
+
+    applyBookmarkFrameSetting(body, undefined);
+    assert.equal(body.classList.contains('bookmark-frames-hidden'), false);
 });

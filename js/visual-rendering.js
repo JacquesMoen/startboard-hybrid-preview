@@ -35,6 +35,10 @@
         preview.appendChild(image);
     }
 
+    function applyBookmarkFrameSetting(body, showFrames) {
+        body.classList.toggle('bookmark-frames-hidden', showFrames === false);
+    }
+
     async function requestVisualRefresh(chromeApi, bookmarkId, source) {
         const response = await chromeApi.runtime.sendMessage({
             type: 'visual:refresh',
@@ -50,6 +54,7 @@
     return {
         applyRepresentativeThumbnail,
         applyScreenshot,
+        applyBookmarkFrameSetting,
         requestVisualRefresh
     };
 });

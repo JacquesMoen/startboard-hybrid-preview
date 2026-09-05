@@ -325,6 +325,10 @@ body.has-video-background {
     z-index: 12;
 }
 
+body.bookmark-frames-hidden .bookmark-card:not(.selected):not(.dragging) {
+    box-shadow: none;
+}
+
 .bookmark-card.dragging {
     z-index: 1000;
     box-shadow: 0 12px 24px var(--shadow-hover);
