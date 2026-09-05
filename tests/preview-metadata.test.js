@@ -71,6 +71,16 @@ test('samples a stable plate color from image edges', () => {
     assert.equal(sampleEdgeColor(pixels, 3, 3), 'rgb(12, 34, 56)');
 });
 
+test('uses a transparent plate when the representative image has transparent edges', () => {
+    const pixels = new Uint8ClampedArray([
+        0, 0, 0, 0,       40, 80, 120, 255, 40, 80, 120, 255,
+        40, 80, 120, 255,  99, 99, 99, 255, 40, 80, 120, 255,
+        40, 80, 120, 255,  40, 80, 120, 255, 40, 80, 120, 255
+    ]);
+
+    assert.equal(sampleEdgeColor(pixels, 3, 3), 'transparent');
+});
+
 test('renders a portrait representative image inside the bounded cache without cropping it', async () => {
     const drawCalls = [];
     const renderedPixels = new Uint8ClampedArray(450 * 675 * 4);

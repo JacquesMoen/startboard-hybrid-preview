@@ -133,10 +133,12 @@
         let green = 0;
         let blue = 0;
         let count = 0;
+        let hasTransparentPixel = false;
 
         function addPixel(x, y) {
             const index = (y * width + x) * 4;
             const alpha = pixelData[index + 3];
+            if (alpha < 255) hasTransparentPixel = true;
             if (!alpha) return;
             red += pixelData[index];
             green += pixelData[index + 1];
@@ -153,6 +155,7 @@
             if (width > 1) addPixel(width - 1, y);
         }
 
+        if (hasTransparentPixel) return 'transparent';
         if (!count) return 'rgb(255, 255, 255)';
         return `rgb(${Math.round(red / count)}, ${Math.round(green / count)}, ${Math.round(blue / count)})`;
     }

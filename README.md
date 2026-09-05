@@ -2,11 +2,18 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.4.2-blue)
+![Version](https://img.shields.io/badge/version-2.4.3-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.4.2
+## ⭐ What's New in 2.4.3
+
+- Icon Only thumbnails now preserve transparent image edges like YASD, allowing
+  the StartBoard wallpaper to show behind transparent logos and illustrations.
+- Fully opaque images keep their sampled edge-color plate; no background
+  removal or alteration is applied to the source artwork.
+
+## What's New in 2.4.2
 
 - Rebuilt the Icon Only processor result path to match the proven speed-dial
   pattern: the offscreen page now sends a separate correlated completion

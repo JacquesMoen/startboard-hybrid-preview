@@ -26,7 +26,7 @@
    "manifest_version": 3,
    "name": "__MSG_extName__",
    "permissions": [ "storage", "unlimitedStorage", "tabs", "contextMenus", "bookmarks", "scripting", "offscreen" ],
-   "version": "2.4.2",
+   "version": "2.4.3",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "migrate.html" ]
