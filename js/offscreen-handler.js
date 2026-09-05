@@ -6,6 +6,10 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function (PreviewPolicy) {
     function createOffscreenMessageHandler(dependencies) {
         return function onMessage(message, sender, sendResponse) {
+            if (message && message.type === 'offscreen:ping') {
+                sendResponse({ ready: true });
+                return false;
+            }
             if (!message || message.type !== 'offscreen:thumbnail-refresh') return false;
 
             Promise.resolve().then(async () => {

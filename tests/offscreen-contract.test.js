@@ -28,6 +28,7 @@ test('concurrent thumbnail requests create one offscreen document and receive re
         },
         runtime: {
             async sendMessage(message) {
+                if (message.type === 'offscreen:ping') return { ready: true };
                 calls.push(['message', message.bookmarkId]);
                 return { success: true, bookmarkId: message.bookmarkId };
             }
@@ -43,6 +44,45 @@ test('concurrent thumbnail requests create one offscreen document and receive re
     assert.equal(calls.filter(call => call[0] === 'create').length, 1);
     assert.deepEqual(calls.filter(call => call[0] === 'message').map(call => call[1]), ['a', 'b']);
     assert.deepEqual(responses.map(response => response.bookmarkId), ['a', 'b']);
+});
+
+test('thumbnail refresh waits until the newly created offscreen listener is ready', async () => {
+    let created = false;
+    let pingCount = 0;
+    const messages = [];
+    const chromeApi = {
+        offscreen: {
+            async hasDocument() {
+                return created;
+            },
+            async createDocument() {
+                created = true;
+            }
+        },
+        runtime: {
+            async sendMessage(message) {
+                messages.push(message.type);
+                if (message.type === 'offscreen:ping') {
+                    pingCount += 1;
+                    if (pingCount === 1) {
+                        throw new Error('Could not establish connection. Receiving end does not exist.');
+                    }
+                    return { ready: true };
+                }
+                return { success: true, bookmarkId: message.bookmarkId };
+            }
+        }
+    };
+
+    const bridge = createOffscreenBridge(chromeApi);
+    await bridge.refreshThumbnail({ bookmarkId: 'chronicle', source: 'metadata' });
+
+    assert.equal(pingCount, 2);
+    assert.deepEqual(messages, [
+        'offscreen:ping',
+        'offscreen:ping',
+        'offscreen:thumbnail-refresh'
+    ]);
 });
 
 test('rendered page extraction returns social, schema, icon, manifest, and content candidates', () => {
@@ -105,4 +145,18 @@ test('offscreen handler processes rendered candidates only for the current icon 
     assert.deepEqual(calls[0][1], { openGraph: ['/og.jpg'] });
     assert.equal(calls[0][3].source, 'rendered-metadata');
     assert.deepEqual(response, { success: true, bookmarkId: 'a' });
+});
+
+test('offscreen handler answers readiness probes synchronously', () => {
+    const listener = createOffscreenMessageHandler({});
+    let response;
+
+    const keepChannelOpen = listener(
+        { type: 'offscreen:ping' },
+        {},
+        value => { response = value; }
+    );
+
+    assert.equal(keepChannelOpen, false);
+    assert.deepEqual(response, { ready: true });
 });

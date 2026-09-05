@@ -2,11 +2,17 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.4.0-blue)
+![Version](https://img.shields.io/badge/version-2.4.1-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.4.0
+## ⭐ What's New in 2.4.1
+
+- Waits for the offscreen thumbnail processor to finish loading before sending
+  the first automatic Icon Only request, preventing a new bookmark from getting
+  stuck on its favicon fallback.
+
+## What's New in 2.4.0
 
 ### 🔄 Two Correctly Separated Visual Modes
 
