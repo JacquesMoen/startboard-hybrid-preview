@@ -370,7 +370,11 @@ class BookmarkManager {
         return card;
     }
 
-    renderIconPreview(preview, bookmark) {
+    renderFaviconPreview(preview, bookmark) {
+        preview.classList.remove('representative-thumbnail', 'screenshot-preview');
+        preview.style.backgroundImage = '';
+        preview.style.backgroundColor = '';
+        preview.innerHTML = '';
         const favicon = document.createElement('img');
         favicon.className = 'favicon';
         favicon.src = StorageManager.getFaviconUrl(bookmark.url);
@@ -381,6 +385,23 @@ class BookmarkManager {
         preview.appendChild(favicon);
     }
 
+    async renderIconPreview(preview, bookmark) {
+        this.renderFaviconPreview(preview, bookmark);
+        const thumbnail = await StorageManager.getThumbnail(bookmark.id);
+        if (thumbnail) {
+            VisualRendering.applyRepresentativeThumbnail(preview, thumbnail);
+            return;
+        }
+
+        try {
+            await VisualRendering.requestVisualRefresh(chrome, bookmark.id, 'initial');
+            const refreshed = await StorageManager.getThumbnail(bookmark.id);
+            if (refreshed) VisualRendering.applyRepresentativeThumbnail(preview, refreshed);
+        } catch (error) {
+            // The favicon already shown is the intended final fallback.
+        }
+    }
+
     async renderCustomPreview(preview, bookmark) {
         const customImage = await StorageManager.getCustomImage(bookmark.id);
         if (customImage) {
@@ -389,7 +410,7 @@ class BookmarkManager {
             preview.appendChild(img);
         } else {
             // Fallback
-            this.renderIconPreview(preview, bookmark);
+            this.renderFaviconPreview(preview, bookmark);
         }
     }
 
@@ -401,17 +422,9 @@ class BookmarkManager {
         const screenshot = await StorageManager.getScreenshot(bookmark.id);
 
         if (screenshot) {
-            // Show screenshot
-            const img = document.createElement('img');
-            img.src = screenshot;
-            img.alt = bookmark.title;
-            img.style.width = '100%';
-            img.style.height = '100%';
-            img.style.objectFit = 'cover';
-            preview.innerHTML = '';
-            preview.appendChild(img);
+            VisualRendering.applyScreenshot(preview, screenshot, bookmark.title);
         } else {
-            // No preview yet - obtain the page's representative image without opening a popup.
+            // No real screenshot yet: queue the initial temporary-window capture.
             this.captureAndDisplayScreenshot(preview, bookmark);
         }
     }
@@ -433,20 +446,10 @@ class BookmarkManager {
         `;
 
         try {
-            await PreviewMetadata.refreshBookmarkMetadata(bookmark, { force: true });
+            await VisualRendering.requestVisualRefresh(chrome, bookmark.id, 'initial');
             const screenshot = await StorageManager.getScreenshot(bookmark.id);
-            if (!screenshot) throw new Error('No preview image available');
-
-            // Display screenshot
-            const img = document.createElement('img');
-            img.src = screenshot;
-            img.alt = bookmark.title;
-            img.style.width = '100%';
-            img.style.height = '100%';
-            img.style.objectFit = 'cover';
-
-            preview.innerHTML = '';
-            preview.appendChild(img);
+            if (!screenshot) throw new Error('No screenshot available');
+            VisualRendering.applyScreenshot(preview, screenshot, bookmark.title);
 
         } catch (error) {
             console.error('Failed to capture screenshot:', error);
@@ -479,27 +482,20 @@ class BookmarkManager {
         }
 
         try {
-            await StorageManager.refreshScreenshot(bookmark.id, bookmark.url);
+            await VisualRendering.requestVisualRefresh(chrome, bookmark.id, 'manual');
 
-            // Reload screenshot
-            const screenshot = await StorageManager.getScreenshot(bookmark.id);
-
-            if (screenshot) {
-                // If displayType was 'icon', change to 'preview' now that we have a screenshot
-                if (bookmark.displayType === 'icon' || bookmark.displayType === 'custom') {
-                    await this.updateBookmark(bookmark.id, { displayType: 'preview' });
-                    bookmark.displayType = 'preview';
+            if (bookmark.displayType === 'preview' || !bookmark.displayType) {
+                const screenshot = await StorageManager.getScreenshot(bookmark.id);
+                if (screenshot) VisualRendering.applyScreenshot(preview, screenshot, bookmark.title);
+            } else if (bookmark.displayType === 'icon') {
+                const thumbnail = await StorageManager.getThumbnail(bookmark.id);
+                if (thumbnail) {
+                    VisualRendering.applyRepresentativeThumbnail(preview, thumbnail);
+                } else {
+                    this.renderFaviconPreview(preview, bookmark);
                 }
-
-                // Always recreate img element to ensure proper styling
-                preview.innerHTML = '';
-                const newImg = document.createElement('img');
-                newImg.src = screenshot;
-                newImg.alt = bookmark.title;
-                newImg.style.width = '100%';
-                newImg.style.height = '100%';
-                newImg.style.objectFit = 'cover';
-                preview.appendChild(newImg);
+            } else {
+                await this.renderCustomPreview(preview, bookmark);
             }
         } catch (error) {
             console.error('Failed to refresh screenshot:', error);
