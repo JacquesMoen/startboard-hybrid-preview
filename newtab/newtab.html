@@ -384,6 +384,15 @@
                     <div id="imagePreview"></div>
                 </div>
 
+                <div class="form-group" id="screenshotRefreshGroup">
+                    <label for="screenshotRefreshInterval" data-i18n="screenshotRefreshInterval">Automatic Screenshot Refresh</label>
+                    <select id="screenshotRefreshInterval">
+                        <option value="off" selected data-i18n="screenshotRefreshOff">Off</option>
+                        <option value="daily" data-i18n="screenshotRefreshDaily">Daily</option>
+                        <option value="weekly" data-i18n="screenshotRefreshWeekly">Weekly</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label data-i18n="size">Size</label>
                     <select id="bookmarkSize">
@@ -874,6 +883,7 @@
 
     <script src="../js/i18n.js"></script>
     <script src="../js/preview-policy.js"></script>
+    <script src="../js/bookmark-form.js"></script>
     <script src="../js/indexeddb-storage.js"></script>
     <script src="../js/hybrid-storage.js"></script>
     <script src="../js/storage.js"></script>

@@ -540,8 +540,24 @@
       "message": "Failed to refresh screenshot: $1"
    },
    "refreshScreenshotTooltip": {
-      "description": "Tooltip for refresh screenshot button",
-      "message": "Refresh screenshot"
+      "description": "Tooltip for refreshing the current bookmark visual",
+      "message": "刷新图片"
+   },
+   "screenshotRefreshDaily": {
+      "description": "Daily screenshot refresh option",
+      "message": "每天"
+   },
+   "screenshotRefreshInterval": {
+      "description": "Automatic screenshot refresh field label",
+      "message": "自动更新截图"
+   },
+   "screenshotRefreshOff": {
+      "description": "Disabled screenshot refresh option",
+      "message": "关闭"
+   },
+   "screenshotRefreshWeekly": {
+      "description": "Weekly screenshot refresh option",
+      "message": "每周"
    },
    "refreshScreenshotsConfirm": {
       "description": "Confirm before refreshing screenshots",

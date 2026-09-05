@@ -540,8 +540,24 @@
       "message": "Failed to refresh screenshot: $1"
    },
    "refreshScreenshotTooltip": {
-      "description": "Tooltip for refresh screenshot button",
-      "message": "Refresh screenshot"
+      "description": "Tooltip for refreshing the current bookmark visual",
+      "message": "Refresh image"
+   },
+   "screenshotRefreshDaily": {
+      "description": "Daily screenshot refresh option",
+      "message": "Daily"
+   },
+   "screenshotRefreshInterval": {
+      "description": "Automatic screenshot refresh field label",
+      "message": "Automatic Screenshot Refresh"
+   },
+   "screenshotRefreshOff": {
+      "description": "Disabled screenshot refresh option",
+      "message": "Off"
+   },
+   "screenshotRefreshWeekly": {
+      "description": "Weekly screenshot refresh option",
+      "message": "Weekly"
    },
    "refreshScreenshotsConfirm": {
       "description": "Confirm before refreshing screenshots",

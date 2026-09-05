@@ -202,15 +202,14 @@ async function initializeApp() {
 
 function setupHybridPreviewRefresh() {
     chrome.runtime.onMessage.addListener((message) => {
-        if (message && message.type === 'preview-updated') refreshBookmarks();
+        if (message && (message.type === 'visual:updated' || message.type === 'preview-updated')) {
+            refreshBookmarks();
+        }
     });
 
-    // Keep startup fast: refresh stale representative images after the board is usable.
-    setTimeout(() => {
-        PreviewMetadata.refreshStalePreviews(async () => {
-            await refreshBookmarks();
-        }).catch((error) => console.debug('Automatic preview refresh skipped:', error.message));
-    }, 0);
+    // The same due checker is also invoked by chrome.runtime.onStartup.
+    chrome.runtime.sendMessage({ type: 'visual:check-due' }).catch((error) =>
+        console.debug('Scheduled screenshot check skipped:', error.message));
 }
 
 function setupEventListeners() {
@@ -244,7 +243,7 @@ function setupEventListeners() {
     // Display type radio change
     document.querySelectorAll('input[name="displayType"]').forEach(radio => {
         radio.addEventListener('change', (e) => {
-            bookmarkManager.toggleCustomImageField(e.target.value);
+            bookmarkManager.toggleDisplayTypeFields(e.target.value);
         });
     });
 
@@ -1177,7 +1176,8 @@ async function openAddBookmarkModal() {
     document.querySelector(
         `input[name="displayType"][value="${PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE}"]`
     ).checked = true;
-    document.getElementById('customImageGroup').style.display = 'none';
+    document.getElementById('screenshotRefreshInterval').value = 'off';
+    bookmarkManager.toggleDisplayTypeFields(PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE);
     document.getElementById('imagePreview').innerHTML = '';
 
     // Load folders into dropdown
@@ -1202,7 +1202,8 @@ async function openAddBookmarkModalInFolder(folderId) {
     document.querySelector(
         `input[name="displayType"][value="${PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE}"]`
     ).checked = true;
-    document.getElementById('customImageGroup').style.display = 'none';
+    document.getElementById('screenshotRefreshInterval').value = 'off';
+    bookmarkManager.toggleDisplayTypeFields(PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE);
     document.getElementById('imagePreview').innerHTML = '';
 
     // Load folders into dropdown
@@ -1231,7 +1232,14 @@ async function saveBookmark() {
     const url = document.getElementById('bookmarkUrl').value.trim();
     const sizeValue = parseInt(document.getElementById('bookmarkSize').value);
     const displayType = document.querySelector('input[name="displayType"]:checked').value;
+    const screenshotRefreshInterval = displayType === 'preview'
+        ? BookmarkFormPolicy.normalizeScreenshotRefreshInterval(
+            document.getElementById('screenshotRefreshInterval').value)
+        : 'off';
     const folderId = document.getElementById('bookmarkFolder').value;
+    const previousBookmark = bookmarkManager.currentEditingId
+        ? await StorageManager.getBookmarkById(bookmarkManager.currentEditingId)
+        : null;
 
     if (!title || !url) {
         alert(i18n('fillRequiredFields'));
@@ -1251,7 +1259,8 @@ async function saveBookmark() {
         url,
         width: sizeValue,
         height: sizeValue,
-        displayType
+        displayType,
+        screenshotRefreshInterval
     };
 
     // Add folder if selected
@@ -1265,13 +1274,12 @@ async function saveBookmark() {
         bookmarkData.y = freePos.y;
     } else {
         // Editing existing bookmark - preserve current position from storage
-        const currentBookmark = await StorageManager.getBookmarkById(bookmarkManager.currentEditingId);
-        if (currentBookmark) {
-            bookmarkData.x = currentBookmark.x;
-            bookmarkData.y = currentBookmark.y;
+        if (previousBookmark) {
+            bookmarkData.x = previousBookmark.x;
+            bookmarkData.y = previousBookmark.y;
             // Also preserve folderId if it was set
-            if (currentBookmark.folderId) {
-                bookmarkData.folderId = currentBookmark.folderId;
+            if (previousBookmark.folderId) {
+                bookmarkData.folderId = previousBookmark.folderId;
             }
         }
     }
@@ -1308,12 +1316,19 @@ async function saveBookmark() {
         }
     }
 
+    let savedBookmark;
     if (bookmarkManager.currentEditingId) {
         // Update existing bookmark
-        await bookmarkManager.updateBookmark(bookmarkManager.currentEditingId, bookmarkData);
+        savedBookmark = await bookmarkManager.updateBookmark(bookmarkManager.currentEditingId, bookmarkData);
     } else {
         // Add new bookmark
-        await bookmarkManager.addBookmark(bookmarkData);
+        savedBookmark = await bookmarkManager.addBookmark(bookmarkData);
+    }
+
+    const visualRefreshSource = BookmarkFormPolicy.getVisualRefreshSource(previousBookmark, savedBookmark);
+    if (visualRefreshSource) {
+        VisualRendering.requestVisualRefresh(chrome, savedBookmark.id, visualRefreshSource)
+            .catch((error) => console.debug('Initial visual refresh skipped:', error.message));
     }
 
     closeBookmarkModal();

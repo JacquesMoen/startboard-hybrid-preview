@@ -600,8 +600,10 @@ class BookmarkManager {
         const displayTypeRadio = document.querySelector(`input[name="displayType"][value="${bookmark.displayType}"]`);
         if (displayTypeRadio) {
             displayTypeRadio.checked = true;
-            this.toggleCustomImageField(bookmark.displayType);
+            this.toggleDisplayTypeFields(bookmark.displayType);
         }
+        document.getElementById('screenshotRefreshInterval').value =
+            BookmarkFormPolicy.normalizeScreenshotRefreshInterval(bookmark.screenshotRefreshInterval);
 
         // Load folders and set current folder
         if (typeof loadFoldersIntoDropdown === 'function') {
@@ -673,13 +675,16 @@ class BookmarkManager {
         }
     }
 
-    toggleCustomImageField(displayType) {
+    toggleDisplayTypeFields(displayType) {
+        const visibility = BookmarkFormPolicy.getDisplayFieldVisibility(displayType);
         const customImageGroup = document.getElementById('customImageGroup');
-        if (displayType === 'custom') {
-            customImageGroup.style.display = 'block';
-        } else {
-            customImageGroup.style.display = 'none';
-        }
+        const screenshotRefreshGroup = document.getElementById('screenshotRefreshGroup');
+        customImageGroup.style.display = visibility.showCustomImage ? 'block' : 'none';
+        screenshotRefreshGroup.style.display = visibility.showScreenshotSchedule ? 'block' : 'none';
+    }
+
+    toggleCustomImageField(displayType) {
+        this.toggleDisplayTypeFields(displayType);
     }
 
     async searchBookmarks(query) {
