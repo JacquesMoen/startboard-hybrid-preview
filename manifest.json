@@ -25,7 +25,7 @@
    },
    "manifest_version": 3,
    "name": "__MSG_extName__",
-   "permissions": [ "storage", "unlimitedStorage", "tabs", "contextMenus", "bookmarks" ],
+   "permissions": [ "storage", "unlimitedStorage", "tabs", "contextMenus", "bookmarks", "scripting", "offscreen" ],
    "version": "2.3.1",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],

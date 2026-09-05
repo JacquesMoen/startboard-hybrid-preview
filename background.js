@@ -1,11 +1,104 @@
 // Background service worker for context menu bookmark capture
-/* global PreviewPolicy, StorageManager */
+/* global PreviewPolicy, StorageManager, RefreshCoordinator, OffscreenBridge, RenderedMetadata */
 
 // Load shared storage utilities (order matters)
-importScripts('js/preview-policy.js', 'js/indexeddb-storage.js', 'js/hybrid-storage.js', 'js/storage.js');
+importScripts(
+    'js/preview-policy.js',
+    'js/indexeddb-storage.js',
+    'js/hybrid-storage.js',
+    'js/storage.js',
+    'js/refresh-coordinator.js',
+    'js/offscreen-bridge.js',
+    'js/rendered-metadata.js'
+);
 
 const ROOT_MENU_ID = 'startboard_add_bookmark';
-const visitCapturesInFlight = new Set();
+const SCHEDULE_CLAIMS_KEY = 'scheduledScreenshotRefreshClaims';
+const CLAIM_LIFETIME_MS = 5 * 60 * 1000;
+
+function readLocalStorage(keys) {
+    return new Promise((resolve) => chrome.storage.local.get(keys, resolve));
+}
+
+function writeLocalStorage(values) {
+    return new Promise((resolve) => chrome.storage.local.set(values, resolve));
+}
+
+const claimStore = {
+    async claim(bookmarkId, now) {
+        const result = await readLocalStorage([SCHEDULE_CLAIMS_KEY]);
+        const claims = result[SCHEDULE_CLAIMS_KEY] || {};
+        for (const [id, expiresAt] of Object.entries(claims)) {
+            if (!Number.isFinite(expiresAt) || expiresAt <= now) delete claims[id];
+        }
+        if (claims[bookmarkId]) return false;
+        claims[bookmarkId] = now + CLAIM_LIFETIME_MS;
+        await writeLocalStorage({ [SCHEDULE_CLAIMS_KEY]: claims });
+        return true;
+    },
+
+    async release(bookmarkId) {
+        const result = await readLocalStorage([SCHEDULE_CLAIMS_KEY]);
+        const claims = result[SCHEDULE_CLAIMS_KEY] || {};
+        delete claims[bookmarkId];
+        await writeLocalStorage({ [SCHEDULE_CLAIMS_KEY]: claims });
+    }
+};
+
+const offscreenBridge = OffscreenBridge.createOffscreenBridge(chrome);
+
+async function refreshRepresentativeThumbnail(bookmark, source, context = {}) {
+    return offscreenBridge.refreshThumbnail({
+        bookmarkId: bookmark.id,
+        expectedUrl: bookmark.url,
+        source: source === 'rendered-metadata' ? source : (source || 'metadata'),
+        candidateGroups: context.candidateGroups,
+        pageUrl: context.pageUrl
+    });
+}
+
+async function captureVisitedScreenshots(targets, tab) {
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const currentTab = await chrome.tabs.get(tab.id);
+    if (!currentTab.active ||
+        PreviewPolicy.normalizeComparableUrl(currentTab.url) !==
+        PreviewPolicy.normalizeComparableUrl(tab.url)) {
+        throw new Error('Visited tab changed before screenshot capture');
+    }
+
+    const screenshot = await chrome.tabs.captureVisibleTab(tab.windowId, {
+        format: 'jpeg',
+        quality: 85
+    });
+    const timestamp = Date.now();
+
+    for (const target of targets) {
+        const current = await StorageManager.getBookmarkById(target.id);
+        if (!PreviewPolicy.shouldCaptureScreenshotVisit(current, tab.url, timestamp)) continue;
+        await StorageManager.saveScreenshotResult(current.id, screenshot, 'visit', timestamp);
+    }
+}
+
+async function notifyVisualUpdated(bookmarkIds) {
+    try {
+        await chrome.runtime.sendMessage({ type: 'visual:updated', bookmarkIds });
+    } catch (error) {
+        // StartBoard may be closed; stored visuals will render next time it opens.
+    }
+}
+
+const visualCoordinator = RefreshCoordinator.createRefreshCoordinator({
+    getBookmarks: () => StorageManager.getBookmarks(),
+    getBookmark: (bookmarkId) => StorageManager.getBookmarkById(bookmarkId),
+    captureScreenshot: (bookmark, source) =>
+        StorageManager.captureScreenshot(bookmark.url, bookmark.id, source),
+    captureVisitedScreenshots,
+    refreshThumbnail: refreshRepresentativeThumbnail,
+    notifyUpdated: notifyVisualUpdated,
+    claimStore
+});
+
+RefreshCoordinator.registerRefreshCoordinatorEvents(chrome, visualCoordinator);
 
 // Create/refresh the context menu based on current workspaces
 async function refreshContextMenu() {
@@ -72,6 +165,8 @@ async function handleAddBookmark(workspaceId, info, tab) {
     const bookmarks = await StorageManager.getBookmarks();
     bookmarks.push(newBookmark);
     await StorageManager.saveBookmarks(bookmarks);
+    visualCoordinator.refreshBookmarkVisual(newBookmark.id, 'initial').catch((error) =>
+        console.debug('Initial bookmark thumbnail unavailable:', error.message));
 }
 
 chrome.runtime.onInstalled.addListener(() => {
@@ -102,7 +197,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     }
 });
 
-async function captureVisitedBookmarkPreviews(tab) {
+async function captureVisitedBookmarkVisuals(tab) {
     if (!tab || !tab.id || !tab.active || tab.status !== 'complete' ||
         !PreviewPolicy.normalizeComparableUrl(tab.url)) return;
 
@@ -110,46 +205,35 @@ async function captureVisitedBookmarkPreviews(tab) {
     if (!currentWindow.focused || currentWindow.type !== 'normal') return;
 
     const bookmarks = await StorageManager.getBookmarks();
-    const targets = bookmarks.filter((bookmark) =>
-        !visitCapturesInFlight.has(bookmark.id) &&
-        PreviewPolicy.shouldCaptureVisit(bookmark, tab.url));
-    if (!targets.length) return;
+    const needsRenderedMetadata = bookmarks.some((bookmark) =>
+        PreviewPolicy.shouldRefreshThumbnailVisit(bookmark, tab.url));
+    let candidateGroups;
 
-    targets.forEach((bookmark) => visitCapturesInFlight.add(bookmark.id));
-
-    try {
-        // Give late-loading page content a brief chance to settle.
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        const currentTab = await chrome.tabs.get(tab.id);
-        if (!currentTab.active ||
-            PreviewPolicy.normalizeComparableUrl(currentTab.url) !== PreviewPolicy.normalizeComparableUrl(tab.url)) return;
-
-        const screenshot = await chrome.tabs.captureVisibleTab(tab.windowId, { format: 'jpeg', quality: 85 });
-        const capturedAt = Date.now();
-        await Promise.all(targets.map((bookmark) =>
-            StorageManager.savePreview(bookmark.id, screenshot, 'visit', capturedAt)));
-
-        chrome.runtime.sendMessage({
-            type: 'preview-updated',
-            bookmarkIds: targets.map((bookmark) => bookmark.id)
-        }).catch(() => {});
-    } catch (error) {
-        console.debug('Visited-page preview capture skipped:', error.message);
-    } finally {
-        targets.forEach((bookmark) => visitCapturesInFlight.delete(bookmark.id));
+    if (needsRenderedMetadata) {
+        try {
+            const results = await chrome.scripting.executeScript({
+                target: { tabId: tab.id },
+                func: RenderedMetadata.extractRenderedCandidateGroups
+            });
+            candidateGroups = results[0] && results[0].result && results[0].result.candidateGroups;
+        } catch (error) {
+            // Restricted pages and pages that disappear during extraction fall back to server metadata.
+        }
     }
+
+    await visualCoordinator.captureVisitedBookmarkVisuals(tab, candidateGroups);
 }
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === 'complete') {
-        captureVisitedBookmarkPreviews(tab).catch((error) =>
-            console.debug('Visited-page preview capture skipped:', error.message));
+        captureVisitedBookmarkVisuals(tab).catch((error) =>
+            console.debug('Visited-page visual refresh skipped:', error.message));
     }
 });
 
 chrome.tabs.onActivated.addListener(async ({ tabId }) => {
     try {
-        await captureVisitedBookmarkPreviews(await chrome.tabs.get(tabId));
+        await captureVisitedBookmarkVisuals(await chrome.tabs.get(tabId));
     } catch (error) {
         // The tab may have closed before it could be queried.
     }
