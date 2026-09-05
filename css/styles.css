@@ -723,6 +723,7 @@ body.workspace-locked .folder-actions {
 }
 
 .settings-tab-highlight {
+    order: 999;
     background: linear-gradient(135deg, rgba(255, 193, 7, 0.28), rgba(255, 152, 0, 0.18));
     border-color: rgba(255, 152, 0, 0.4);
     color: #b35a00;

@@ -498,6 +498,11 @@ function setupContextMenu() {
 }
 
 function setupSettingsTabs() {
+    SettingsUI.moveSettingsTabLast(
+        document.querySelector('.settings-tabs'),
+        document.querySelector('.settings-tab[data-tab="support"]')
+    );
+
     const tabs = Array.from(document.querySelectorAll('.settings-tab'));
     const panels = Array.from(document.querySelectorAll('.settings-tab-panel'));
 
@@ -613,12 +618,7 @@ function setupSettingsListeners() {
         }
     });
 
-    // Rate extension
-    document.getElementById('rateExtension').addEventListener('click', () => {
-        chrome.tabs.create({
-            url: 'https://chromewebstore.google.com/detail/kehalcfmekcecdjnkplkmkdhikifjbml'
-        });
-    });
+    SettingsUI.configureStoreRating(document.getElementById('rateExtension'), null);
 }
 
 function setupSelectionToolbar() {

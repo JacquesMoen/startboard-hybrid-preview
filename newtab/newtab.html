@@ -152,11 +152,11 @@
                     <button class="settings-tab active" data-tab="visual" data-i18n="visualSettings">Visual Settings</button>
                     <button class="settings-tab" data-tab="organization" data-i18n="organization">Organization</button>
                     <button class="settings-tab" data-tab="backup" data-i18n="backupRestore">Backup & Restore</button>
+                    <button class="settings-tab" data-tab="whatsnew" data-i18n="whatsNew">What's New</button>
                     <button class="settings-tab settings-tab-highlight" data-tab="support">
                         <span class="settings-emoji" aria-hidden="true">😊</span>
                         <span data-i18n="supportUs">Support Us</span>
                     </button>
-                    <button class="settings-tab" data-tab="whatsnew" data-i18n="whatsNew">What's New</button>
                 </nav>
 
                 <div class="settings-body">
@@ -310,11 +310,11 @@
                                 <span data-i18n="supportUs">Support Us</span>
                             </h3>
 
-                            <p style="color: var(--text-secondary); margin-bottom: 12px; font-size: 14px;" data-i18n="rateExtensionDescription">Enjoying our extension? Please rate and review us!</p>
+                            <p style="color: var(--text-secondary); margin-bottom: 12px; font-size: 14px;">改造版尚未上架 Chrome 应用商店，评分入口将在上架后开放。</p>
 
-                            <button class="btn btn-primary" id="rateExtension">
+                            <button class="btn btn-primary" id="rateExtension" disabled>
                                 <span class="material-icons">star</span>
-                                <span data-i18n="rateExtension">Rate Our Extension</span>
+                                <span>尚未上架</span>
                             </button>
                         </div>
                     </section>
@@ -894,6 +894,7 @@
     </div>
 
     <script src="../js/i18n.js"></script>
+    <script src="../js/settings-ui.js"></script>
     <script src="../js/preview-policy.js"></script>
     <script src="../js/bookmark-form.js"></script>
     <script src="../js/indexeddb-storage.js"></script>
