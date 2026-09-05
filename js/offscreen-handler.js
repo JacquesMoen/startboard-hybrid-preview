@@ -1,9 +1,8 @@
 (function (root, factory) {
-    const policy = root && root.PreviewPolicy ? root.PreviewPolicy : require('./preview-policy.js');
-    const api = factory(policy);
+    const api = factory();
     if (typeof module === 'object' && module.exports) module.exports = api;
     if (root) root.OffscreenHandler = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (PreviewPolicy) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     function createOffscreenMessageHandler(dependencies) {
         return function onMessage(message, sender, sendResponse) {
             if (message && message.type === 'offscreen:ping') {
@@ -13,38 +12,32 @@
             if (!message || message.type !== 'offscreen:thumbnail-refresh') return false;
 
             Promise.resolve().then(async () => {
-                const bookmark = await dependencies.getBookmark(message.bookmarkId);
-                if (!PreviewPolicy.isThumbnailBookmark(bookmark)) {
-                    throw new Error('Bookmark is no longer in icon mode');
-                }
-                if (message.expectedUrl &&
-                    PreviewPolicy.normalizeComparableUrl(bookmark.url) !==
-                    PreviewPolicy.normalizeComparableUrl(message.expectedUrl)) {
-                    throw new Error('Bookmark URL changed during refresh');
-                }
-
+                let processed;
                 if (message.candidateGroups) {
-                    await dependencies.refreshFromCandidateGroups(
-                        bookmark,
+                    processed = await dependencies.processCandidates(
                         message.candidateGroups,
-                        message.pageUrl || bookmark.url,
-                        { force: true, source: message.source || 'rendered-metadata' }
+                        message.pageUrl || message.expectedUrl
                     );
                 } else {
-                    await dependencies.refreshMetadata(bookmark, {
-                        force: true,
-                        source: message.source || 'metadata'
-                    });
+                    processed = await dependencies.findRepresentativeImage(message.expectedUrl);
                 }
-                sendResponse({ success: true, bookmarkId: bookmark.id });
+                await dependencies.publishResult({
+                    type: 'offscreen:thumbnail-result',
+                    requestId: message.requestId,
+                    success: true,
+                    bookmarkId: message.bookmarkId,
+                    processed
+                });
             }).catch((error) => {
-                sendResponse({
+                dependencies.publishResult({
+                    type: 'offscreen:thumbnail-result',
+                    requestId: message.requestId,
                     success: false,
                     bookmarkId: message.bookmarkId,
                     error: error.message
                 });
             });
-            return true;
+            return false;
         };
     }
 

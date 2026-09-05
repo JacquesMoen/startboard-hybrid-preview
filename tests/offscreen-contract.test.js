@@ -12,7 +12,7 @@ test('extension declares only the extra Chrome capabilities used by the visual p
     assert.ok(manifest.host_permissions.includes('<all_urls>'));
 });
 
-test('concurrent thumbnail requests create one offscreen document and receive responses', async () => {
+test('concurrent thumbnail requests create one offscreen document and resolve from correlated result messages', async () => {
     const calls = [];
     let created = false;
     const chromeApi = {
@@ -29,27 +29,45 @@ test('concurrent thumbnail requests create one offscreen document and receive re
         runtime: {
             async sendMessage(message) {
                 if (message.type === 'offscreen:ping') return { ready: true };
-                calls.push(['message', message.bookmarkId]);
-                return { success: true, bookmarkId: message.bookmarkId };
+                calls.push(['message', message.bookmarkId, message.requestId]);
             }
         }
     };
     const bridge = createOffscreenBridge(chromeApi);
 
-    const responses = await Promise.all([
+    const pending = [
         bridge.refreshThumbnail({ bookmarkId: 'a', source: 'metadata' }),
         bridge.refreshThumbnail({ bookmarkId: 'b', source: 'metadata' })
-    ]);
+    ];
+    while (calls.filter(call => call[0] === 'message').length < 2) {
+        await new Promise(resolve => setImmediate(resolve));
+    }
+
+    for (const [, bookmarkId, requestId] of calls.filter(call => call[0] === 'message')) {
+        bridge.handleMessage({
+            type: 'offscreen:thumbnail-result',
+            requestId,
+            success: true,
+            bookmarkId,
+            processed: { imageDataUrl: `data:image/webp;base64,${bookmarkId}` }
+        });
+    }
+    const responses = await Promise.all(pending);
 
     assert.equal(calls.filter(call => call[0] === 'create').length, 1);
     assert.deepEqual(calls.filter(call => call[0] === 'message').map(call => call[1]), ['a', 'b']);
     assert.deepEqual(responses.map(response => response.bookmarkId), ['a', 'b']);
+    assert.deepEqual(responses.map(response => response.processed.imageDataUrl), [
+        'data:image/webp;base64,a',
+        'data:image/webp;base64,b'
+    ]);
 });
 
 test('thumbnail refresh waits until the newly created offscreen listener is ready', async () => {
     let created = false;
     let pingCount = 0;
     const messages = [];
+    let bridge;
     const chromeApi = {
         offscreen: {
             async hasDocument() {
@@ -69,12 +87,18 @@ test('thumbnail refresh waits until the newly created offscreen listener is read
                     }
                     return { ready: true };
                 }
-                return { success: true, bookmarkId: message.bookmarkId };
+                queueMicrotask(() => bridge.handleMessage({
+                    type: 'offscreen:thumbnail-result',
+                    requestId: message.requestId,
+                    success: true,
+                    bookmarkId: message.bookmarkId,
+                    processed: { imageDataUrl: 'data:image/webp;base64,dGh1bWI=' }
+                }));
             }
         }
     };
 
-    const bridge = createOffscreenBridge(chromeApi);
+    bridge = createOffscreenBridge(chromeApi);
     await bridge.refreshThumbnail({ bookmarkId: 'chronicle', source: 'metadata' });
 
     assert.equal(pingCount, 2);
@@ -119,32 +143,48 @@ test('rendered page extraction returns social, schema, icon, manifest, and conte
     }
 });
 
-test('offscreen handler processes rendered candidates only for the current icon bookmark', async () => {
+test('offscreen handler publishes processed rendered candidates as a separate correlated result', async () => {
     const calls = [];
-    const bookmark = { id: 'a', url: 'https://example.com/page', displayType: 'icon' };
+    let published;
     const listener = createOffscreenMessageHandler({
-        getBookmark: async () => bookmark,
-        refreshMetadata: async () => assert.fail('rendered candidates should avoid a second page fetch'),
-        refreshFromCandidateGroups: async (...args) => calls.push(args)
+        findRepresentativeImage: async () => assert.fail('rendered candidates should avoid a second page fetch'),
+        processCandidates: async (...args) => {
+            calls.push(args);
+            return {
+                imageDataUrl: 'data:image/webp;base64,dGh1bWI=',
+                plateColor: 'rgb(12, 34, 56)',
+                sourceUrl: 'https://example.com/og.jpg'
+            };
+        },
+        publishResult: async message => { published = message; }
     });
 
-    const response = await new Promise(resolve => {
-        const keepChannelOpen = listener({
-            type: 'offscreen:thumbnail-refresh',
-            bookmarkId: 'a',
-            expectedUrl: 'https://example.com/page',
-            source: 'rendered-metadata',
-            candidateGroups: { openGraph: ['/og.jpg'] },
-            pageUrl: 'https://example.com/page'
-        }, {}, resolve);
-        assert.equal(keepChannelOpen, true);
-    });
+    const keepChannelOpen = listener({
+        type: 'offscreen:thumbnail-refresh',
+        requestId: 'request-a',
+        bookmarkId: 'a',
+        expectedUrl: 'https://example.com/page',
+        source: 'rendered-metadata',
+        candidateGroups: { openGraph: ['/og.jpg'] },
+        pageUrl: 'https://example.com/page'
+    }, {}, () => assert.fail('thumbnail work must not hold the response channel open'));
+    assert.equal(keepChannelOpen, false);
+    await new Promise(resolve => setImmediate(resolve));
 
     assert.equal(calls.length, 1);
-    assert.equal(calls[0][0], bookmark);
-    assert.deepEqual(calls[0][1], { openGraph: ['/og.jpg'] });
-    assert.equal(calls[0][3].source, 'rendered-metadata');
-    assert.deepEqual(response, { success: true, bookmarkId: 'a' });
+    assert.deepEqual(calls[0][0], { openGraph: ['/og.jpg'] });
+    assert.equal(calls[0][1], 'https://example.com/page');
+    assert.deepEqual(published, {
+        type: 'offscreen:thumbnail-result',
+        requestId: 'request-a',
+        success: true,
+        bookmarkId: 'a',
+        processed: {
+            imageDataUrl: 'data:image/webp;base64,dGh1bWI=',
+            plateColor: 'rgb(12, 34, 56)',
+            sourceUrl: 'https://example.com/og.jpg'
+        }
+    });
 });
 
 test('offscreen handler answers readiness probes synchronously', () => {

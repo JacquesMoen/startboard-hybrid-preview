@@ -6,6 +6,9 @@
     function createOffscreenBridge(chromeApi) {
         let creatingDocument = null;
         let documentReady = false;
+        let requestSequence = 0;
+        const pendingRequests = new Map();
+        const RESULT_TIMEOUT_MS = 60 * 1000;
 
         async function waitUntilReady() {
             if (documentReady) return;
@@ -45,17 +48,46 @@
 
         async function refreshThumbnail(request) {
             await ensureDocument();
-            const response = await chromeApi.runtime.sendMessage({
-                type: 'offscreen:thumbnail-refresh',
-                ...request
+            const requestId = `thumbnail-${Date.now()}-${++requestSequence}`;
+            const completion = new Promise((resolve, reject) => {
+                const timeout = setTimeout(() => {
+                    pendingRequests.delete(requestId);
+                    reject(new Error('Offscreen thumbnail refresh timed out'));
+                }, RESULT_TIMEOUT_MS);
+                pendingRequests.set(requestId, { resolve, reject, timeout });
             });
-            if (!response || !response.success) {
-                throw new Error(response && response.error || 'Offscreen thumbnail refresh failed');
+
+            try {
+                await chromeApi.runtime.sendMessage({
+                    type: 'offscreen:thumbnail-refresh',
+                    requestId,
+                    ...request
+                });
+            } catch (error) {
+                const pending = pendingRequests.get(requestId);
+                if (pending) {
+                    clearTimeout(pending.timeout);
+                    pendingRequests.delete(requestId);
+                }
+                throw error;
             }
-            return response;
+
+            return completion;
         }
 
-        return { ensureDocument, refreshThumbnail };
+        function handleMessage(message) {
+            if (!message || message.type !== 'offscreen:thumbnail-result') return false;
+            const pending = pendingRequests.get(message.requestId);
+            if (!pending) return false;
+
+            clearTimeout(pending.timeout);
+            pendingRequests.delete(message.requestId);
+            if (message.success) pending.resolve(message);
+            else pending.reject(new Error(message.error || 'Offscreen thumbnail refresh failed'));
+            return false;
+        }
+
+        return { ensureDocument, refreshThumbnail, handleMessage };
     }
 
     return { createOffscreenBridge };

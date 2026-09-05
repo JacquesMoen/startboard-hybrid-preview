@@ -58,15 +58,36 @@ const migrationStore = {
 };
 
 const offscreenBridge = OffscreenBridge.createOffscreenBridge(chrome);
+chrome.runtime.onMessage.addListener((message) => {
+    offscreenBridge.handleMessage(message);
+    return false;
+});
 
 async function refreshRepresentativeThumbnail(bookmark, source, context = {}) {
-    return offscreenBridge.refreshThumbnail({
+    const result = await offscreenBridge.refreshThumbnail({
         bookmarkId: bookmark.id,
         expectedUrl: bookmark.url,
         source: source === 'rendered-metadata' ? source : (source || 'metadata'),
         candidateGroups: context.candidateGroups,
         pageUrl: context.pageUrl
     });
+    const current = await StorageManager.getBookmarkById(bookmark.id);
+    if (!PreviewPolicy.isThumbnailBookmark(current)) {
+        throw new Error('Bookmark is no longer in icon mode');
+    }
+    if (PreviewPolicy.normalizeComparableUrl(current.url) !==
+        PreviewPolicy.normalizeComparableUrl(bookmark.url)) {
+        throw new Error('Bookmark URL changed during refresh');
+    }
+
+    await StorageManager.saveThumbnail(current.id, result.processed.imageDataUrl, {
+        plateColor: result.processed.plateColor,
+        sourceUrl: result.processed.sourceUrl,
+        source: source === 'rendered-metadata' ? source : (source || 'metadata'),
+        timestamp: Date.now(),
+        expectedUrl: current.url
+    });
+    return result;
 }
 
 async function captureVisitedScreenshots(targets, tab) {

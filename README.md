@@ -2,11 +2,19 @@
 
 Beautiful visual bookmarks with drag & drop support for your new tab page.
 
-![Version](https://img.shields.io/badge/version-2.4.1-blue)
+![Version](https://img.shields.io/badge/version-2.4.2-blue)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green)
 ![Storage](https://img.shields.io/badge/storage-hybrid-orange)
 
-## ⭐ What's New in 2.4.1
+## ⭐ What's New in 2.4.2
+
+- Rebuilt the Icon Only processor result path to match the proven speed-dial
+  pattern: the offscreen page now sends a separate correlated completion
+  message and the background service worker validates and stores the image.
+- Representative images such as Chronicle's Open Graph banner no longer fall
+  back to a favicon when the long-lived response channel closes early.
+
+## What's New in 2.4.1
 
 - Waits for the offscreen thumbnail processor to finish loading before sending
   the first automatic Icon Only request, preventing a new bookmark from getting

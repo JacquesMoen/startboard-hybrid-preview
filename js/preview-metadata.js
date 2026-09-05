@@ -339,6 +339,7 @@
         calculateThumbnailPlan,
         sampleEdgeColor,
         resizeToThumbnail,
+        processCandidates,
         findRepresentativeImage,
         refreshBookmarkMetadata,
         refreshBookmarkFromCandidateGroups,

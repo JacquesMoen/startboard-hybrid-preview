@@ -1,11 +1,9 @@
-/* global OffscreenHandler, PreviewMetadata, StorageManager */
+/* global OffscreenHandler, PreviewMetadata */
 
 const handleOffscreenMessage = OffscreenHandler.createOffscreenMessageHandler({
-    getBookmark: (bookmarkId) => StorageManager.getBookmarkById(bookmarkId),
-    refreshMetadata: (bookmark, options) =>
-        PreviewMetadata.refreshBookmarkMetadata(bookmark, options),
-    refreshFromCandidateGroups: (bookmark, groups, pageUrl, options) =>
-        PreviewMetadata.refreshBookmarkFromCandidateGroups(bookmark, groups, pageUrl, options)
+    findRepresentativeImage: (pageUrl) => PreviewMetadata.findRepresentativeImage(pageUrl),
+    processCandidates: (groups, pageUrl) => PreviewMetadata.processCandidates(groups, pageUrl),
+    publishResult: (message) => chrome.runtime.sendMessage(message)
 });
 
 chrome.runtime.onMessage.addListener(handleOffscreenMessage);
