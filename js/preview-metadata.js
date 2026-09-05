@@ -274,7 +274,8 @@
             plateColor: processed.plateColor,
             sourceUrl: processed.sourceUrl,
             source: options.source || 'metadata',
-            timestamp
+            timestamp,
+            expectedUrl: bookmark.url
         });
     }
 

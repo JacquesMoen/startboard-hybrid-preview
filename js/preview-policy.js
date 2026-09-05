@@ -39,6 +39,13 @@
         return normalizeComparableUrl(bookmark && bookmark.url) === normalizeComparableUrl(tabUrl);
     }
 
+    function isVisualRequestCurrent(bookmark, expectedUrl, displayType) {
+        if (!exactBookmarkUrlMatches(bookmark, expectedUrl)) return false;
+        if (displayType === 'preview') return isScreenshotBookmark(bookmark);
+        if (displayType === 'icon') return isThumbnailBookmark(bookmark);
+        return false;
+    }
+
     function shouldCaptureScreenshotVisit(bookmark, tabUrl, now = Date.now()) {
         if (!isScreenshotBookmark(bookmark) || !exactBookmarkUrlMatches(bookmark, tabUrl)) return false;
         return isStale(bookmark.screenshotVisitCapturedAt, now, DAY_MS);
@@ -111,6 +118,7 @@
         shouldCaptureScreenshotVisit,
         shouldRefreshThumbnailVisit,
         isScheduledScreenshotDue,
+        isVisualRequestCurrent,
         markScreenshot,
         markThumbnail,
         // Temporary compatibility aliases while older call sites migrate.

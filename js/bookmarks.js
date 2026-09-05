@@ -597,10 +597,11 @@ class BookmarkManager {
         document.getElementById('bookmarkSize').value = size.toString();
 
         // Set display type
-        const displayTypeRadio = document.querySelector(`input[name="displayType"][value="${bookmark.displayType}"]`);
+        const displayType = bookmark.displayType || PreviewPolicy.DEFAULT_BOOKMARK_DISPLAY_TYPE;
+        const displayTypeRadio = document.querySelector(`input[name="displayType"][value="${displayType}"]`);
         if (displayTypeRadio) {
             displayTypeRadio.checked = true;
-            this.toggleDisplayTypeFields(bookmark.displayType);
+            this.toggleDisplayTypeFields(displayType);
         }
         document.getElementById('screenshotRefreshInterval').value =
             BookmarkFormPolicy.normalizeScreenshotRefreshInterval(bookmark.screenshotRefreshInterval);

@@ -518,7 +518,15 @@ const StorageManager = {
             const { url, bookmarkId, source, resolve, reject } = this._screenshotQueue.shift();
 
             try {
-                const result = await this._captureScreenshotInternal(url, bookmarkId, source);
+                const result = await this._captureScreenshotInternal(url);
+                const current = await this.getBookmarkById(bookmarkId);
+                if (!PreviewPolicy.isVisualRequestCurrent(current, url, 'preview')) {
+                    throw new Error('Bookmark changed before screenshot capture completed');
+                }
+                await this._hybrid.saveScreenshot(bookmarkId, result.imageDataUrl, {
+                    source,
+                    timestamp: result.timestamp
+                });
                 await this.markScreenshotMetadata(bookmarkId, source, result.timestamp);
                 resolve(result.imageDataUrl);
             } catch (error) {
@@ -540,84 +548,68 @@ const StorageManager = {
     },
 
     // Internal method for actual screenshot capture
-    async _captureScreenshotInternal(url, bookmarkId, source) {
-        await this._initHybrid();
-
-        return new Promise(async (resolve, reject) => {
+    async _captureScreenshotInternal(url) {
+        return new Promise((resolve, reject) => {
             let bgWindow = null;
+            let timeoutId = null;
+            let loadListener = null;
+            let settled = false;
+            let captureStarted = false;
 
-            try {
-                // Create a small popup window in corner for screenshot
-                bgWindow = await chrome.windows.create({
-                    url: url,
-                    type: 'popup',
-                    focused: false,
-                    state: 'normal',
-                    width: 800,
-                    height: 600,
-                    left: 0,
-                    top: 0
-                });
+            const finish = async (error, result) => {
+                if (settled) return;
+                settled = true;
+                if (timeoutId) clearTimeout(timeoutId);
+                if (loadListener) chrome.tabs.onUpdated.removeListener(loadListener);
+                try {
+                    if (bgWindow) await chrome.windows.remove(bgWindow.id);
+                } catch (closeError) {}
+                if (error) reject(error);
+                else resolve(result);
+            };
 
+            const captureLoadedTab = async (tab) => {
+                if (settled || captureStarted) return;
+                captureStarted = true;
+                try {
+                    // Wait for images and dynamic content.
+                    await new Promise(r => setTimeout(r, 2000));
+                    await chrome.tabs.update(tab.id, { active: true });
+                    await new Promise(r => setTimeout(r, 100));
+                    const screenshot = await chrome.tabs.captureVisibleTab(
+                        bgWindow.id,
+                        { format: 'jpeg', quality: 85 }
+                    );
+                    await finish(null, { imageDataUrl: screenshot, timestamp: Date.now() });
+                } catch (error) {
+                    await finish(error);
+                }
+            };
+
+            chrome.windows.create({
+                url: url,
+                type: 'popup',
+                focused: false,
+                state: 'normal',
+                width: 800,
+                height: 600,
+                left: 0,
+                top: 0
+            }).then((createdWindow) => {
+                bgWindow = createdWindow;
                 const tab = bgWindow.tabs[0];
-
-                // Wait for page to load
-                const loadListener = async (tabId, changeInfo) => {
+                loadListener = (tabId, changeInfo) => {
                     if (tabId === tab.id && changeInfo.status === 'complete') {
-                        chrome.tabs.onUpdated.removeListener(loadListener);
-
-                        // Wait for images and dynamic content
-                        await new Promise(r => setTimeout(r, 2000));
-
-                        try {
-                            // Activate the tab in background window
-                            await chrome.tabs.update(tab.id, { active: true });
-                            await new Promise(r => setTimeout(r, 100));
-
-                            // Capture screenshot
-                            const screenshot = await chrome.tabs.captureVisibleTab(
-                                bgWindow.id,
-                                { format: 'jpeg', quality: 85 }
-                            );
-
-                            // Save to IndexedDB (not chrome.storage!)
-                            const timestamp = Date.now();
-                            await this._hybrid.saveScreenshot(bookmarkId, screenshot, { source, timestamp });
-
-                            // Close background window
-                            await chrome.windows.remove(bgWindow.id);
-
-                            resolve({ imageDataUrl: screenshot, timestamp });
-                        } catch (error) {
-                            try {
-                                await chrome.windows.remove(bgWindow.id);
-                            } catch (e) {}
-                            reject(error);
-                        }
+                        captureLoadedTab(tab);
                     }
                 };
-
                 chrome.tabs.onUpdated.addListener(loadListener);
+                if (tab.status === 'complete') captureLoadedTab(tab);
+            }).catch((error) => finish(error));
 
-                // Timeout after 30 seconds
-                setTimeout(async () => {
-                    chrome.tabs.onUpdated.removeListener(loadListener);
-                    try {
-                        if (bgWindow) {
-                            await chrome.windows.remove(bgWindow.id);
-                        }
-                    } catch (e) {}
-                    reject(new Error('Screenshot capture timeout'));
-                }, 30000);
-
-            } catch (error) {
-                try {
-                    if (bgWindow) {
-                        await chrome.windows.remove(bgWindow.id);
-                    }
-                } catch (e) {}
-                reject(error);
-            }
+            timeoutId = setTimeout(() => {
+                finish(new Error('Screenshot capture timeout'));
+            }, 30000);
         });
     },
 
@@ -670,16 +662,29 @@ const StorageManager = {
         return await this._hybrid.deleteScreenshot(bookmarkId);
     },
 
-    async saveScreenshotResult(bookmarkId, imageDataUrl, source, timestamp = Date.now()) {
+    async saveScreenshotResult(bookmarkId, imageDataUrl, source, timestamp = Date.now(), expectedUrl = null) {
         await this._initHybrid();
+        if (expectedUrl) {
+            const current = await this.getBookmarkById(bookmarkId);
+            if (!PreviewPolicy.isVisualRequestCurrent(current, expectedUrl, 'preview')) {
+                throw new Error('Bookmark changed before screenshot could be saved');
+            }
+        }
         await this._hybrid.saveScreenshot(bookmarkId, imageDataUrl, { source, timestamp });
         return await this.markScreenshotMetadata(bookmarkId, source, timestamp);
     },
 
     async saveThumbnail(bookmarkId, imageDataUrl, metadata = {}) {
         await this._initHybrid();
+        if (metadata.expectedUrl) {
+            const current = await this.getBookmarkById(bookmarkId);
+            if (!PreviewPolicy.isVisualRequestCurrent(current, metadata.expectedUrl, 'icon')) {
+                throw new Error('Bookmark changed before thumbnail could be saved');
+            }
+        }
         const timestamp = metadata.timestamp || Date.now();
-        await this._hybrid.saveThumbnail(bookmarkId, imageDataUrl, { ...metadata, timestamp });
+        const { expectedUrl, ...storedMetadata } = metadata;
+        await this._hybrid.saveThumbnail(bookmarkId, imageDataUrl, { ...storedMetadata, timestamp });
         return await this.markThumbnailMetadata(bookmarkId, metadata, timestamp);
     },
 
@@ -1130,6 +1135,7 @@ const StorageManager = {
             await this._initHybrid();
             for (const bookmark of removedBookmarks) {
                 await this._hybrid.deleteScreenshot(bookmark.id);
+                await this._hybrid.deleteThumbnail(bookmark.id);
                 await this._hybrid.deleteCustomImage(bookmark.id);
             }
         }

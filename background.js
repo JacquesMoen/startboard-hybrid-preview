@@ -14,6 +14,7 @@ importScripts(
 
 const ROOT_MENU_ID = 'startboard_add_bookmark';
 const SCHEDULE_CLAIMS_KEY = 'scheduledScreenshotRefreshClaims';
+const VISUAL_STORAGE_MIGRATION_KEY = 'previewModeStorageMigrationV1';
 const CLAIM_LIFETIME_MS = 5 * 60 * 1000;
 
 function readLocalStorage(keys) {
@@ -42,6 +43,17 @@ const claimStore = {
         const claims = result[SCHEDULE_CLAIMS_KEY] || {};
         delete claims[bookmarkId];
         await writeLocalStorage({ [SCHEDULE_CLAIMS_KEY]: claims });
+    }
+};
+
+const migrationStore = {
+    async hasCompleted() {
+        const result = await readLocalStorage([VISUAL_STORAGE_MIGRATION_KEY]);
+        return result[VISUAL_STORAGE_MIGRATION_KEY] === true;
+    },
+
+    async markCompleted() {
+        await writeLocalStorage({ [VISUAL_STORAGE_MIGRATION_KEY]: true });
     }
 };
 
@@ -75,7 +87,13 @@ async function captureVisitedScreenshots(targets, tab) {
     for (const target of targets) {
         const current = await StorageManager.getBookmarkById(target.id);
         if (!PreviewPolicy.shouldCaptureScreenshotVisit(current, tab.url, timestamp)) continue;
-        await StorageManager.saveScreenshotResult(current.id, screenshot, 'visit', timestamp);
+        await StorageManager.saveScreenshotResult(
+            current.id,
+            screenshot,
+            'visit',
+            timestamp,
+            tab.url
+        );
     }
 }
 
@@ -94,11 +112,17 @@ const visualCoordinator = RefreshCoordinator.createRefreshCoordinator({
         StorageManager.captureScreenshot(bookmark.url, bookmark.id, source),
     captureVisitedScreenshots,
     refreshThumbnail: refreshRepresentativeThumbnail,
+    getScreenshotRecord: (bookmarkId) => StorageManager.getScreenshotRecord(bookmarkId),
+    saveThumbnail: (bookmarkId, imageDataUrl, metadata) =>
+        StorageManager.saveThumbnail(bookmarkId, imageDataUrl, metadata),
     notifyUpdated: notifyVisualUpdated,
-    claimStore
+    claimStore,
+    migrationStore
 });
 
 RefreshCoordinator.registerRefreshCoordinatorEvents(chrome, visualCoordinator);
+visualCoordinator.migrateLegacyVisuals().catch((error) =>
+    console.debug('Legacy visual migration skipped:', error.message));
 
 // Create/refresh the context menu based on current workspaces
 async function refreshContextMenu() {

@@ -11,14 +11,92 @@
         const captureScreenshot = dependencies.captureScreenshot;
         const captureVisitedScreenshots = dependencies.captureVisitedScreenshots;
         const refreshThumbnail = dependencies.refreshThumbnail;
+        const getScreenshotRecord = dependencies.getScreenshotRecord;
+        const saveThumbnail = dependencies.saveThumbnail;
         const notifyUpdated = dependencies.notifyUpdated || (async () => {});
         const claimStore = dependencies.claimStore || {
             claim: async () => true,
             release: async () => {}
         };
+        const migrationStore = dependencies.migrationStore || {
+            hasCompleted: async () => true,
+            markCompleted: async () => {}
+        };
         const screenshotInFlight = new Set();
         const thumbnailInFlight = new Set();
         let runningDueCheck = null;
+        let runningMigration = null;
+
+        async function migrateLegacyVisuals() {
+            if (runningMigration) return runningMigration;
+
+            runningMigration = (async () => {
+                if (await migrationStore.hasCompleted()) return { skipped: true };
+
+                const result = {
+                    migratedThumbnailIds: [],
+                    recapturedScreenshotIds: [],
+                    failedIds: []
+                };
+
+                try {
+                    const bookmarks = await getBookmarks();
+                    for (const bookmark of bookmarks) {
+                        if (!getScreenshotRecord) continue;
+
+                        let record;
+                        try {
+                            record = await getScreenshotRecord(bookmark.id);
+                        } catch (error) {
+                            result.failedIds.push(bookmark.id);
+                            continue;
+                        }
+
+                        const isLegacyMetadata = bookmark.previewSource === 'metadata' ||
+                            (record && record.source === 'metadata');
+                        if (!record || !record.imageDataUrl || !isLegacyMetadata) continue;
+
+                        try {
+                            const current = await getBookmark(bookmark.id);
+                            if (PreviewPolicy.isThumbnailBookmark(current) && saveThumbnail) {
+                                await saveThumbnail(current.id, record.imageDataUrl, {
+                                    plateColor: current.previewPlateColor || null,
+                                    sourceUrl: current.previewSourceUrl || null,
+                                    source: 'migration',
+                                    timestamp: record.timestamp || now(),
+                                    expectedUrl: current.url
+                                });
+                                result.migratedThumbnailIds.push(current.id);
+                            } else if (PreviewPolicy.isScreenshotBookmark(current)) {
+                                if (screenshotInFlight.has(current.id)) continue;
+                                screenshotInFlight.add(current.id);
+                                try {
+                                    await captureScreenshot(current, 'migration');
+                                    result.recapturedScreenshotIds.push(current.id);
+                                } finally {
+                                    screenshotInFlight.delete(current.id);
+                                }
+                            }
+                        } catch (error) {
+                            result.failedIds.push(bookmark.id);
+                        }
+                    }
+                } finally {
+                    await migrationStore.markCompleted();
+                }
+
+                const updatedIds = [
+                    ...result.migratedThumbnailIds,
+                    ...result.recapturedScreenshotIds
+                ];
+                if (updatedIds.length) await notifyUpdated(updatedIds);
+                return result;
+            })().finally(() => {
+                runningMigration = null;
+            });
+
+            return runningMigration;
+        }
 
         async function checkDueScreenshotRefreshes(trigger) {
             if (runningDueCheck) return runningDueCheck;
@@ -135,6 +213,7 @@
         }
 
         return {
+            migrateLegacyVisuals,
             checkDueScreenshotRefreshes,
             refreshBookmarkVisual,
             captureVisitedBookmarkVisuals

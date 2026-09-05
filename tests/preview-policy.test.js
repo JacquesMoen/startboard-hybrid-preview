@@ -11,6 +11,7 @@ const {
     shouldCaptureScreenshotVisit,
     shouldRefreshThumbnailVisit,
     isScheduledScreenshotDue,
+    isVisualRequestCurrent,
     markScreenshot,
     markThumbnail,
     selectPreviewCandidates
@@ -77,6 +78,17 @@ test('visit refresh routes require an exact normalized URL and their own mode', 
     assert.equal(shouldRefreshThumbnailVisit(thumbnail, 'https://example.com/other', NOW), false);
     assert.equal(shouldRefreshThumbnailVisit({ ...thumbnail, displayType: 'preview' }, thumbnail.url, NOW), false);
     assert.equal(shouldRefreshThumbnailVisit({ ...thumbnail, thumbnailVisitRefreshedAt: NOW - DAY_MS + 1 }, thumbnail.url, NOW), false);
+});
+
+test('async visual results remain valid only while URL and display mode are unchanged', () => {
+    const screenshot = { url: 'https://example.com/page/', displayType: 'preview' };
+    const thumbnail = { url: 'https://example.com/page/', displayType: 'icon' };
+
+    assert.equal(isVisualRequestCurrent(screenshot, 'https://example.com/page#top', 'preview'), true);
+    assert.equal(isVisualRequestCurrent(thumbnail, 'https://example.com/page#top', 'icon'), true);
+    assert.equal(isVisualRequestCurrent(screenshot, 'https://example.com/other', 'preview'), false);
+    assert.equal(isVisualRequestCurrent({ ...screenshot, displayType: 'icon' }, screenshot.url, 'preview'), false);
+    assert.equal(isVisualRequestCurrent({ ...thumbnail, displayType: 'custom' }, thumbnail.url, 'icon'), false);
 });
 
 test('screenshot metadata records the source and visit throttle separately', () => {

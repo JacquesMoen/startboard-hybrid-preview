@@ -176,7 +176,8 @@ test('downloads the best representative image into thumbnail storage', async () 
                 plateColor: 'rgb(12, 34, 56)',
                 sourceUrl: 'https://ampcode.com/chronicle.jpg',
                 source: 'metadata',
-                timestamp: 12345
+                timestamp: 12345,
+                expectedUrl: 'https://ampcode.com/chronicle'
             }
         ]]);
     } finally {

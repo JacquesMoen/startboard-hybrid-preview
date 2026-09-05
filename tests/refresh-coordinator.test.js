@@ -169,3 +169,87 @@ test('Chrome startup and board-open messages invoke the same due checker', async
     assert.deepEqual(calls, ['startup', 'board-open']);
     assert.deepEqual(response, { success: true });
 });
+
+test('legacy metadata images migrate once without deleting the old screenshot records', async () => {
+    const bookmarks = [
+        { id: 'icon', url: 'https://icon.example', displayType: 'icon', previewSource: 'metadata' },
+        { id: 'screen', url: 'https://screen.example', displayType: 'preview', previewSource: 'metadata' },
+        { id: 'custom', url: 'https://custom.example', displayType: 'custom', previewSource: 'metadata' }
+    ];
+    const screenshots = {
+        icon: {
+            imageDataUrl: 'data:image/webp;base64,aWNvbg==',
+            source: 'metadata',
+            timestamp: NOW - 1000
+        },
+        screen: {
+            imageDataUrl: 'data:image/webp;base64,c2NyZWVu',
+            source: 'metadata',
+            timestamp: NOW - 2000
+        },
+        custom: {
+            imageDataUrl: 'data:image/webp;base64,Y3VzdG9t',
+            source: 'metadata',
+            timestamp: NOW - 3000
+        }
+    };
+    const calls = [];
+    let completed = false;
+    const coordinator = createRefreshCoordinator({
+        now: () => NOW,
+        getBookmarks: async () => bookmarks,
+        getBookmark: async id => bookmarks.find(bookmark => bookmark.id === id),
+        getScreenshotRecord: async id => screenshots[id],
+        saveThumbnail: async (...args) => calls.push(['thumbnail', ...args]),
+        captureScreenshot: async (bookmark, source) => calls.push(['screenshot', bookmark.id, source]),
+        refreshThumbnail: async () => {},
+        migrationStore: {
+            hasCompleted: async () => completed,
+            markCompleted: async () => { completed = true; }
+        },
+        claimStore: claimStore()
+    });
+
+    const first = await coordinator.migrateLegacyVisuals();
+    const second = await coordinator.migrateLegacyVisuals();
+
+    assert.deepEqual(calls, [
+        ['thumbnail', 'icon', screenshots.icon.imageDataUrl, {
+            plateColor: null,
+            sourceUrl: null,
+            source: 'migration',
+            timestamp: screenshots.icon.timestamp,
+            expectedUrl: 'https://icon.example'
+        }],
+        ['screenshot', 'screen', 'migration']
+    ]);
+    assert.deepEqual(first, { migratedThumbnailIds: ['icon'], recapturedScreenshotIds: ['screen'], failedIds: [] });
+    assert.deepEqual(second, { skipped: true });
+    assert.equal(completed, true);
+});
+
+test('legacy migration also recognizes metadata from the stored image record', async () => {
+    const bookmark = { id: 'icon', url: 'https://icon.example', displayType: 'icon' };
+    const writes = [];
+    const coordinator = createRefreshCoordinator({
+        getBookmarks: async () => [bookmark],
+        getBookmark: async () => bookmark,
+        getScreenshotRecord: async () => ({
+            imageDataUrl: 'data:image/webp;base64,aWNvbg==',
+            source: 'metadata',
+            timestamp: NOW
+        }),
+        saveThumbnail: async (...args) => writes.push(args),
+        captureScreenshot: async () => {},
+        refreshThumbnail: async () => {},
+        migrationStore: {
+            hasCompleted: async () => false,
+            markCompleted: async () => {}
+        },
+        claimStore: claimStore()
+    });
+
+    await coordinator.migrateLegacyVisuals();
+
+    assert.equal(writes.length, 1);
+});
