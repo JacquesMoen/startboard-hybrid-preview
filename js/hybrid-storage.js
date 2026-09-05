@@ -47,9 +47,9 @@ class HybridStorageManager {
     // ========== SCREENSHOTS ==========
     // Store in IndexedDB (efficient for large images)
 
-    async saveScreenshot(bookmarkId, imageDataUrl) {
+    async saveScreenshot(bookmarkId, imageDataUrl, metadata = {}) {
         await this.init();
-        return await this.idb.saveScreenshot(bookmarkId, imageDataUrl);
+        return await this.idb.saveScreenshot(bookmarkId, imageDataUrl, metadata);
     }
 
     async getScreenshot(bookmarkId) {
@@ -60,6 +60,28 @@ class HybridStorageManager {
     async deleteScreenshot(bookmarkId) {
         await this.init();
         return await this.idb.deleteScreenshot(bookmarkId);
+    }
+
+    async getScreenshotRecord(bookmarkId) {
+        await this.init();
+        return await this.idb.getScreenshotRecord(bookmarkId);
+    }
+
+    // ========== REPRESENTATIVE THUMBNAILS ==========
+
+    async saveThumbnail(bookmarkId, imageDataUrl, metadata = {}) {
+        await this.init();
+        return await this.idb.saveThumbnail(bookmarkId, imageDataUrl, metadata);
+    }
+
+    async getThumbnail(bookmarkId) {
+        await this.init();
+        return await this.idb.getThumbnail(bookmarkId);
+    }
+
+    async deleteThumbnail(bookmarkId) {
+        await this.init();
+        return await this.idb.deleteThumbnail(bookmarkId);
     }
 
     // ========== CUSTOM IMAGES ==========

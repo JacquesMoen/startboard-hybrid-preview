@@ -370,6 +370,7 @@ const StorageManager = {
         // Delete screenshot from IndexedDB
         await this._initHybrid();
         await this._hybrid.deleteScreenshot(id);
+        await this._hybrid.deleteThumbnail(id);
         await this._hybrid.deleteCustomImage(id);
 
         return true;
@@ -514,12 +515,12 @@ const StorageManager = {
         this._isProcessingScreenshots = true;
 
         while (this._screenshotQueue.length > 0) {
-            const { url, bookmarkId, resolve, reject } = this._screenshotQueue.shift();
+            const { url, bookmarkId, source, resolve, reject } = this._screenshotQueue.shift();
 
             try {
-                const screenshot = await this._captureScreenshotInternal(url, bookmarkId);
-                await this.markPreviewMetadata(bookmarkId, 'manual');
-                resolve(screenshot);
+                const result = await this._captureScreenshotInternal(url, bookmarkId, source);
+                await this.markScreenshotMetadata(bookmarkId, source, result.timestamp);
+                resolve(result.imageDataUrl);
             } catch (error) {
                 reject(error);
             }
@@ -529,17 +530,17 @@ const StorageManager = {
     },
 
     // Capture screenshot of a URL directly (in background window)
-    async captureScreenshot(url, bookmarkId) {
+    async captureScreenshot(url, bookmarkId, source = 'manual') {
         return new Promise((resolve, reject) => {
             // Add to queue
-            this._screenshotQueue.push({ url, bookmarkId, resolve, reject });
+            this._screenshotQueue.push({ url, bookmarkId, source, resolve, reject });
             // Process queue
             this._processScreenshotQueue();
         });
     },
 
     // Internal method for actual screenshot capture
-    async _captureScreenshotInternal(url, bookmarkId) {
+    async _captureScreenshotInternal(url, bookmarkId, source) {
         await this._initHybrid();
 
         return new Promise(async (resolve, reject) => {
@@ -580,12 +581,13 @@ const StorageManager = {
                             );
 
                             // Save to IndexedDB (not chrome.storage!)
-                            await this._hybrid.saveScreenshot(bookmarkId, screenshot);
+                            const timestamp = Date.now();
+                            await this._hybrid.saveScreenshot(bookmarkId, screenshot, { source, timestamp });
 
                             // Close background window
                             await chrome.windows.remove(bgWindow.id);
 
-                            resolve(screenshot);
+                            resolve({ imageDataUrl: screenshot, timestamp });
                         } catch (error) {
                             try {
                                 await chrome.windows.remove(bgWindow.id);
@@ -647,8 +649,8 @@ const StorageManager = {
     },
 
     // Refresh screenshot for a bookmark
-    async refreshScreenshot(bookmarkId, url) {
-        return await this.captureScreenshot(url, bookmarkId);
+    async refreshScreenshot(bookmarkId, url, source = 'manual') {
+        return await this.captureScreenshot(url, bookmarkId, source);
     },
 
     // Get screenshot from storage (FROM INDEXEDDB NOW!)
@@ -657,17 +659,46 @@ const StorageManager = {
         return await this._hybrid.getScreenshot(bookmarkId);
     },
 
+    async getScreenshotRecord(bookmarkId) {
+        await this._initHybrid();
+        return await this._hybrid.getScreenshotRecord(bookmarkId);
+    },
+
     // Delete screenshot from storage
     async deleteScreenshot(bookmarkId) {
         await this._initHybrid();
         return await this._hybrid.deleteScreenshot(bookmarkId);
     },
 
+    async saveScreenshotResult(bookmarkId, imageDataUrl, source, timestamp = Date.now()) {
+        await this._initHybrid();
+        await this._hybrid.saveScreenshot(bookmarkId, imageDataUrl, { source, timestamp });
+        return await this.markScreenshotMetadata(bookmarkId, source, timestamp);
+    },
+
+    async saveThumbnail(bookmarkId, imageDataUrl, metadata = {}) {
+        await this._initHybrid();
+        const timestamp = metadata.timestamp || Date.now();
+        await this._hybrid.saveThumbnail(bookmarkId, imageDataUrl, { ...metadata, timestamp });
+        return await this.markThumbnailMetadata(bookmarkId, metadata, timestamp);
+    },
+
+    async getThumbnail(bookmarkId) {
+        await this._initHybrid();
+        return await this._hybrid.getThumbnail(bookmarkId);
+    },
+
+    async deleteThumbnail(bookmarkId) {
+        await this._initHybrid();
+        return await this._hybrid.deleteThumbnail(bookmarkId);
+    },
+
     // Save a preview image and record how it was obtained.
     async savePreview(bookmarkId, imageDataUrl, source, timestamp = Date.now()) {
-        await this._initHybrid();
-        await this._hybrid.saveScreenshot(bookmarkId, imageDataUrl);
-        return await this.markPreviewMetadata(bookmarkId, source, timestamp);
+        if (source === 'metadata') {
+            return await this.saveThumbnail(bookmarkId, imageDataUrl, { source, timestamp });
+        }
+        return await this.saveScreenshotResult(bookmarkId, imageDataUrl, source, timestamp);
     },
 
     async _updatePreviewMetadata(bookmarkId, update) {
@@ -686,8 +717,20 @@ const StorageManager = {
     },
 
     async markPreviewMetadata(bookmarkId, source, timestamp = Date.now()) {
+        if (source === 'metadata') {
+            return await this.markThumbnailMetadata(bookmarkId, { source }, timestamp);
+        }
+        return await this.markScreenshotMetadata(bookmarkId, source, timestamp);
+    },
+
+    async markScreenshotMetadata(bookmarkId, source, timestamp = Date.now()) {
         return await this._updatePreviewMetadata(bookmarkId, (bookmark) =>
-            PreviewPolicy.markPreview(bookmark, source, timestamp));
+            PreviewPolicy.markScreenshot(bookmark, source, timestamp));
+    },
+
+    async markThumbnailMetadata(bookmarkId, metadata = {}, timestamp = Date.now()) {
+        return await this._updatePreviewMetadata(bookmarkId, (bookmark) =>
+            PreviewPolicy.markThumbnail(bookmark, metadata, timestamp));
     },
 
     async markPreviewMetadataChecked(bookmarkId, timestamp = Date.now()) {

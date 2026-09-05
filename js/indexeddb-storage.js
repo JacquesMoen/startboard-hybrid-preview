@@ -4,7 +4,7 @@
 class IndexedDBStorage {
     constructor() {
         this.dbName = 'VisualBookmarksDB';
-        this.version = 1;
+        this.version = 2;
         this.db = null;
     }
 
@@ -26,6 +26,12 @@ class IndexedDBStorage {
                 if (!db.objectStoreNames.contains('screenshots')) {
                     const screenshotStore = db.createObjectStore('screenshots', { keyPath: 'id' });
                     screenshotStore.createIndex('bookmarkId', 'bookmarkId', { unique: true });
+                }
+
+                // Store for representative site thumbnails
+                if (!db.objectStoreNames.contains('thumbnails')) {
+                    const thumbnailStore = db.createObjectStore('thumbnails', { keyPath: 'id' });
+                    thumbnailStore.createIndex('bookmarkId', 'bookmarkId', { unique: true });
                 }
 
                 // Store for custom images
@@ -54,7 +60,7 @@ class IndexedDBStorage {
     }
 
     // Save screenshot (as Blob, more efficient than base64)
-    async saveScreenshot(bookmarkId, imageDataUrl) {
+    async saveScreenshot(bookmarkId, imageDataUrl, metadata = {}) {
         if (!this.db) {
             throw new Error('IndexedDB not initialized. Call init() first.');
         }
@@ -70,7 +76,8 @@ class IndexedDBStorage {
                 id: `screenshot-${bookmarkId}`,
                 bookmarkId: bookmarkId,
                 image: blob,
-                timestamp: Date.now()
+                timestamp: metadata.timestamp || Date.now(),
+                source: metadata.source || null
             };
 
             const request = store.put(data);
@@ -81,6 +88,12 @@ class IndexedDBStorage {
 
     // Get screenshot
     async getScreenshot(bookmarkId) {
+        const record = await this.getScreenshotRecord(bookmarkId);
+        return record ? record.imageDataUrl : null;
+    }
+
+    // Get screenshot together with capture metadata
+    async getScreenshotRecord(bookmarkId) {
         if (!this.db) {
             throw new Error('IndexedDB not initialized. Call init() first.');
         }
@@ -92,9 +105,12 @@ class IndexedDBStorage {
 
             request.onsuccess = async () => {
                 if (request.result && request.result.image) {
-                    // Convert Blob back to data URL for <img> src
                     const dataUrl = await this._blobToDataUrl(request.result.image);
-                    resolve(dataUrl);
+                    resolve({
+                        imageDataUrl: dataUrl,
+                        timestamp: request.result.timestamp,
+                        source: request.result.source || null
+                    });
                 } else {
                     resolve(null);
                 }
@@ -114,6 +130,70 @@ class IndexedDBStorage {
             const store = transaction.objectStore('screenshots');
             const request = store.delete(`screenshot-${bookmarkId}`);
 
+            request.onsuccess = () => resolve(true);
+            request.onerror = () => reject(request.error);
+        });
+    }
+
+    // Save a representative site thumbnail and its presentation metadata
+    async saveThumbnail(bookmarkId, imageDataUrl, metadata = {}) {
+        if (!this.db) {
+            throw new Error('IndexedDB not initialized. Call init() first.');
+        }
+
+        const blob = await this._dataUrlToBlob(imageDataUrl);
+        return new Promise((resolve, reject) => {
+            const transaction = this.db.transaction(['thumbnails'], 'readwrite');
+            const store = transaction.objectStore('thumbnails');
+            const request = store.put({
+                id: `thumbnail-${bookmarkId}`,
+                bookmarkId,
+                image: blob,
+                plateColor: metadata.plateColor || null,
+                sourceUrl: metadata.sourceUrl || null,
+                source: metadata.source || 'metadata',
+                timestamp: metadata.timestamp || Date.now()
+            });
+            request.onsuccess = () => resolve(true);
+            request.onerror = () => reject(request.error);
+        });
+    }
+
+    // Get a representative thumbnail and all metadata needed to render it
+    async getThumbnail(bookmarkId) {
+        if (!this.db) {
+            throw new Error('IndexedDB not initialized. Call init() first.');
+        }
+
+        return new Promise((resolve, reject) => {
+            const transaction = this.db.transaction(['thumbnails'], 'readonly');
+            const store = transaction.objectStore('thumbnails');
+            const request = store.get(`thumbnail-${bookmarkId}`);
+            request.onsuccess = async () => {
+                if (!request.result || !request.result.image) {
+                    resolve(null);
+                    return;
+                }
+                resolve({
+                    imageDataUrl: await this._blobToDataUrl(request.result.image),
+                    plateColor: request.result.plateColor || null,
+                    sourceUrl: request.result.sourceUrl || null,
+                    source: request.result.source || 'metadata',
+                    timestamp: request.result.timestamp
+                });
+            };
+            request.onerror = () => reject(request.error);
+        });
+    }
+
+    async deleteThumbnail(bookmarkId) {
+        if (!this.db) {
+            throw new Error('IndexedDB not initialized. Call init() first.');
+        }
+
+        return new Promise((resolve, reject) => {
+            const transaction = this.db.transaction(['thumbnails'], 'readwrite');
+            const request = transaction.objectStore('thumbnails').delete(`thumbnail-${bookmarkId}`);
             request.onsuccess = () => resolve(true);
             request.onerror = () => reject(request.error);
         });
@@ -307,7 +387,7 @@ class IndexedDBStorage {
             throw new Error('IndexedDB not initialized. Call init() first.');
         }
 
-        const storeNames = ['screenshots', 'customImages', 'workspaceBackgrounds', 'bookmarks', 'folders'];
+        const storeNames = ['screenshots', 'thumbnails', 'customImages', 'workspaceBackgrounds', 'bookmarks', 'folders'];
 
         return new Promise((resolve, reject) => {
             const transaction = this.db.transaction(storeNames, 'readwrite');
